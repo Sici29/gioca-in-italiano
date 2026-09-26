@@ -60,7 +60,9 @@ jobs:
       - name: Genera catalog.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python tools/build_catalog.py catalog.json
+        # catalog.json si riscrive solo se e' cambiato qualcosa che conta; il
+        # sito invece usa sempre i dati appena letti, download compresi.
+        run: python tools/build_catalog.py catalog.json --fresco _catalogo-fresco.json
 
       - name: Pubblica il catalogo se e' cambiato
         # git status e non git diff: al primo giro il file non e' ancora nel
@@ -78,7 +80,7 @@ jobs:
           git push
 
       - name: Genera il sito
-        run: python tools/genera_sito.py --catalogo catalog.json --uscita _site
+        run: python tools/genera_sito.py --catalogo _catalogo-fresco.json --uscita _site
 
       - name: Confronta con il sito online
         # I giri programmati pubblicano solo se il sito e' cambiato davvero;

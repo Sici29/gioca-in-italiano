@@ -270,6 +270,21 @@ class CatalogoNelRepo(unittest.TestCase):
         vecchio = self.catalogo(ore_fa=25)
         self.assertTrue(build_catalog.da_riscrivere(vecchio, self.catalogo(ore_fa=0)))
 
+    def test_il_sito_ha_comunque_i_dati_di_adesso(self):
+        # catalog.json resta com'era (cambiano solo i download), ma il sito
+        # deve vedere i numeri nuovi: per questo c'e' il file "fresco".
+        with tempfile.TemporaryDirectory() as cartella:
+            dest = Path(cartella) / "catalog.json"
+            fresco = Path(cartella) / "fresco.json"
+            vecchio = self.catalogo(ore_fa=1, scaricati=10)
+            dest.write_text(json.dumps(vecchio), encoding="utf-8")
+            nuovo = self.catalogo(ore_fa=0, scaricati=900)
+            with mock.patch.object(build_catalog, "build", return_value=nuovo):
+                build_catalog.main([str(dest), "--fresco", str(fresco)])
+            self.assertEqual(json.loads(dest.read_text(encoding="utf-8")), vecchio)
+            dati = json.loads(fresco.read_text(encoding="utf-8"))
+            self.assertEqual(dati["entries"][0]["releases"][0]["downloads"], 900)
+
     def test_non_tocca_l_originale(self):
         dati = self.catalogo()
         prima = json.dumps(dati, sort_keys=True)

@@ -641,6 +641,26 @@ ricerca e l'anteprima per chi condivide il link su WhatsApp, Telegram o Discord.
 Il pulsante per scaricare l'hub compare da solo quando questo repo ha una
 release con dentro l'exe. Finché non c'è, il sito non ne parla.
 
+### Cosa si aggiorna da solo
+
+Tutto, a ogni giro della Action (ogni tre ore):
+
+- **i numeri in cima**: i giochi tradotti (i repo con almeno una release), i
+  download (la somma delle ultime 12 release di ogni traduzione, arrotondata
+  per difetto: "oltre 1.100") e la data dell'ultimo aggiornamento, cioè
+  l'ultima release uscita. Il sito legge i dati appena scaricati
+  (`--fresco`), non `catalog.json`, che si riscrive solo quando cambia
+  qualcosa che conta;
+- **le copertine**, riscaricate ogni volta da Steam, o dal `cover_url` del
+  `hub.json` se c'è, e con loro la tinta di ogni gioco. La copertina scelta a
+  mano nell'hub con "Cambia immagine" resta sul PC di chi l'ha scelta: per
+  cambiarla sul sito si mette il `cover_url` nel `hub.json`;
+- versioni, note di rilascio, pulsanti di download, proposte e il pulsante
+  dell'app.
+
+Siccome i download sono arrotondati, il sito si ripubblica davvero solo quando
+un numero cambia di centinaio, o quando cambia qualcos'altro.
+
 ### Quello che il catalogo non sa
 
 La lingua da scegliere nel gioco, il tasto per tornare all'originale, cosa fare
@@ -676,7 +696,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-327 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+328 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -787,7 +807,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           327 test, senza rete
+tests/           328 test, senza rete
 ```
 
 ---

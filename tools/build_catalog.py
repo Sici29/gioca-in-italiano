@@ -7,11 +7,12 @@ l'hub degli utenti finisce per non farne nessuna.
 Riusa gli stessi moduli dell'hub, quindi le regole di riconoscimento dei repo
 restano scritte in un posto solo (hub/config.py).
 
-    python tools/build_catalog.py [percorso/catalog.json]
+    python tools/build_catalog.py [percorso/catalog.json] [--fresco dati-per-il-sito.json]
 """
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import sys
@@ -175,22 +176,35 @@ def da_riscrivere(vecchio: dict | None, nuovo: dict) -> bool:
     return feed._age_hours(str(vecchio.get("generated_at", ""))) >= RINFRESCO_ORE
 
 
-def main() -> int:
-    dest = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(config.FEED_PATH)
+def _scrivi(dest: Path, data: dict) -> None:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(
+        json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+    )
+    print(f"scritto {dest} ({dest.stat().st_size / 1024:.0f} KB)")
+
+
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("dest", nargs="?", default=config.FEED_PATH)
+    # Il sito vuole i dati di adesso, compresi i download, anche quando
+    # catalog.json resta com'era perche' non e' cambiato niente di importante.
+    ap.add_argument("--fresco", help="dove scrivere comunque i dati appena letti")
+    args = ap.parse_args(argv)
+
+    dest = Path(args.dest)
     data = build()
+    print()
+    if args.fresco:
+        _scrivi(Path(args.fresco), data)
     try:
         vecchio = json.loads(dest.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         vecchio = None
     if not da_riscrivere(vecchio, data):
-        print(f"\n{dest}: niente di nuovo, resta quello di prima")
+        print(f"{dest}: niente di nuovo, resta quello di prima")
         return 0
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(
-        json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
-    )
-    size = dest.stat().st_size / 1024
-    print(f"\nscritto {dest} ({size:.0f} KB)")
+    _scrivi(dest, data)
     return 0
 
 
