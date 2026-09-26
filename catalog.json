@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-26T13:50:09+00:00",
+ "generated_at": "2026-09-26T13:54:00+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 42919319,
-       "downloads": 50,
+       "downloads": 53,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 42919319,
-      "downloads": 50,
+      "downloads": 53,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 50
+     "downloads": 53
     },
     {
      "tag": "v1.0.3595896.0",
@@ -771,5 +771,18 @@
   }
  ],
  "proposals": [],
- "hub_release": {}
+ "hub_release": {
+  "tag_name": "v1.0.0",
+  "name": "Gioca in Italiano 1.0.0",
+  "body": "**Gioca in Italiano** raccoglie in un'app sola tutte le traduzioni italiane di Sici29: Aniimo, Neverness to Everness, Fatekeeper, ARK: Survival Ascended e Star Citizen.\n\n## Cosa fa\n\n- Trova da sola i giochi installati sul PC e ti mostra prima i tuoi\n- Installa e aggiorna le traduzioni con un clic, senza finestre nere\n- Ti avvisa quando esce una versione nuova di una traduzione, o dell'app\n- Fa partire il gioco direttamente dall'app\n- Dal menu **Altro** torni al gioco originale quando vuoi\n\n## Come si usa\n\n1. Scarica **GiocaInItaliano.exe** qui sotto.\n2. Aprilo: non va installato.\n3. Premi **Installa** sulla scheda del gioco.\n\nWindows può mostrare l'avviso SmartScreen, perché l'app è gratuita e non ha una firma digitale a pagamento: premi «Ulteriori informazioni» e poi «Esegui comunque».\n\nServe Windows 10 o 11.\n\nSHA-256 di `GiocaInItaliano.exe`:\n`5A41DDE5E688C419DAE3413EEFF1E5B514B694E44F692B2CEEFF4740CA1CEE3D`\n\nIl sito con tutte le traduzioni: https://sici29.github.io/gioca-in-italiano/\n",
+  "html_url": "https://github.com/Sici29/gioca-in-italiano/releases/tag/v1.0.0",
+  "published_at": "2026-09-26T13:53:38Z",
+  "assets": [
+   {
+    "name": "GiocaInItaliano.exe",
+    "browser_download_url": "https://github.com/Sici29/gioca-in-italiano/releases/download/v1.0.0/GiocaInItaliano.exe",
+    "size": 25826531
+   }
+  ]
+ }
 }
