@@ -1,8 +1,8 @@
 # Generato da tools/make_version_info.py - non modificare a mano.
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1, 0, 0, 0),
-    prodvers=(1, 0, 0, 0),
+    filevers=(1, 0, 1, 0),
+    prodvers=(1, 0, 1, 0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -17,12 +17,12 @@ VSVersionInfo(
         [
           StringStruct('CompanyName', 'Sici29'),
           StringStruct('FileDescription', 'Gioca in Italiano - le traduzioni di Sici29'),
-          StringStruct('FileVersion', '1.0.0'),
+          StringStruct('FileVersion', '1.0.1'),
           StringStruct('InternalName', 'GiocaInItaliano'),
           StringStruct('LegalCopyright', 'Sici29 - traduzioni amatoriali non ufficiali'),
           StringStruct('OriginalFilename', 'GiocaInItaliano.exe'),
           StringStruct('ProductName', 'Gioca in Italiano'),
-          StringStruct('ProductVersion', '1.0.0')
+          StringStruct('ProductVersion', '1.0.1')
         ]
       )
     ]),

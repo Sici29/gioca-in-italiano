@@ -30,6 +30,9 @@ const S = {
   source: '',
   hubUpdate: null,
   drawerRepo: '',
+  // Il gioco da aprire dopo il clic su una notifica, se il catalogo non c'e'
+  // ancora: si apre appena arriva.
+  daAprire: '',
   lastFocus: null,
 };
 
@@ -1014,6 +1017,18 @@ function applicaCatalogo(payload) {
   render();
   renderAccountRiga();
   mostraAvviso(payload.error);
+  if (S.daAprire && S.projects.some((p) => p.repo === S.daAprire)) {
+    const repo = S.daAprire;
+    S.daAprire = '';
+    openDrawer(repo);
+  }
+}
+
+// Il clic su una notifica di Windows: la scheda del gioco, subito o appena
+// il catalogo arriva.
+function apriDaNotifica(repo) {
+  if (S.projects.some((p) => p.repo === repo)) openDrawer(repo);
+  else S.daAprire = repo;
 }
 
 window.hubEvent = function (msg) {
@@ -1031,6 +1046,8 @@ window.hubEvent = function (msg) {
     handleInstallEvent(payload);
   } else if (event === 'installer') {
     handleInstallerEvent(payload);
+  } else if (event === 'apri') {
+    apriDaNotifica(payload.repo);
   } else if (event === 'hubupdate') {
     const btn = $('#hub-update-get');
     if (payload.phase === 'download') {
@@ -1277,6 +1294,10 @@ on('#btn-data', 'click', () => api('open_data_folder'));
 
 on('#set-auto', 'change', (e) => api('set_setting', 'auto_refresh', e.target.checked));
 on('#set-notify', 'change', (e) => api('set_setting', 'notify', e.target.checked));
+on('#btn-prova-notifica', 'click', () => {
+  api('prova_notifica');
+  toast('Notifica inviata. Se non compare, controlla che «Non disturbare» di Windows sia spento.', 'info');
+});
 
 on('#search', 'input', (e) => { S.query = e.target.value; renderGrid(); });
 on('#sort', 'change', (e) => {

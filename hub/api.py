@@ -74,6 +74,9 @@ class Api:
         self._checked_at = self._catalog.get("checked_at") or ""
         self._tentativi = 0
         self._stop = threading.Event()
+        # La finestra ha chiesto i suoi dati: da qui in poi puo' ricevere
+        # eventi, per esempio "apri la scheda" dopo il clic su una notifica.
+        self._pronto = threading.Event()
         self._account: dict | None = None
         self._login_stop = threading.Event()
         self._update_checked = False
@@ -113,6 +116,7 @@ class Api:
         """Dati immediati per disegnare la finestra, poi il resto arriva dopo."""
         local = state.load()
         self.refresh(silent=True)
+        self._pronto.set()
         return {
             "version": __version__,
             "user": config.GITHUB_USER,
@@ -632,16 +636,10 @@ class Api:
                     self._status(
                         f"{summary['updates']} traduzioni da aggiornare.", "update"
                     )
-                    if state.load()["settings"].get("notify", True):
-                        notify.updates_found(
-                            [
-                                p
-                                for p in result["projects"]
-                                if p["status"] == catalog.STATUS_UPDATE
-                            ]
-                        )
                 elif not silent:
                     self._status("Tutto aggiornato.", "ok")
+                if not result.get("error"):
+                    self._notifica(result["projects"])
             except Exception as exc:
                 self.log.exception("aggiornamento catalogo fallito")
                 self._emit("error", {"message": str(exc), "trace": traceback.format_exc()})
@@ -665,6 +663,96 @@ class Api:
 
     def shutdown(self) -> None:
         self._stop.set()
+
+    # -- notifiche di Windows ------------------------------------------------
+
+    @staticmethod
+    def _copertina(repo: str) -> Path | None:
+        percorso = covers.percorso(repo)
+        return percorso if percorso.exists() else None
+
+    def _notifica(self, progetti: list[dict]) -> None:
+        """Annuncia con una notifica di Windows solo cio' che non e' gia' stato detto."""
+        try:
+            local = state.load()
+            if not local["settings"].get("notify", True):
+                return
+            registro = local["notifiche"]
+            notifiche, inviate = notify.da_notificare(
+                progetti, self._hub_update, registro.get("inviate", {}), copertina=self._copertina
+            )
+            if not notifiche and inviate == registro.get("inviate"):
+                return
+            ora = time.time()
+            gettoni = dict(registro.get("gettoni", {}))
+            for n in notifiche:
+                for gettone, repo in n.gettoni.items():
+                    gettoni[gettone] = {"repo": repo, "ts": ora}
+            registro["inviate"] = inviate
+            registro["gettoni"] = notify.pota_gettoni(gettoni, ora)
+            # Prima si salva, poi si mostra: se l'hub si chiude a meta', il
+            # pulsante "Aggiorna" deve trovare il suo gettone.
+            state.save(local)
+            for n in notifiche:
+                notify.mostra(n)
+                self.log.info("notifica: %s", n.titolo)
+        except Exception:
+            self.log.exception("notifica non riuscita")
+
+    def gestisci_link(self, link: str) -> None:
+        """Un clic su una notifica.
+
+        Apre la scheda del gioco. Se il pulsante era "Aggiorna", e il suo
+        gettone e' uno di quelli messi dall'hub, fa anche partire
+        l'aggiornamento: un link giocainitaliano: scritto da altri apre al
+        massimo una scheda.
+        """
+        richiesta = notify.leggi_link(link)
+        self.log.info("link dalla notifica: %s", richiesta)
+        if not richiesta or richiesta["azione"] == "apri":
+            return
+        repo = richiesta["repo"]
+        self._emit("apri", {"repo": repo})
+        if richiesta["azione"] != "aggiorna":
+            return
+
+        local = state.load()
+        gettoni = local["notifiche"].get("gettoni", {})
+        valido = notify.usa_gettone(gettoni, richiesta.get("gettone", ""), repo)
+        local["notifiche"]["gettoni"] = gettoni
+        state.save(local)
+        progetto = self._project(repo)
+        if valido and progetto and progetto.get("status") == catalog.STATUS_UPDATE:
+            self.install(repo)
+        elif not valido:
+            self.log.info("aggiornamento di %s senza gettone valido: apro solo la scheda", repo)
+
+    def ascolta_notifiche(self, link_iniziale: str | None = None) -> None:
+        """Raccoglie i clic sulle notifiche.
+
+        Quello che ha fatto partire l'hub, e quelli arrivati mentre era gia'
+        aperto: in quel caso il secondo avvio lascia il link in un file e si
+        chiude (vedi notify.lascia_richiesta).
+        """
+
+        def ciclo() -> None:
+            if link_iniziale:
+                # Prima la finestra deve disegnare la griglia, o non c'e'
+                # nessuna scheda da aprire.
+                self._pronto.wait(60)
+                time.sleep(1.0)
+                self.gestisci_link(link_iniziale)
+            while not self._stop.wait(1.0):
+                link = notify.prendi_richiesta()
+                if link:
+                    self.gestisci_link(link)
+
+        threading.Thread(target=ciclo, daemon=True).start()
+
+    def prova_notifica(self) -> bool:
+        """Il pulsante "Prova" delle impostazioni."""
+        notify.mostra(notify.prova(self._catalog.get("projects") or [], copertina=self._copertina))
+        return True
 
     def _project(self, repo: str) -> dict | None:
         for p in self._catalog.get("projects", []):

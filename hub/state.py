@@ -29,6 +29,10 @@ _DEFAULT: dict[str, Any] = {
     # repo -> cartella del gioco scelta a mano, da passare all'installer
     # quando quella che trova da solo e' sbagliata
     "cartelle_scelte": {},
+    # Notifiche di Windows: cosa e' gia' stato annunciato (repo -> tag, piu'
+    # l'ultima versione dell'hub), per non ripeterlo a ogni controllo, e i
+    # gettoni dei pulsanti "Aggiorna" (gettone -> repo e data).
+    "notifiche": {"inviate": {}, "gettoni": {}},
     "settings": {
         "theme": "dark",
         "auto_refresh": True,

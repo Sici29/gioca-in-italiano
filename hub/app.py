@@ -7,7 +7,7 @@ import sys
 import traceback
 from datetime import datetime
 
-from . import APP_TITLE, __version__, auth, journal, paths, singleton, state
+from . import APP_TITLE, __version__, auth, journal, notify, paths, singleton, state
 from .api import Api
 
 WIDTH = 1300
@@ -53,7 +53,7 @@ def _restore_geometry(local: dict) -> dict:
     return geometry
 
 
-def run(debug: bool = False) -> int:
+def run(debug: bool = False, link: str | None = None) -> int:
     log = journal.setup(debug)
     log.info("avvio hub %s (frozen=%s)", __version__, getattr(sys, "frozen", False))
 
@@ -68,8 +68,18 @@ def run(debug: bool = False) -> int:
 
     if not singleton.acquire():
         log.info("istanza gia' aperta: porto in primo piano e chiudo")
+        if link:
+            # Il clic su una notifica mentre l'hub e' gia' aperto: il link lo
+            # raccoglie lui, questo avvio serviva solo a consegnarlo.
+            notify.lascia_richiesta(link)
         singleton.focus_existing()
         return 0
+
+    # Nome e icona dell'hub nelle notifiche di Windows, e il link
+    # giocainitaliano: dei loro pulsanti. Costa pochi millisecondi e si rifa'
+    # a ogni avvio, perche' nel frattempo l'exe puo' essere stato spostato.
+    registrate = notify.registra(sys.executable if getattr(sys, "frozen", False) else None)
+    log.info("notifiche di Windows: %s", "a nome dell'hub" if registrate else "ripiego su PowerShell")
 
     try:
         import webview
@@ -102,6 +112,7 @@ def run(debug: bool = False) -> int:
     )
     api._window = window
     api.start_auto_refresh()
+    api.ascolta_notifiche(link)
 
     # Dimensione e posizione si aggiornano in memoria mentre si usa la
     # finestra, e finiscono su disco una volta sola alla chiusura.
@@ -156,8 +167,10 @@ def log_crash(message: str) -> None:
 def main(argv: list[str] | None = None) -> int:
     """Ingresso unico, usato sia da `python -m hub` sia dall'eseguibile."""
     args = argv if argv is not None else sys.argv
+    # Chi clicca una notifica fa partire l'hub con il link come argomento.
+    link = next((a for a in args[1:] if str(a).lower().startswith(notify.PROTOCOLLO + ":")), None)
     try:
-        return run(debug="--debug" in args)
+        return run(debug="--debug" in args, link=link)
     except BaseException:
         log_crash(
             f"Avvio fallito.\n"

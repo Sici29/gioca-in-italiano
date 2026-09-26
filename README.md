@@ -121,6 +121,33 @@ che risulta installato sul PC e con l'ultimo che l'utente ha gia' visto:
 Il controllo parte all'avvio e poi ogni 30 minuti finche' l'hub resta aperto,
 con una notifica di Windows quando trova qualcosa.
 
+#### Le notifiche di Windows
+
+Arrivano a nome di **Gioca in Italiano**, con la sua icona. Per mostrare una
+notifica Windows vuole l'identita' di un'app registrata, e all'inizio si
+prendeva in prestito quella di PowerShell, che finiva nel titolo. Ora l'hub
+registra la sua a ogni avvio, sotto `HKEY_CURRENT_USER` (niente permessi di
+amministratore), insieme al link `giocainitaliano:` usato dai pulsanti.
+
+- **Una traduzione da aggiornare**: la copertina del gioco, la versione, la
+  prima novita' delle note e il pulsante **Aggiorna**, che apre la scheda e fa
+  partire l'aggiornamento.
+- **Piu' traduzioni insieme**: una notifica sola, con i nomi.
+- **Una traduzione nuova** e **una versione nuova dell'hub**: annunciate anche
+  queste, al massimo tre notifiche per controllo.
+
+Ogni versione si annuncia **una volta sola**: prima la stessa notifica tornava
+a ogni controllo, cioe' ogni mezz'ora, finche' l'aggiornamento restava da
+fare.
+
+Chiunque puo' scrivere un link `giocainitaliano:` in una pagina web, quindi da
+solo un link apre al massimo una scheda. Per far partire l'aggiornamento serve
+il gettone che l'hub mette nella notifica, che vale una volta sola e scade
+dopo 14 giorni. Se l'hub e' gia' aperto, il clic lancia un secondo avvio che
+lascia il link in un file e si chiude, e il primo lo raccoglie.
+
+Nelle impostazioni, **Prova una notifica** ne manda una di esempio.
+
 ### 3. Prende le copertine da Steam
 
 Le copertine arrivano dal database pubblico di Steam, senza account ne' chiave
@@ -649,7 +676,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-297 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+327 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -723,7 +750,9 @@ Coprono soprattutto i punti dove e' gia' andato storto qualcosa:
   un exe da scaricare;
 - l'impronta del sito deve restare uguale se non cambia niente, altrimenti la
   Action ripubblicherebbe a ogni giro;
-- `catalog.json` non va riscritto solo perche' sono cambiati data e download.
+- `catalog.json` non va riscritto solo perche' sono cambiati data e download;
+- la stessa notifica non deve tornare a ogni controllo, e un link
+  `giocainitaliano:` scritto da altri non deve poter installare niente.
 
 ---
 
@@ -758,7 +787,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           297 test, senza rete
+tests/           327 test, senza rete
 ```
 
 ---
