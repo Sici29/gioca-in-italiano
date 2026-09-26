@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gioca in Italiano</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M4 7h24v3.4H4zM4 14.3h16.5v3.4H4zM4 21.6h20.5V25H4z" fill="currentColor"/>
+      <circle cx="27" cy="16" r="2.6" fill="var(--accent)"/>
+    </svg>
+    <div class="brand-text">
+      <strong>Gioca in Italiano</strong>
+      <span id="brand-sub">Le traduzioni di Sici29</span>
+    </div>
+  </div>
+
+  <div class="search">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <input id="search" type="search" placeholder="Cerca una traduzione..." autocomplete="off" spellcheck="false">
+    <kbd class="search-kbd" aria-hidden="true">/</kbd>
+  </div>
+
+  <div class="topbar-actions">
+    <button id="btn-refresh" class="btn btn-ghost" type="button" title="Controlla aggiornamenti">
+      <svg class="icon-refresh" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M13.6 1.9v3.2h-3.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Controlla</span>
+    </button>
+    <button id="btn-account" class="btn btn-ghost" type="button" hidden>
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.8 14a5.2 5.2 0 0 1 10.4 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span id="account-label">Accedi</span>
+    </button>
+    <button id="btn-settings" class="btn btn-icon" type="button" title="Impostazioni" aria-label="Impostazioni">
+      <!-- Un ingranaggio vero, con i denti. Quello di prima era un cerchio con
+           otto raggi, cioe' un sole: si leggeva "cambia tema", non "impostazioni". -->
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6.48 3.03 L6.77 1.01 L9.23 1.01 L9.52 3.03 L10.44 3.41 L12.07 2.18 L13.82 3.93 L12.59 5.56 L12.97 6.48 L14.99 6.77 L14.99 9.23 L12.97 9.52 L12.59 10.44 L13.82 12.07 L12.07 13.82 L10.44 12.59 L9.52 12.97 L9.23 14.99 L6.77 14.99 L6.48 12.97 L5.56 12.59 L3.93 13.82 L2.18 12.07 L3.41 10.44 L3.03 9.52 L1.01 9.23 L1.01 6.77 L3.03 6.48 L3.41 5.56 L2.18 3.93 L3.93 2.18 L5.56 3.41 Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="8" cy="8" r="2.1" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+    </button>
+  </div>
+</header>
+
+<div id="progress" class="progress" hidden><div class="progress-bar"></div></div>
+
+<main class="page">
+
+  <div id="hub-update" class="banner banner-update" hidden>
+    <div class="banner-text">
+      <strong>Nuova versione dell'hub disponibile</strong>
+      <span id="hub-update-body"></span>
+    </div>
+    <button id="hub-update-later" class="btn btn-quiet" type="button">Più tardi</button>
+    <button id="hub-update-get" class="btn btn-primary" type="button">Scarica</button>
+  </div>
+
+  <section class="stats" id="stats">
+    <div class="stat">
+      <span class="stat-label">Traduzioni</span>
+      <strong class="stat-value" id="stat-count">—</strong>
+      <span class="stat-note" id="stat-count-note">in catalogo</span>
+    </div>
+    <div class="stat stat-click" id="stat-updates-box" role="button" tabindex="0"
+         data-filter="aggiornare" title="Mostra solo queste">
+      <span class="stat-label">Da aggiornare</span>
+      <strong class="stat-value" id="stat-updates">—</strong>
+      <span class="stat-note" id="stat-updates-note">tutto a posto</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Download totali</span>
+      <strong class="stat-value" id="stat-downloads">—</strong>
+      <span class="stat-note" id="stat-releases-note">—</span>
+    </div>
+    <div class="stat stat-click" role="button" tabindex="0"
+         data-filter="mie" title="Mostra solo i giochi che hai">
+      <span class="stat-label">Giochi rilevati</span>
+      <strong class="stat-value" id="stat-owned">—</strong>
+      <span class="stat-note" id="stat-library-note">scansione in corso</span>
+    </div>
+  </section>
+
+  <div id="banner" class="banner" hidden>
+    <div class="banner-text">
+      <strong id="banner-title"></strong>
+      <span id="banner-body"></span>
+    </div>
+    <button id="banner-dismiss" class="btn btn-quiet" type="button">Segna come viste</button>
+  </div>
+
+  <div id="notice" class="notice" hidden>
+    <span id="notice-text"></span>
+    <button id="notice-retry" class="btn btn-quiet" type="button" hidden>Riprova</button>
+  </div>
+
+  <section class="toolbar">
+    <div class="filters" role="group" aria-label="Filtri">
+      <button class="chip is-active" data-filter="tutte" type="button">Tutte</button>
+      <button class="chip" data-filter="mie" type="button">Solo i miei giochi</button>
+      <button class="chip" data-filter="aggiornare" type="button">Da aggiornare</button>
+      <button class="chip" data-filter="installate" type="button">Installate</button>
+    </div>
+    <div class="toolbar-right">
+      <span id="result-count" class="result-count" hidden></span>
+    <label class="sort">
+      <span>Ordina</span>
+      <select id="sort">
+        <option value="perte">Per te</option>
+        <option value="recenti">Aggiornate di recente</option>
+        <option value="nome">Nome</option>
+        <option value="download">Più scaricate</option>
+      </select>
+    </label>
+    </div>
+  </section>
+
+  <section id="grid" class="grid" aria-live="polite"></section>
+
+  <section id="empty" class="empty" hidden>
+    <strong id="empty-title">Nessun risultato</strong>
+    <p id="empty-body">Prova a cambiare filtro o testo di ricerca.</p>
+    <button id="empty-propose" class="btn btn-primary" type="button" hidden></button>
+  </section>
+
+  <section class="board" id="board">
+    <div class="board-head">
+      <div class="board-intro">
+        <h2>Cosa vorrebbe la comunità</h2>
+        <p>Le proposte più votate sono quelle a cui do la precedenza.</p>
+      </div>
+      <button id="btn-propose" class="btn btn-primary" type="button">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3.2v9.6M3.2 8h9.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        Proponi una traduzione
+      </button>
+    </div>
+    <ol id="board-list" class="board-list"></ol>
+    <p id="board-empty" class="board-empty" hidden>
+      Nessuna proposta ancora: apri tu la prima.
+    </p>
+  </section>
+
+  <section class="support">
+    <div class="support-art" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <path d="M14 26h30v14a11 11 0 0 1-11 11H25a11 11 0 0 1-11-11z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M44 30h4a6 6 0 0 1 0 12h-4" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M22 9c-2 3 0 5 1 7M31 7c-2 3 0 5 1 7M40 9c-2 3 0 5 1 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+      </svg>
+    </div>
+    <div class="support-text">
+      <h2>Scaricare è gratis. Tenere tutto al passo un po' meno.</h2>
+      <p>
+        Ogni patch di un gioco rimescola le stringhe: vanno riallineate, ricontrollate
+        contro il glossario, ritestate e reimpacchettate nell'installer. È il lavoro
+        che non si vede, e torna da capo a ogni aggiornamento. Un caffè copre le spese
+        e mi permette di continuare.
+      </p>
+      <div class="support-actions">
+        <button id="btn-bmc" class="btn btn-coffee" type="button">Offrimi un caffè</button>
+        <button id="btn-follow" class="btn btn-ghost" type="button">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6 9.9 5.7l4.5.5-3.4 3 1 4.4L8 11.3 4 13.6l1-4.4-3.4-3 4.5-.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <span id="follow-label">Segui su GitHub</span>
+        </button>
+        <span class="support-link" id="bmc-label">buymeacoffee.com/sici29</span>
+      </div>
+      <p class="support-free">
+        Una stella sulle traduzioni e un segui non costano nulla e le rendono
+        più facili da trovare. Bastano due clic: l’hub apre GitHub al punto giusto.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <button id="btn-profile" class="link" type="button">Tutti i progetti su GitHub</button>
+      <button id="btn-data" class="link" type="button">Apri cartella dati</button>
+    </div>
+    <p class="disclaimer">
+      Traduzioni amatoriali non ufficiali, non affiliate né approvate dagli
+      sviluppatori o dagli editori dei giochi. Marchi e copertine appartengono
+      ai rispettivi proprietari.
+    </p>
+  </footer>
+</main>
+
+<!-- Pannello di dettaglio -->
+<div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="drawer" class="drawer" hidden aria-label="Dettagli traduzione">
+  <button id="drawer-close" class="drawer-close" type="button" aria-label="Chiudi">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div id="drawer-body"></div>
+</aside>
+
+<!-- Impostazioni -->
+<div id="settings-backdrop" class="drawer-backdrop" hidden></div>
+<aside id="settings" class="drawer drawer-narrow" hidden aria-label="Impostazioni">
+  <button id="settings-close" class="drawer-close" type="button" aria-label="Chiudi">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="drawer-pad">
+    <h2 class="drawer-title">Impostazioni</h2>
+    <label class="toggle">
+      <input type="checkbox" id="set-auto">
+      <span><strong>Controlla da solo</strong><em>Ricontrolla GitHub ogni 30 minuti mentre l'hub è aperto.</em></span>
+    </label>
+    <label class="toggle">
+      <input type="checkbox" id="set-notify">
+      <span><strong>Notifiche di Windows</strong><em>Avvisa quando esce un aggiornamento.</em></span>
+    </label>
+    <div class="settings-actions">
+      <p class="section-title">Account GitHub <em>(facoltativo)</em></p>
+      <p class="settings-hint">
+        Stelle, voti e proposte funzionano anche senza: l’hub apre GitHub nel
+        browser. Collegandoti le fai senza uscire da qui.
+      </p>
+
+      <div id="account-riga" class="account-riga" hidden>
+        <span id="account-stato" class="account-stato"></span>
+        <button id="account-azione" class="btn btn-ghost btn-small" type="button"></button>
+      </div>
+
+      <div id="oauth-attivo" class="oauth-stato" hidden>
+        <p class="oauth-stato-riga">
+          <span class="oauth-pallino" aria-hidden="true"></span>
+          <span>Accesso con un clic <strong>attivo</strong></span>
+        </p>
+        <p class="settings-hint">
+          Applicazione <span id="oauth-id" class="mono">—</span><span id="oauth-dove"></span>
+        </p>
+        <button id="oauth-config" class="btn btn-ghost btn-small" type="button" hidden>
+          Copia le righe per config.py
+        </button>
+        <button id="oauth-forget" class="btn btn-ghost btn-small" type="button" hidden>
+          Rimuovi le credenziali
+        </button>
+      </div>
+
+      <div id="oauth-da-fare" hidden>
+        <p class="settings-hint">
+          L’accesso dentro l’hub non è ancora attivo. Si attiva una volta sola,
+          in un minuto, e vale per chiunque userà questa copia dell’hub.
+        </p>
+        <button id="oauth-open" class="btn btn-primary btn-small" type="button">
+          Attiva l’accesso con un clic
+        </button>
+      </div>
+    </div>
+
+    <div id="hidden-list" class="hidden-list" hidden></div>
+
+    <div class="settings-actions">
+      <p class="section-title">Copertine</p>
+      <button id="btn-clear-covers" class="btn btn-ghost" type="button">
+        Riscarica le copertine
+      </button>
+      <p class="settings-hint">
+        Se una copertina è sbagliata o il gioco ne ha una nuova.
+      </p>
+    </div>
+
+    <div class="settings-actions">
+      <button id="btn-tasti" class="btn btn-ghost btn-small" type="button">
+        Scorciatoie da tastiera
+      </button>
+      <p class="settings-hint">Da qualsiasi punto dell’hub, premi <kbd>?</kbd>.</p>
+    </div>
+
+    <div class="settings-meta">
+      <p>Versione <span id="set-version" class="mono">—</span></p>
+      <p id="set-checked">—</p>
+    </div>
+  </div>
+</aside>
+
+<div id="modal-backdrop" class="modal-backdrop" hidden></div>
+
+<div id="modal-propose" class="modal" hidden role="dialog" aria-label="Proponi una traduzione">
+  <h2 class="modal-title">Proponi una traduzione</h2>
+  <p class="modal-note">Finisce fra le proposte, dove chiunque può votarla.</p>
+  <label class="field">
+    <span>Gioco</span>
+    <input id="propose-title" type="text" maxlength="120" placeholder="Nome del gioco" autocomplete="off">
+  </label>
+  <label class="field">
+    <span>Dettagli <em>(facoltativo)</em></span>
+    <textarea id="propose-body" rows="5" maxlength="2000" placeholder="Dove si trova, quanto testo ha, esiste già una traduzione..."></textarea>
+  </label>
+  <div id="propose-error" class="modal-error" hidden></div>
+  <div class="modal-actions">
+    <button id="propose-cancel" class="btn btn-ghost" type="button">Annulla</button>
+    <button id="propose-send" class="btn btn-primary" type="button">Invia proposta</button>
+  </div>
+</div>
+
+<div id="modal-login" class="modal" hidden role="dialog" aria-label="Accedi a GitHub">
+  <h2 class="modal-title">Accedi con GitHub</h2>
+  <p class="modal-note">
+    <strong>Non è obbligatorio:</strong> stelle, voti e proposte funzionano anche
+    senza, aprendo GitHub nel browser. Collegarti serve solo a farle restando
+    dentro l’hub. La tua password non passa mai dall’applicazione: autorizzi
+    tu su github.com.
+  </p>
+  <div id="login-attesa" class="login-attesa" hidden>
+    <div class="login-spinner" aria-hidden="true"></div>
+    <p class="modal-note">
+      Ho aperto il browser sulla pagina di GitHub: premi <strong>Authorize</strong>
+      e torna qui. Ci penso io al resto.
+    </p>
+  </div>
+
+  <div id="login-codice" hidden>
+    <div class="device-code" id="login-code">—</div>
+    <p class="modal-note">
+      Apri <strong id="login-url">github.com/login/device</strong> e inserisci questo codice.
+    </p>
+  </div>
+  <div id="login-error" class="modal-error" hidden></div>
+  <div class="modal-actions">
+    <button id="login-cancel" class="btn btn-ghost" type="button">Annulla</button>
+    <button id="login-open" class="btn btn-primary" type="button" hidden>Apri GitHub e copia il codice</button>
+  </div>
+</div>
+
+<div id="modal-oauth" class="modal modal-wide" hidden role="dialog" aria-label="Attiva l'accesso con un clic">
+  <h2 class="modal-title">Attiva l’accesso con un clic</h2>
+  <p class="modal-note">
+    Una volta sola, e solo per te: <strong>chi scarica l’hub non farà mai
+    questa procedura</strong>, trova l’accesso già pronto. GitHub non autentica
+    applicazioni che non siano registrate, ma il passaggio finisce qui: niente
+    file da aprire, niente da ricompilare.
+  </p>
+
+  <ol class="passi">
+    <li class="passo">
+      <div class="passo-testo">
+        <strong>Registra l’applicazione.</strong>
+        Il modulo si apre già compilato: premi solo
+        <em>Register application</em>, in fondo alla pagina.
+      </div>
+      <button id="oauth-apri-github" class="btn btn-primary btn-small" type="button">
+        Apri il modulo su GitHub
+      </button>
+      <details class="passo-extra">
+        <summary>Se i campi risultassero vuoti, copiali da qui</summary>
+        <div class="copia-riga">
+          <span class="copia-etichetta">Application name</span>
+          <code id="oauth-v-nome" class="mono">—</code>
+          <button class="btn btn-ghost btn-mini copia" data-copia="#oauth-v-nome" type="button">Copia</button>
+        </div>
+        <div class="copia-riga">
+          <span class="copia-etichetta">Homepage URL</span>
+          <code id="oauth-v-home" class="mono">—</code>
+          <button class="btn btn-ghost btn-mini copia" data-copia="#oauth-v-home" type="button">Copia</button>
+        </div>
+        <div class="copia-riga">
+          <span class="copia-etichetta">Callback URL</span>
+          <code id="oauth-v-callback" class="mono">—</code>
+          <button class="btn btn-ghost btn-mini copia" data-copia="#oauth-v-callback" type="button">Copia</button>
+        </div>
+      </details>
+    </li>
+
+    <li class="passo">
+      <div class="passo-testo">
+        <strong>Incolla le due stringhe.</strong>
+        Il <em>Client ID</em> è già lì; il secret compare premendo
+        <em>Generate a new client secret</em>. Se li inverti, ci penso io.
+      </div>
+      <label class="field">
+        <span>Client ID</span>
+        <input id="oauth-id-input" type="text" spellcheck="false" autocomplete="off"
+               placeholder="Ov23li…">
+      </label>
+      <label class="field">
+        <span>Client secret</span>
+        <input id="oauth-secret-input" type="text" spellcheck="false" autocomplete="off"
+               placeholder="40 caratteri">
+      </label>
+    </li>
+
+    <li class="passo">
+      <div class="passo-testo">
+        <strong>Salva e prova.</strong>
+        Controllo il Client ID con GitHub, salvo cifrato sul tuo PC e provo
+        subito l’accesso, così vedi se funziona davvero.
+      </div>
+    </li>
+  </ol>
+
+  <p class="modal-note modal-note-quiet">
+    Restano su questo PC, cifrate con DPAPI. Perché valgano anche per chi
+    scarica l’hub devono finire in <span class="mono">config.py</span> prima di
+    ricompilare.
+    <button id="oauth-copia-config" class="btn btn-ghost btn-mini" type="button">
+      Copia le righe per config.py
+    </button>
+  </p>
+
+  <div id="oauth-error" class="modal-error" hidden></div>
+  <div class="modal-actions">
+    <button id="oauth-cancel" class="btn btn-ghost" type="button">Chiudi</button>
+    <button id="oauth-save" class="btn btn-primary" type="button">Salva e prova</button>
+  </div>
+</div>
+
+<div id="modal-tasti" class="modal" hidden role="dialog" aria-label="Scorciatoie da tastiera">
+  <h2 class="modal-title">Scorciatoie</h2>
+  <p class="modal-note">Funzionano ovunque, tranne mentre scrivi in un campo.</p>
+  <dl class="tasti">
+    <div><dt><kbd>/</kbd></dt><dd>Cerca</dd></div>
+    <div><dt><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></dt><dd>Tutte · I miei giochi · Da aggiornare · Installate</dd></div>
+    <div><dt><kbd>R</kbd></dt><dd>Controlla gli aggiornamenti</dd></div>
+    <div><dt><kbd>P</kbd></dt><dd>Proponi una traduzione</dd></div>
+    <div><dt><kbd>,</kbd></dt><dd>Impostazioni</dd></div>
+    <div><dt><kbd>Esc</kbd></dt><dd>Chiudi, o svuota la ricerca</dd></div>
+    <div><dt><kbd>?</kbd></dt><dd>Questo elenco</dd></div>
+  </dl>
+  <div class="modal-actions">
+    <button id="tasti-chiudi" class="btn btn-primary" type="button">Ho capito</button>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>

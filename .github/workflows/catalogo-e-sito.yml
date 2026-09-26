@@ -1,0 +1,121 @@
+# Ogni tre ore rigenera, dagli stessi dati, due cose:
+#
+#  - catalog.json, il catalogo che l'hub scarica al posto di interrogare l'API
+#    di GitHub. Qui c'e' il GITHUB_TOKEN (5.000 richieste/ora), cosi' l'hub
+#    installato sui PC degli utenti non ne consuma nessuna;
+#  - il sito su GitHub Pages, una pagina per ogni traduzione.
+#
+# Una release nuova in uno qualunque dei repo delle traduzioni arriva cosi'
+# all'hub e al sito entro tre ore, senza toccare niente.
+
+name: Catalogo e sito
+
+on:
+  schedule:
+    # Il catalogo resta valido 36 ore lato hub: anche saltando qualche giro,
+    # nessuno resta senza dati.
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "hub/**"
+      - "sito/**"
+      - "tools/build_catalog.py"
+      - "tools/genera_sito.py"
+      - "tools/make_icon.py"
+      - ".github/workflows/catalogo-e-sito.yml"
+
+permissions:
+  contents: write   # per il commit di catalog.json
+  pages: write      # per pubblicare il sito
+  id-token: write   # richiesto dalla pubblicazione su Pages
+  actions: write    # per tenere attivo il giro programmato (vedi in fondo)
+
+concurrency:
+  group: catalogo-e-sito
+  cancel-in-progress: false
+
+jobs:
+  genera:
+    runs-on: ubuntu-latest
+    outputs:
+      pubblica: ${{ steps.confronto.outputs.pubblica }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Sempre la punta di main: un giro rimasto in coda potrebbe partire
+          # da un commit ormai superato e non riuscire a pubblicare.
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installa le dipendenze
+        # Niente pywebview, che richiederebbe un ambiente grafico. Pillow serve
+        # alle copertine, che passano dalla stessa pipeline dell'hub.
+        run: pip install requests Pillow
+
+      - name: Genera catalog.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python tools/build_catalog.py catalog.json
+
+      - name: Pubblica il catalogo se e' cambiato
+        # git status e non git diff: al primo giro il file non e' ancora nel
+        # repo, e git diff non vede i file nuovi.
+        run: |
+          if [ -z "$(git status --porcelain -- catalog.json)" ]; then
+            echo "Catalogo invariato: niente commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          git commit -m "Aggiorna il catalogo dell'hub"
+          git pull --rebase --quiet origin main
+          git push
+
+      - name: Genera il sito
+        run: python tools/genera_sito.py --catalogo catalog.json --uscita _site
+
+      - name: Confronta con il sito online
+        # I giri programmati pubblicano solo se il sito e' cambiato davvero;
+        # un push o un avvio a mano pubblicano sempre.
+        id: confronto
+        run: |
+          sito="$(python -c 'from hub import config; print(config.SITO_URL)')"
+          online="$(curl -fsSL "${sito}impronta.txt" 2>/dev/null || true)"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$online" = "$(cat _site/impronta.txt)" ]; then
+            echo "Il sito online e' gia' aggiornato."
+            echo "pubblica=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "pubblica=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.confronto.outputs.pubblica == 'true'
+        with:
+          path: _site
+
+      - name: Tieni attivo il giro programmato
+        # GitHub spegne i workflow programmati dei repo pubblici dopo 60 giorni
+        # senza attivita'. Riabilitarlo a ogni giro azzera il conto, e il sito
+        # resta aggiornato anche nei mesi in cui non esce niente.
+        if: github.event_name == 'schedule'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/catalogo-e-sito.yml/enable"
+
+  pubblica-sito:
+    needs: genera
+    if: needs.genera.outputs.pubblica == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblicazione.outputs.page_url }}
+    steps:
+      - id: pubblicazione
+        uses: actions/deploy-pages@v4

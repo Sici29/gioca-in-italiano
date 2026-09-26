@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+build/build/
+build/dist/
+dist/
+*.spec.bak
+hub/web/_preview.html
+
+# Credenziali OAuth dell'applicazione. Non devono MAI finire in un commit:
+# GitHub fa secret scanning sui repo pubblici e revoca i client secret che
+# ci trova. Finiscono comunque nell'eseguibile, che e' dove servono.
+hub/credenziali.py
+
+# Il sito generato e i file di lavoro del generatore.
+_sito/
+_site/
+_lavoro/

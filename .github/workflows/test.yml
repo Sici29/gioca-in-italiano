@@ -1,0 +1,39 @@
+# I test girano senza rete e senza interfaccia grafica: tutto cio' che tocca
+# GitHub o Steam e' simulato, quindi funzionano anche su Linux ed e' inutile
+# pagare un runner Windows. Serve pero' Node, perche' una parte dei test
+# esegue davvero app.js; i test che cifrano con DPAPI si saltano da soli.
+
+name: Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Installa le dipendenze
+        # Niente pywebview: richiede un ambiente grafico e i test non lo usano.
+        run: pip install requests Pillow
+
+      - name: Esegui i test
+        run: python -m unittest discover -s tests -v
+
+      - name: Verifica che i generatori di catalogo e sito siano importabili
+        # Non li eseguiamo (interrogherebbero GitHub e Steam), ma almeno
+        # controlliamo che non si sia rotto un import.
+        run: python -c "import tools.build_catalog, tools.genera_sito"

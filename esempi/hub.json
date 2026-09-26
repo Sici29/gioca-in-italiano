@@ -1,0 +1,9 @@
+{
+  "nome_gioco": "Nome del gioco come sta su Steam",
+  "steam_appid": 123456,
+  "cover_url": null,
+  "non_su_steam": false,
+  "descrizione": "Una riga che compare sotto il titolo nel pannello dettagli.",
+  "motore_installazione": "unreal_pak",
+  "nascondi": false
+}

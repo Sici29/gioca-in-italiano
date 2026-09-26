@@ -1,0 +1,58 @@
+{
+  "_leggimi": [
+    "Le informazioni che il catalogo non sa: cosa scegliere nel gioco, come si torna all'originale, cosa fare se l'installer non trova il gioco.",
+    "Una traduzione che qui non c'e' ha comunque la sua pagina, con le istruzioni generiche: questo file serve solo a renderla piu' precisa.",
+    "Tutti i campi sono facoltativi. Il nome della chiave e' quello del repository su GitHub."
+  ],
+
+  "Aniimo-Italian-Translation": {
+    "cosa": "Tutti i testi del gioco in italiano: interfaccia, dialoghi, missioni, oggetti e tutorial, con gli accenti giusti e le date nel formato italiano.",
+    "lingua": "Inglese",
+    "nota_lingua": "La traduzione prende il posto dell'inglese: le altre lingue del gioco restano com'erano.",
+    "chiudi": "Aniimo e il suo launcher",
+    "avvio": "Fai doppio clic sul file e premi Invio: l'installer trova il gioco da solo e fa un backup prima di toccare qualsiasi file.",
+    "non_trova": "Se il gioco non viene trovato, sposta l'installer nella stessa cartella di Aniimo.exe e riaprilo, oppure scegli la cartella dalla finestra che compare. Su Steam la trovi da Libreria → Aniimo → Gestisci → Sfoglia i file locali.",
+    "ripristino": "Chiudi il gioco, riapri l'installer, scrivi 2 e premi Invio: torna l'ultimo backup dei file originali.",
+    "avvertenza": "È una modifica non ufficiale dei file del gioco: i termini di Pawprint limitano le modifiche non autorizzate e nessuno può garantire che non ci siano conseguenze sull'account."
+  },
+
+  "NTE-Italian-Translation": {
+    "cosa": "Interfaccia, storia principale, missioni secondarie, dialoghi della città, abilità, equipaggiamento e personalizzazione dei veicoli: oltre 100.000 righe di testo.",
+    "lingua": "Inglese",
+    "nota_lingua": "La traduzione prende il posto dell'inglese. I testi aggiunti da un aggiornamento del gioco restano in inglese finché non esce la versione nuova della traduzione.",
+    "chiudi": "Neverness to Everness",
+    "avvio": "Avvia il file e scegli 1 (Installa / Aggiorna): l'installer cerca il gioco nelle librerie di Steam.",
+    "non_trova": "Se il gioco non viene trovato, scegli l'opzione 4 e indica la cartella di Neverness to Everness.",
+    "ripristino": "Chiudi il gioco, riapri l'installer e scegli 3: la traduzione viene tolta e il gioco torna com'era."
+  },
+
+  "Fatekeeper-Italian-Translation": {
+    "cosa": "Menu, impostazioni, oggetti, talenti, alchimia, lore e sottotitoli di tutti i dialoghi.",
+    "lingua": "Italiano",
+    "nota_lingua": "La traduzione aggiunge l'italiano al menu delle lingue del gioco.",
+    "chiudi": "Fatekeeper",
+    "avvio": "Avvia il file e scegli 1 (Installa Traduzione Italiana): l'installer trova il gioco su Steam e fa un backup.",
+    "ripristino": "Chiudi il gioco, riapri l'installer e scegli 3: tornano i file originali di Steam."
+  },
+
+  "ARK-Survival-Ascended-Italian-Translation": {
+    "cosa": "Interfaccia, descrizioni, sistemi di gioco, tutorial, note e testi narrativi, rivisti riga per riga.",
+    "lingua": "Italiano",
+    "nota_lingua": "Si sceglie dalle impostazioni della lingua, dentro il gioco.",
+    "chiudi": "ARK: Survival Ascended",
+    "avvio": "Fai doppio clic sul file e premi Invio: l'installer trova il gioco in tutte le librerie di Steam, anche su dischi diversi, e fa un backup.",
+    "non_trova": "Se ARK non viene trovato compare una finestra di Windows: scegli la cartella che contiene ShooterGame, per esempio D:\\SteamLibrary\\steamapps\\common\\ARK Survival Ascended.",
+    "ripristino": "Chiudi il gioco, riapri l'installer, scrivi 2 e premi Invio."
+  },
+
+  "SC-Italian-Translation": {
+    "cosa": "Interfaccia, missioni, oggetti e lore, tradotti a mano. Nomi di navi, luoghi e aziende restano in inglese, come nelle guide della community, e l'audio resta quello originale.",
+    "nota_lingua": "Non devi cambiare niente nel gioco: la lingua la imposta l'installer, senza toccare le tue impostazioni grafiche e dei comandi.",
+    "chiudi": "Star Citizen e RSI Launcher",
+    "avvio": "Fai doppio clic sul file e premi Invio: l'installer trova la cartella LIVE del gioco e fa un backup.",
+    "non_trova": "Se il gioco è su un altro disco, scegli l'opzione 4 e indica la cartella LIVE, quella che contiene Data.p4k e Bin64.",
+    "ripristino": "Chiudi gioco e launcher, riapri l'installer, scrivi 2 e premi Invio.",
+    "sviluppatore": "Cloud Imperium Games",
+    "sito_gioco": "https://robertsspaceindustries.com/"
+  }
+}

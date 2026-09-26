@@ -1,0 +1,8 @@
+{
+  "nome_gioco": "Star Citizen",
+  "steam_appid": null,
+  "non_su_steam": true,
+  "game_version": "4.10",
+  "cover_url": "https://cdn.robertsspaceindustries.com/static/images/thumbnail/starcitizen.png",
+  "motore_installazione": "global_ini"
+}
