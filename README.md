@@ -696,7 +696,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-328 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+329 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -807,7 +807,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           328 test, senza rete
+tests/           329 test, senza rete
 ```
 
 ---

@@ -132,7 +132,9 @@ class ComeAppare(unittest.TestCase):
         n = notify.Notifica(
             titolo='Aniimo & "amici" <v2>',
             testo="Versione v2",
-            immagine=r"C:\Dati\covers\Aniimo.jpg",
+            # Un percorso completo sul sistema che fa girare i test: "C:\..."
+            # su Linux sarebbe relativo.
+            immagine=str(Path(tempfile.gettempdir()) / "covers" / "Aniimo.jpg"),
             apri="giocainitaliano:mostra/Aniimo",
             pulsanti=[("Aggiorna", "giocainitaliano:aggiorna/Aniimo?t=a&b"), ("Più tardi", "chiudi")],
         )
@@ -147,6 +149,10 @@ class ComeAppare(unittest.TestCase):
         azioni = list(radice.iter("action"))
         self.assertEqual(azioni[0].get("arguments"), "giocainitaliano:aggiorna/Aniimo?t=a&b")
         self.assertEqual(azioni[1].get("activationType"), "system")
+
+    def test_un_percorso_relativo_non_rompe_la_notifica(self):
+        radice = ET.fromstring(notify.xml(notify.Notifica(titolo="Ciao", immagine="covers/a.jpg")))
+        self.assertIsNone(next(radice.iter("image"), None))
 
     def test_senza_immagine_ne_pulsanti(self):
         radice = ET.fromstring(notify.xml(notify.Notifica(titolo="Ciao")))

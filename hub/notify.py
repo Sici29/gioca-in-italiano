@@ -364,10 +364,12 @@ def xml(n: Notifica) -> str:
     corpo = [f"<text>{e(n.titolo)}</text>"]
     if n.testo:
         corpo.append(f"<text>{e(n.testo)}</text>")
-    if n.immagine:
+    immagine = Path(n.immagine) if n.immagine else None
+    if immagine and immagine.is_absolute():
         # La copertina in grande, in cima: e' quella che fa capire di che gioco
-        # si parla prima ancora di leggere.
-        corpo.append(f'<image placement="hero" src="{e(Path(n.immagine).as_uri())}"/>')
+        # si parla prima ancora di leggere. Windows la vuole come file:///, e
+        # un percorso relativo non si puo' scrivere cosi': meglio senza.
+        corpo.append(f'<image placement="hero" src="{e(immagine.as_uri())}"/>')
     azioni = []
     for etichetta, link in n.pulsanti:
         if link == "chiudi":
