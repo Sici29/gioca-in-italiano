@@ -1,0 +1,775 @@
+{
+ "version": 1,
+ "generated_at": "2026-09-26T13:50:09+00:00",
+ "user": "Sici29",
+ "entries": [
+  {
+   "repo": {
+    "name": "Aniimo-Italian-Translation",
+    "description": "Traduzione italiana Aniimo",
+    "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
+    "stargazers_count": 5,
+    "topics": [],
+    "pushed_at": "2026-09-26T07:47:30Z"
+   },
+   "marker": {
+    "steam_appid": 4126040
+   },
+   "releases": [
+    {
+     "tag": "v1.0.3603741.0",
+     "name": "Release 1.0.3603741.0",
+     "date": "2026-09-26T07:48:06Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3603741.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3603741.0** (build 3603741).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3603741**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 26 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità e modifiche**:\n  - Tradotte e integrate tutte le **122 stringhe** modificate della build 3603741.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornate le descrizioni degli oggetti per gli Hatchinator dell'Avamposto e della Base.\n  - Aggiornate le FAQ e le informazioni di supporto per il Club Polaris e il Mini-programma Aniimo Land.\n  - Aggiornati i requisiti delle missioni (Capitolo 7, cattura Aniimo Leggendari, decorazione piattaforme nei Parchi).\n  - Aggiornati i messaggi di raggiungimento quota per i Timbri stagionali (Simulatore Olo-battaglie, Interconnessione, Ordinazioni Base, Tè Sotto le Stelle, Furto d'Uova, Alpha).\n  - Rifinite le interazioni, i quiz e gli obiettivi degli Hummin.\n  - Corretti e aggiornati i testi relativi agli sconti ufficiali sui Cristalli Lumin e alle regole della Trasmogrificazione.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3603741.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 42919319,
+       "downloads": 50,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 42919319,
+      "downloads": 50,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 50
+    },
+    {
+     "tag": "v1.0.3595896.0",
+     "name": "Release 1.0.3595896.0: supporto Steam build 3595896",
+     "date": "2026-09-24T16:53:50Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3595896.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3595896.0** (build 3595896).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3595896**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 24 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **11 stringhe** nuove e modificate della build 3595896.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornati i testi della Trasmogrificazione per l'Ombra Fluttuante Scintillante e l'Ombra di Sogno Radiosa.\n  - Aggiornata la descrizione del Giradischi per la Base e l'Area Residenziale.\n  - Aggiornati i messaggi promozionali per lo sconto del 5% sui Cristalli Lumin tramite Pagamento Ufficiale.\n  - Aggiornata la sezione Riscatto Punti (Prossimamente) e la denominazione dell'Ambra del Sogno di Farfalla.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3595896.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 42918830,
+       "downloads": 91,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 42918830,
+      "downloads": 91,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 91
+    },
+    {
+     "tag": "v1.0.3584014.0",
+     "name": "Release 1.0.3584014.0: supporto Steam build 3584014",
+     "date": "2026-09-23T07:19:50Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3584014.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3584014.0** (build 3584014).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3584014**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 23 settembre 2026.\n  - Catalogo espanso a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o in lingua originale).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **837 stringhe** nuove e modificate della build 3584014.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile), pronomi, nomi dei tratti e terminologia coerente degli equipaggiamenti.\n  - Aggiornate descrizioni degli eventi stagionali, abilità di combattimento, nuovi chip tattici per Santuari Perduti, missioni di Irisalis e nuove notifiche del gioco.\n- **Supporto al nuovo bundle font nativo**:\n  - Registrato e validato il nuovo bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab` introdotto con la build 3584014, garantendo la corretta visualizzazione di tutte le lettere accentate italiane.\n- **Miglioramento dell'installer in modalità fallback**:\n  - Ottimizzata la procedura di fallback automatico per future build di gioco: la generazione della patch e la verifica dell'archivio operano in modo trasparente anche in presenza di nuove versioni non ancora registrate.\n- **Conservazione delle funzionalità e stabilità**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3584014.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 12679104,
+       "downloads": 145,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 12679104,
+      "downloads": 145,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 145
+    },
+    {
+     "tag": "1.0.3551601.0-R2",
+     "name": "Aniimo - Traduzione Italiana 1.0.3551601.0-R2 (Build Steam 3551601)",
+     "date": "2026-09-19T11:38:54Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3551601.0-R2\n\nRevisione R2 per la patch del client Steam **1.0.3551601.0** (build 3551601).\n\nQuesta revisione risolve un problema critico di visualizzazione dei testi emerso su installazioni con cache preesistente o file sciolti (*loose files*):\n\n- **Risolto problema dei testi troncati / sfasati in gioco**:\n  - In precedenza, in presenza di un vecchio file `Compress_en.bin` nella cartella prioritaria di runtime (`Aniimo_Data\\cvs\\res\\lua\\LuaScripts\\Data\\I18N`), il motore del gioco combinava la nuova mappa dei testi con il vecchio buffer binario non sincronizzato, provocando lo slittamento dei byte e stringhe tagliate o incomplete (es. nei menu, scritte dei comandi e descrizioni di oggetti).\n  - L'installer ora rileva la presenza di file di localizzazione sciolti non allineati (`check_loose_i18n_sync`), li segnala nell'interfaccia (`↑ FILE LINGUA DISALLINEATI`) e garantisce la sincronizzazione completa e bidirezionale in **tutti** gli archivi e percorsi di runtime del gioco (`StreamingAssets` e cartelle `cvs`).\n- **Backup e ripristino multi-archivio per file sciolti**:\n  - I file sciolti di localizzazione presenti in qualsiasi archivio attivo vengono ora tracciati singolarmente nel manifest di backup e rimossi/ripristinati in modo pulito al momento del ripristino (opzione 2).\n- **Mantenute tutte le funzionalità introdotte con R1**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender (cartella di lavoro in `%LOCALAPPDATA%\\AniimoItalianTranslation`).\n  - Supporto al parametro `--work-dir` e alla variabile d'ambiente `ANIIMO_WORK_DIR`.\n  - Risincronizzazione e tracciamento rigoroso di `LuaCacheVer.txt`.\n  - Apertura immediata della cartella dei backup (opzione 5 / `backup-dir`).\n- **Traduzione invariata al 100,00%**: 112.187 chiavi su 112.187 tradotte con zero fallback e piena compatibilità terminologica.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. In gioco seleziona **Inglese**.\n\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/1.0.3551601.0-R2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 24340820,
+       "downloads": 183,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R2/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 24340820,
+      "downloads": 183,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R2/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 183
+    },
+    {
+     "tag": "1.0.3551601.0-R1",
+     "name": "Aniimo - Traduzione Italiana 1.0.3551601.0-R1 (Build Steam 3551601)",
+     "date": "2026-09-19T07:11:12Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3551601.0-R1\n\nRevisione R1 per la patch del client Steam **1.0.3551601.0** (build 3551601).\n\nQuesta revisione introduce importanti correzioni di compatibilità e usabilità emerse dai test della community su GitHub:\n\n- **Risolto errore `[WinError 2]` con Windows Defender (Accesso alle cartelle controllato)**:\n  - Spostata la cartella predefinita per backup, impostazioni, cache di aggiornamento e lock in `%LOCALAPPDATA%\\AniimoItalianTranslation`.\n  - Windows Defender Controlled Folder Access protegge `%USERPROFILE%\\Documents` bloccando le creazioni di directory; `%LOCALAPPDATA%` non è soggetto a questi blocchi ed è il percorso standard raccomandato su Windows.\n  - Aggiunto il supporto alla variabile d'ambiente `ANIIMO_WORK_DIR` e al parametro da riga di comando `--work-dir <percorso>` per consentire una configurazione completamente personalizzata.\n  - Mantenuta la lettura automatica e trasparente dei backup precedenti in `Documents`, protetta da eccezioni di sicurezza.\n- **Risolto disallineamento al ripristino di `LuaCacheVer.txt`**:\n  - `LuaCacheVer.txt` viene ora salvato nel backup di ciascun archivio Lua e verificato tramite hash SHA-256 nel manifest.\n  - Durante l'installazione, `LuaCacheVer.txt` viene sincronizzato con la dimensione e l'hash del nuovo `LuaScripts.xdt`.\n  - Durante il ripristino (opzione 2), `LuaCacheVer.txt` viene ripristinato fedelmente dal backup. Per eventuali backup creati con versioni precedenti, l'installer risincronizza automaticamente la riga con la versione, dimensione e hash del file originale ripristinato.\n- **Accesso immediato alla cartella dei backup (opzione 5)**:\n  - Aggiunta l'opzione **5** nel menu principale per mostrare il percorso esatto ed aprire direttamente la cartella dei backup in Esplora file di Windows.\n- **Traduzione invariata al 100,00%**: 112.187 chiavi su 112.187 tradotte con zero fallback e piena compatibilità terminologica.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. In gioco seleziona **Inglese**.\n\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/1.0.3551601.0-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 35830773,
+       "downloads": 47,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R1/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 35830773,
+      "downloads": 47,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R1/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 47
+    },
+    {
+     "tag": "1.0.3551601.0",
+     "name": "Aniimo - Traduzione Italiana 1.0.3551601.0 (Build Steam 3551601)",
+     "date": "2026-09-18T20:07:05Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3551601.0\n\nRelease per la patch del client Steam **1.0.3551601.0** (build 3551601).\n\n- **Adozione del nuovo schema di versioning ufficiale**: la numerazione delle versioni della traduzione adotta direttamente il numero di patch del gioco (`1.0.<build>.0`), con suffissi `-R1`, `-R2`, ecc. riservati per eventuali revisioni testuali della stessa build.\n- **112.187 chiavi su 112.187 tradotte in italiano (100,00%)**, zero fallback e zero stringhe mancanti.\n- Supporto nativo per la nuova build Steam **3551601** (patch 1.0.3551601.0):\n  - Verifica integrale dei testi del client: 0 stringhe modificate o aggiunte rispetto al master di gioco verificato (compatibilità al 100%).\n  - Riconoscimento e supporto del nuovo bundle font Steam aggiornato (`bb25716c229ac94cbe6a0ffdadcf48aa`).\n- Installer standalone `Aniimo-Italian-Translation.exe` aggiornato:\n  - Rilevamento prioritario automatico della libreria Steam e installazioni personalizzate.\n  - Sincronizzazione automatica tra `StreamingAssets` e cache `cvs`.\n  - Motore di compatibilità dinamica: verifica in tempo reale le stringhe di gioco ad ogni patch; se una patch futura non cambia testi procede al 100%, altrimenti applica il fallback alle sole stringhe nuove.\n  - Backup automatico ad ogni installazione e ripristino immediato con opzione 2.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. In gioco seleziona **Inglese**.\n\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/1.0.3551601.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 35828316,
+       "downloads": 68,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 35828316,
+      "downloads": 68,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 68
+    },
+    {
+     "tag": "v0.4.2",
+     "name": "Aniimo - Traduzione Italiana v0.4.2 (Build Steam 3544783)",
+     "date": "2026-09-17T18:32:59Z",
+     "body": "# Aniimo — Traduzione italiana v0.4.2\r\n\r\nRelease per il client Steam (build 3544783).\r\n\r\n- **112.187 chiavi su 112.187 tradotte in italiano (100,00%)**, zero fallback e zero stringhe mancanti.\r\n- Supporto e traduzione completa della nuova build Steam **3544783**:\r\n  - Integrate le 4 nuove stringhe introdotte dagli sviluppatori (oggetti vincolati Sol Lion/Lunara, sblocco desideri, Edizione contratto Zanna Feroce).\r\n  - Revisionate e aggiornate tutte le 97 stringhe modificate (aggiornamento terminologico Hexxin, eventi crossover Sparkelf, requisiti livello 45/50/55, limiti settimanali Monete Voxel, nutrizione degli ecosistemi ai Rami).\r\n- Installer aggiornato con sincronizzazione tra StreamingAssets e cache cvs: garantisce priorità automatica all'archivio più recente quando Steam rilascia una nuova versione, applicando la traduzione a tutti gli archivi di gioco.\r\n- Un solo file EXE standalone con rilevamento prioritario automatico di Steam, fallback Pawprint e supporto a selezione manuale o posizionamento nella root del gioco.\r\n- Rilevamento dinamico per future versioni di Aniimo: compatibilità automatica 100% se i testi non cambiano, fallback selettivo all'inglese con avviso per eventuali nuove stringhe.\r\n- Backup automatico ad ogni installazione e ripristino immediato con opzione 2.\r\n\r\n### Installazione\r\n\r\n1. Chiudi Aniimo e il launcher.\r\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\r\n3. In gioco seleziona **Inglese**.\r\n\r\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\r\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.4.2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 35828800,
+       "downloads": 259,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 35828800,
+      "downloads": 259,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 259
+    },
+    {
+     "tag": "v0.4.1",
+     "name": "Aniimo — Traduzione italiana v0.4.1",
+     "date": "2026-09-16T20:55:25Z",
+     "body": "# Aniimo — Traduzione italiana v0.4.1\r\n\r\nRelease per il client Steam (build 3535596).\r\n\r\n- **112.183 chiavi su 112.183 tradotte in italiano (100,00%)**, zero fallback e zero stringhe mancanti.\r\n- Revisione professionale terminologica e glossario di gioco allineati.\r\n- Un solo file EXE standalone, con ricerca automatica prioritaria Steam, fallback Pawprint, supporto selezione manuale o posizionamento nella root del gioco.\r\n- Rilevamento dinamico per future versioni di Aniimo: se i testi non cambiano dichiara compatibilità al 100%; se ci sono stringhe nuove o modificate applica per quelle sole stringhe il fallback all'inglese e avvisa l'utente.\r\n- Backup automatico a ogni installazione e ripristino immediato con opzione 2.\r\n- Verificata con successo in gioco.\r\n\r\n### Installazione\r\n\r\n1. Chiudi Aniimo e il launcher.\r\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\r\n3. In gioco seleziona **Inglese**.\r\n\r\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\r\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.4.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 35828526,
+       "downloads": 154,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.1/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 35828526,
+      "downloads": 154,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.1/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 154
+    },
+    {
+     "tag": "v0.3.18-beta",
+     "name": "Aniimo — Traduzione italiana v0.3.18 Beta",
+     "date": "2026-07-18T12:14:19Z",
+     "body": "# Aniimo — Traduzione italiana v0.3.18 Beta\n\nQuesta release corregge definitivamente un fallback runtime che poteva mostrare in inglese 359 battute già tradotte e conferma la compatibilità con la build Aniimo `3064863`.\n\n## Novità principali\n\n- Verificata la build `3064863`: 93.029 chiavi e contenuti English identici alla build precedente, quindi nessuna nuova stringa da tradurre.\n- Corretto l'elenco interno `AITranslatedItems_en` usato da Aniimo: tutte le 359 chiavi storicamente recuperate vengono ora abilitate esplicitamente.\n- Risolte così le cinque battute English segnalate nella sequenza introduttiva di Fannie e ogni altra riga appartenente alla stessa categoria.\n- Rilette e rifinite le cinque traduzioni, mantenendo tag, ritorni a capo e terminologia della Base.\n- Aggiunta una nuova icona dell'installer con mascotte Aniimo e badge della bandiera italiana, completa di trasparenza e dimensioni Windows da 16 a 256 pixel.\n\n## Verifiche\n\n- Copertura completa: 93.029 / 93.029 testi.\n- 359 / 359 fallback storici inclusi nell'elenco runtime italiano.\n- Le cinque chiavi segnalate sono presenti nel master, nell'archivio generato e nell'elenco runtime corretto.\n- Strutture tecniche, font accentato, date italiane e timer verificati.\n- 104 test automatici superati.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nChi usa una versione precedente deve reinstallare la traduzione con questo EXE per applicare la correzione ai fallback. La release contiene un solo file eseguibile.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.18-beta",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 34278443,
+       "downloads": 65,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.18-beta/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 34278443,
+      "downloads": 65,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.18-beta/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 65
+    },
+    {
+     "tag": "v0.3.17-beta",
+     "name": "Aniimo — Traduzione italiana v0.3.17 Beta",
+     "date": "2026-07-16T17:31:59Z",
+     "body": "# Aniimo — Traduzione italiana v0.3.17 Beta\n\nQuesta release rende la compatibilità dell'installer automatica e aggiunge il supporto completo alla build Aniimo `3062823`.\n\n## Novità principali\n\n- L'installer non dipende più soltanto dal numero di build: confronta tutte le chiavi e il contenuto reale dei testi del gioco.\n- Le future build con localizzazione invariata vengono riconosciute automaticamente come compatibili, senza richiedere una nuova versione dell'installer.\n- Se il gioco aggiunge, rimuove o modifica testi ufficiali, l'installazione viene fermata finché le nuove stringhe non sono state revisionate.\n- Verificata automaticamente la build `3058113`, che conserva le stesse 93.029 chiavi e gli stessi testi della build precedente.\n- Integrata la build `3062823`: 2 chiavi aggiunte, 2 rimosse e 28 sorgenti English modificate, per un totale invariato di 93.029 chiavi.\n- Tradotte e revisionate tutte le 30 righe interessate, inclusi Closed Beta Globale, Lancio Globale, premi evento, check-in, Sensore di movimento ed elenco dei bloccati.\n\n## Verifiche\n\n- Copertura completa: 93.029 / 93.029 testi.\n- Nessuna stringa nuova o sconosciuta rimasta nella build `3062823`.\n- Strutture tecniche, font accentato, date italiane e timer verificati.\n- 103 test automatici superati.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nLa release contiene un solo file EXE. Non servono Python, estrazioni manuali o programmi aggiuntivi.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.17-beta",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 34188720,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.17-beta/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 34188720,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.17-beta/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 1
+    },
+    {
+     "tag": "v0.3.16-beta",
+     "name": "Aniimo - Traduzione italiana v0.3.16 beta",
+     "date": "2026-07-14T18:53:36Z",
+     "body": "# Aniimo — Traduzione italiana v0.3.16 Beta\n\nQuesta release aggiunge il supporto completo alla build Aniimo `3053563` e ripristina la traduzione dopo l'aggiornamento ufficiale del gioco.\n\n## Novità principali\n\n- Integrate tutte le 45 nuove chiavi ufficiali, equivalenti a 9 testi unici: copertura aggiornata a 93.029 / 93.029.\n- Tradotte le nuove descrizioni delle Uova Aniimo Prismana e scintillanti, dei materiali, delle squadre e delle missioni d'indagine del Polaris Institute.\n- Aggiornate le 5 sorgenti inglesi modificate dal gioco: 4 traduzioni sono state riscritte per il nuovo significato, mentre una correzione grammaticale inglese non richiedeva modifiche all'italiano.\n- Aggiunto il supporto al nuovo bundle font della build `3053563`, mantenendo accenti italiani completi nello slot English.\n- Confermati il formato dinamico `GG/MM/AAAA` su entrambi gli archivi Lua e il timer compatto `h/m/s` nelle card del negozio.\n\n## Verifiche\n\n- Installazione reale completata sulla build `3053563`.\n- 93.029 / 93.029 testi installati, senza fallback inglesi.\n- Font accentato, doppio archivio Lua, date italiane e timer italiano verificati dopo la copia.\n- Backup automatico e ripristino compatibile mantenuti.\n- 95 test automatici superati.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nLa release contiene un solo file EXE. Non servono Python, estrazioni manuali o programmi aggiuntivi.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.16-beta",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 34177285,
+       "downloads": 4,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.16-beta/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 34177285,
+      "downloads": 4,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.16-beta/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 4
+    },
+    {
+     "tag": "v0.3.15-beta",
+     "name": "Aniimo - Traduzione italiana v0.3.15 beta",
+     "date": "2026-07-13T22:07:14Z",
+     "body": "# Aniimo — Traduzione italiana v0.3.15 Beta\n\nQuesta release corregge definitivamente i formati data visibili e il conto alla rovescia con unità cinesi, oltre a due segnalazioni sulla traduzione.\n\n## Novità principali\n\n- Tutte le superfici data verificate usano ora `GG/MM/AAAA`: capitoli missione, `Astra Era`, posta, album, dettagli foto, registri attività e pannelli evento.\n- L'installer gestisce entrambe le copie degli archivi Lua presenti nella build 3048640, ricostruendole separatamente e verificandole dopo la copia.\n- Il timer delle card del negozio passa da un formato come `15分0秒` a `15 m 0 s`.\n- `Gratis` viene ridimensionato soltanto nelle otto etichette strette, così non viene più spezzato su due righe.\n- Jilly si riferisce correttamente a sé stessa con `Sono impressionata`.\n\n## Sicurezza dell'installazione\n\n- Backup e ripristino includono ora entrambe le coppie `LuaScripts.xdf/xdt` e i metadati runtime del timer.\n- Ogni backup registra gli hash SHA-256 dei file aggiuntivi.\n- Gli archivi generati vengono aperti, verificati e confrontati con i relativi indici prima e dopo l'installazione.\n- La patch delle date e quella del timer sono idempotenti e vengono rifiutate se il file del gioco non corrisponde esattamente alla struttura verificata.\n- I backup creati dalle versioni precedenti dell'installer restano ripristinabili.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nLa release contiene un solo file EXE. Non servono Python, estrazioni manuali o programmi aggiuntivi.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.15-beta",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 34171559,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.15-beta/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 34171559,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.15-beta/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 1
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "NTE-Italian-Translation",
+    "description": "Traduzione italiana completa per Neverness to Everness con installer automatico",
+    "html_url": "https://github.com/Sici29/NTE-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-09-22T05:16:02Z"
+   },
+   "marker": {
+    "nome_gioco": "Neverness to Everness",
+    "steam_appid": 4508340,
+    "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
+    "motore_installazione": "unreal_pak"
+   },
+   "releases": [
+    {
+     "tag": "v1.0",
+     "name": "Traduzione Italiana NTE (Release Definitiva 1.0)",
+     "date": "2026-09-21T17:41:09Z",
+     "body": "Prima release completa della traduzione italiana per Neverness to Everness.\n\nInclude:\n- Interfaccia, menu e statistiche completamente in italiano.\n- Dialoghi, missioni e descrizioni oggetti tradotti con cura (100.800+ stringhe).\n- Risolto il 'misgendering' in cui i PNG (es. Mint) venivano scambiati per uomini nei dialoghi originali in inglese.\n- Nessun file personale nei sorgenti.\n- Installer interattivo automatizzato per installare e pulire cache/mod vecchie senza conflitti.",
+     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Installatore_Traduzione_NTE.exe",
+       "size": 16274265,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+      },
+      {
+       "name": "pakchunk999-Windows_999_P.pak",
+       "size": 16284026,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/pakchunk999-Windows_999_P.pak"
+      }
+     ],
+     "download": {
+      "name": "Installatore_Traduzione_NTE.exe",
+      "size": 16274265,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+     },
+     "downloads": 2
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "Fatekeeper-Italian-Translation",
+    "description": "Traduzione italiana completa per Fatekeeper con installer automatico",
+    "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-09-21T19:18:17Z"
+   },
+   "marker": {
+    "nome_gioco": "Fatekeeper",
+    "cover_url": null,
+    "motore_installazione": "unreal_pak",
+    "steam_appid": 2186990
+   },
+   "releases": [
+    {
+     "tag": "0.1.3-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
+     "date": "2026-09-20T09:24:05Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n- **Configurazione Pulita a 2 Lingue & Zero Crash**:\r\n  - Registrazione delle culture in \\Game.locmeta\\ (61 byte, culture \\en\\ e \\it\\).\r\n  - Menu impostazioni pulito con esattamente 2 selezioni disponibili: **English** e **it** (senza duplicati o voci fittizie).\r\n  - Selezione di **English** perfettamente funzionante con fallback sui testi originali in inglese di Steam.\r\n  - Pulizia automatica della cache impostazioni per prevenire qualsiasi blocco o crash dopo i trailer d'avvio.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam e gioca subito in italiano!",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7752041,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7752041,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+     },
+     "downloads": 0
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "ARK-Survival-Ascended-Italian-Translation",
+    "description": "Traduzione italiana completa per ARK: Survival Ascended con installer automatico",
+    "html_url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-09-21T19:18:13Z"
+   },
+   "marker": {
+    "nome_gioco": "ARK: Survival Ascended",
+    "steam_appid": 2399830,
+    "cover_url": null,
+    "motore_installazione": "unreal_pak"
+   },
+   "releases": [
+    {
+     "tag": "v2.1.2",
+     "name": "ARK — Traduzione italiana v2.1.2",
+     "date": "2026-07-29T16:09:23Z",
+     "body": "# ARK — Traduzione italiana v2.1.2\n\nQuesta release rende la traduzione compatibile con il nuovo aggiornamento Steam di ARK.\n\n## Verifica del nuovo aggiornamento\n\n- Build Steam verificata: `24427885`.\n- Catalogo inglese: 38.751 stringhe, identiche alla build precedente.\n- Catalogo italiano ufficiale: 33.254 stringhe, identiche alla build precedente.\n- Chiavi nuove, rimosse o modificate: zero.\n- Copertura della revisione italiana confermata: 38.751/38.751.\n\nIl controllo è stato eseguito sui LOCRES e sul LOCMETA originali estratti direttamente da `pakchunk0-Windows.pak`, senza usare la patch italiana né contenuti di mod.\n\n## Menu DLC rigenerato\n\nL'aggiornamento ha modificato gli oggetti di script UE5 e l'identificatore interno associato a un testo del widget `ASAUI_MainMenu_DLC_Selector`. Il vecchio override non è stato riutilizzato: i widget sono stati riestratti dalla build 24427885, le quattro sostituzioni italiane sono state riapplicate e il trio IoStore è stato ricreato sulla base corrente.\n\nIl contenitore supera `retoc verify`; il round-trip conserva esattamente entrambi gli UEXP modificati.\n\n## Installazione\n\nScarica soltanto `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva automaticamente la copia regolarmente installata, verifica la build 24427885, crea un backup e installa tutti i componenti italiani incorporati controllandone singolarmente l'hash SHA-256.\n\nPer usare la traduzione è necessaria una copia regolarmente installata di ARK: Survival Ascended. Le mod, compresa Play As Dino, non sono incluse.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.1.2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10636096,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10636096,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "v2.1.1",
+     "name": "ARK — Traduzione italiana v2.1.1",
+     "date": "2026-07-24T10:29:30Z",
+     "body": "# ARK — Traduzione italiana v2.1.1\n\nQuesta release rende la traduzione compatibile con il nuovo aggiornamento Steam di ARK.\n\n## Verifica del nuovo aggiornamento\n\n- Build Steam verificata: `24346205`.\n- Catalogo inglese: 38.751 stringhe, identiche alla build precedente.\n- Catalogo italiano ufficiale: 33.254 stringhe, identiche alla build precedente.\n- Chiavi nuove, rimosse o modificate: zero.\n- Copertura della revisione italiana confermata: 38.751/38.751.\n\nIl controllo è stato eseguito sui LOCRES e sul LOCMETA originali estratti direttamente da `pakchunk0-Windows.pak`, senza usare la patch italiana né contenuti di mod.\n\n## Menu DLC rigenerato\n\nL'aggiornamento ha modificato l'identificatore interno associato a un testo del widget `ASAUI_MainMenu_DLC_Selector`. Il vecchio override non è stato riutilizzato: i widget sono stati riestratti dalla build 24346205, le quattro sostituzioni italiane sono state riapplicate e il trio IoStore è stato ricreato sulla base UE5 corrente.\n\nIl contenitore supera `retoc verify`; il round-trip conserva esattamente entrambi gli UEXP modificati.\n\n## Installazione\n\nScarica soltanto `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva automaticamente la copia regolarmente installata, verifica la build 24346205, crea un backup e installa tutti i componenti italiani incorporati controllandone singolarmente l'hash SHA-256.\n\nPer usare la traduzione è necessaria una copia regolarmente installata di ARK: Survival Ascended. Le mod, compresa Play As Dino, non sono incluse.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.1.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10637438,
+       "downloads": 7,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.1/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10637438,
+      "downloads": 7,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.1/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 7
+    },
+    {
+     "tag": "v2.1.0",
+     "name": "ARK — Traduzione italiana v2.1.0",
+     "date": "2026-07-18T12:34:57Z",
+     "body": "# ARK — Traduzione italiana v2.1.0\n\nQuesta release rende la traduzione compatibile con il nuovo aggiornamento Steam di ARK e introduce la nuova icona dell'installer con badge italiano.\n\n## Verifica del nuovo aggiornamento\n\n- Build Steam verificata: `24271369`.\n- Catalogo inglese: 38.751 stringhe, identiche alla build precedente.\n- Catalogo italiano ufficiale: 33.254 stringhe, identiche alla build precedente.\n- Chiavi nuove, rimosse o modificate: zero.\n- Copertura della revisione italiana confermata: 38.751/38.751.\n\nIl controllo è stato eseguito sui LOCRES e sul LOCMETA originali estratti direttamente da `pakchunk0-Windows.pak`, senza usare la patch italiana né contenuti di mod.\n\nI widget DLC fuori catalogo sono stati riestratti e rigenerati sulla nuova base UE5: l'aggiornamento ha modificato un GUID FText e gli oggetti di script interni, mentre le correzioni visibili `PACCHETTI` e `TUOI` restano invariate.\n\n## Nuova icona\n\nL'unico EXE della release usa ora un'icona ARK dedicata con badge italiano, coerente con gli installer Aniimo e Star Citizen e completa delle risoluzioni Windows da 16 a 256 pixel.\n\n## Installazione\n\nScarica soltanto `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva automaticamente la copia regolarmente installata, verifica la build, crea un backup e installa tutti i componenti italiani incorporati controllandone singolarmente l'hash SHA-256.\n\nPer usare la traduzione è necessaria una copia regolarmente installata di ARK: Survival Ascended.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.1.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10638154,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10638154,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 1
+    },
+    {
+     "tag": "v2.0.2",
+     "name": "ARK — Traduzione italiana v2.0.2",
+     "date": "2026-07-16T18:05:22Z",
+     "body": "# ARK — Traduzione italiana v2.0.2\n\nQuesta release rifinisce il criterio editoriale della traduzione: l'obiettivo non è eliminare meccanicamente ogni parola inglese, ma ottenere un italiano naturale per chi gioca.\n\n## Cosa cambia\n\n- 45 adattamenti contestuali verificati manualmente.\n- Ripristinati gli anglicismi ormai normali nel lessico videoludico italiano: `Camera`, `Password`, `Display`, `Gameplay`, `Multiplayer`, `Online`, `Offline`, `Preset`, `Skin` cosmetica e `Ping`.\n- Mantenute le rese italiane quando davvero più naturali o necessarie: `telecamera` nelle frasi descrittive, `pelle` negli usi anatomici, e comandi come Salva, Carica e Indietro.\n- 38.751/38.751 voci compilate e riestratte senza differenze.\n- Zero errori strutturali, zero avvisi e zero decisioni editoriali aperte.\n\n## Installazione\n\nScarica il solo file `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva la copia regolarmente installata, verifica la build, crea il backup e installa tutti i componenti italiani incorporati controllandone singolarmente l'hash SHA-256.\n\nPer usare la traduzione è necessaria una copia regolarmente installata di ARK: Survival Ascended.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.0.2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10592044,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10592044,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 0
+    },
+    {
+     "tag": "v2.0.1",
+     "name": "ARK — Traduzione italiana v2.0.1",
+     "date": "2026-07-16T17:01:50Z",
+     "body": "# ARK — Traduzione italiana v2.0.1\n\nQuesta release correttiva nasce da un nuovo audit manuale concentrato sui testi più facili da notare durante il gioco: menu, interfaccia, personalizzazione del personaggio, valori di opzione e stringhe brevi.\n\n## Cosa cambia\n\n- 66 ulteriori correzioni nel catalogo base.\n- Tradotti `FACE`, `Scalp`, `Brows`, `Foot Size`, `Camera`, `Character`, `Controls`, `Display`, `Password` e altri residui player-facing.\n- Corretti i widget del menu DLC che conservavano `DLC PACKS` e `Owned` direttamente nell'interfaccia, fuori dal catalogo traducibile.\n- 38.751/38.751 voci compilate e riestratte senza differenze.\n- Zero errori strutturali, zero avvisi e zero decisioni editoriali aperte.\n\n## Installazione\n\nScarica il solo file `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva la copia regolarmente installata, verifica la build, crea il backup e installa tutti i componenti italiani incorporati controllandone singolarmente l'hash SHA-256.\n\nPer usare la traduzione è necessaria una copia regolarmente installata di ARK: Survival Ascended.\n\n## Verifiche\n\n- PAK di localizzazione: 38.751 chiavi, nessuna mancante, extra o difforme.\n- Override minimo dei widget DLC verificato con `retoc verify`, conversione inversa e ispezione del contenuto.\n- Installer autonomo one-file con backup e ripristino multi-file.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.0.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10593347,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.1/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10593347,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.1/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 0
+    },
+    {
+     "tag": "v2.0.0",
+     "name": "ARK: Survival Ascended — Traduzione italiana v2.0.0",
+     "date": "2026-07-16T10:25:06Z",
+     "body": "# ARK — Traduzione italiana v2.0.0\n\nQuesta release conclude la revisione editoriale manuale dell'intero catalogo italiano di ARK: Survival Ascended.\n\n## Cosa cambia\n\n- 38.751/38.751 voci lette e classificate manualmente.\n- 11.351 voci riscritte rispetto alla v1.2.0.\n- Eliminati gli ultimi residui inglesi sospetti e corrette traduzioni letterali, innaturali o incoerenti con il contesto e la terminologia di ARK.\n- Verificata la build Steam 24230788, senza nuove chiavi ufficiali rispetto alla build precedente.\n- Autodetect migliorato per sistemi con più librerie o installazioni Steam.\n- Backup e ripristino irrobustiti con percorsi registrati e controlli SHA-256.\n\n## Installazione\n\nScarica il solo file `ARK-Survival-Ascended-Traduzione-Italiana.exe`, chiudi ARK e avvialo. L'installer rileva la copia regolarmente installata, controlla la build, crea il backup e applica il PAK italiano incorporato.\n\nIl repository e la Release non includono file originali del gioco. È necessaria una copia regolarmente installata di ARK: Survival Ascended.\n\n## Verifiche\n\n- 38.751 chiavi compilate e riestratte senza differenze.\n- PAK con un solo `ShooterGame.locres`, verificato byte per byte.\n- Zero errori strutturali, zero avvisi, zero decisioni aperte.\n- Installer autonomo one-file verificato sulla build 24230788.\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v2.0.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10571023,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10571023,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.0.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "v1.2.0",
+     "name": "ARK: Survival Ascended — Traduzione italiana v1.2.0",
+     "date": "2026-07-15T17:17:16Z",
+     "body": "# ARK: Survival Ascended — Traduzione italiana v1.2.0\n\nNuovo audit totale della localizzazione italiana, concentrato sui testi brevi che compaiono più spesso nei menu e nell'interfaccia.\n\n- 38.751 stringhe verificate su 38.751 per la build Steam 24159380.\n- 29.513 stringhe approvate editorialmente.\n- 9.238 risorse tecniche preservate intenzionalmente.\n- 1.783 voci riviste rispetto alla v1.1.0: 1.782 dell'interfaccia e una descrizione composita.\n- Corretti residui inglesi e traduzioni innaturali nei menu, nelle impostazioni avanzate, nei comandi, nelle statistiche e nel pannello del campione.\n- Uniformati termini come `INDIETRO`, `IMPOSTAZIONI`, `IN EVIDENZA`, `Vibrazione`, `Sempre`, `SALUTE`, `PESO` e `PACCHETTI DLC`.\n- Zero errori strutturali, segnaposto mancanti o avvisi nel master finale.\n- Installer Windows autonomo con rilevamento automatico, backup, ripristino, controllo della build e aggiornamenti verificati tramite SHA-256.\n\n## Installazione\n\n1. Chiudi ARK: Survival Ascended.\n2. Scarica `ARK-Survival-Ascended-Traduzione-Italiana.exe`.\n3. Avvia il file e premi Invio.\n4. L'installer trova il gioco, verifica la build e crea un backup prima dell'installazione.\n\nNel gioco seleziona **Italiano**.\n\nÈ necessaria una copia originale di ARK: Survival Ascended già installata. L'installer non contiene e non installa il gioco né i suoi archivi originali.\n\nLa copertura completa riguarda il catalogo di localizzazione estratto. Messaggi diagnostici del server o del motore, testi generati dinamicamente e contenuti di mod possono trovarsi fuori da tale catalogo.\n\n## Verifica download\n\nSHA-256 di `ARK-Survival-Ascended-Traduzione-Italiana.exe`:\n\n```text\n11E5E0C1907F25B0860CE38436790FC4129820C6D7C433237610D62C8F85027B\n```\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v1.2.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10581680,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.2.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10581680,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.2.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 1
+    },
+    {
+     "tag": "v1.1.0",
+     "name": "ARK: Survival Ascended — Traduzione italiana v1.1.0",
+     "date": "2026-07-13T19:53:27Z",
+     "body": "# ARK: Survival Ascended — Traduzione italiana v1.1.0\n\nRevisione generale del catalogo italiano e nuovo installer più sicuro.\n\n- 38.751 stringhe revisionate su 38.751 per la build Steam 24159380.\n- 29.529 stringhe approvate editorialmente.\n- 9.222 risorse tecniche preservate intenzionalmente.\n- 315 ulteriori correzioni emerse dall'audit totale, oltre alle segnalazioni tramite screenshot.\n- Menu, comandi contestuali, descrizioni e testi di sistema resi più naturali e coerenti.\n- Zero errori strutturali, segnaposto mancanti o avvisi nel master finale.\n- Installer Windows autonomo con rilevamento automatico, backup, ripristino e controllo degli aggiornamenti.\n- Download automatici accettati soltanto se GitHub pubblica il relativo digest SHA-256.\n- Blocco delle installazioni su build di ARK non ancora verificate.\n\n## Installazione\n\n1. Chiudi ARK: Survival Ascended.\n2. Scarica `ARK-Survival-Ascended-Traduzione-Italiana.exe`.\n3. Avvia il file e premi Invio.\n4. L'installer trova il gioco, verifica la build e crea un backup prima dell'installazione.\n\nNel gioco seleziona **Italiano**.\n\nÈ necessaria una copia originale di ARK: Survival Ascended già installata. L'installer non contiene e non installa il gioco né i suoi archivi originali.\n\nLa copertura completa riguarda il catalogo di localizzazione estratto. Messaggi diagnostici del server o del motore, testi generati dinamicamente e contenuti di mod possono trovarsi fuori da tale catalogo.\n\n## Verifica download\n\nSHA-256 di `ARK-Survival-Ascended-Traduzione-Italiana.exe`:\n\n```text\n7F38B8AF26E8085244C5A29DC604FC63532CE1913859EC4001785E120BBB72E8\n```\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v1.1.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10582112,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.1.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10582112,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.1.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "v1.0.0",
+     "name": "ARK: Survival Ascended — Traduzione italiana v1.0.0",
+     "date": "2026-07-12T07:48:50Z",
+     "body": "# ARK: Survival Ascended — Traduzione italiana v1.0.0\r\n\r\nPrima versione pubblica completa.\r\n\r\n- 38.751 stringhe revisionate su 38.751.\r\n- 29.392 stringhe approvate editorialmente.\r\n- 9.359 risorse tecniche preservate intenzionalmente.\r\n- Zero errori strutturali, segnaposto mancanti o casi sospesi.\r\n- Installer Windows autonomo con rilevamento automatico, backup e ripristino.\r\n\r\n## Installazione\r\n\r\n1. Chiudi ARK: Survival Ascended e Steam.\r\n2. Scarica `ARK-Survival-Ascended-Traduzione-Italiana.exe`.\r\n3. Avvia il file e premi Invio.\r\n4. L'installer trova il gioco, verifica la build e crea un backup prima dell'installazione.\r\n\r\nNel gioco seleziona **Italiano**.\r\n\r\nÈ necessaria una copia originale di ARK: Survival Ascended già installata. L'installer non contiene e non installa il gioco né i suoi archivi originali.\r\n\r\n## Verifica download\r\n\r\nSHA-256 di `ARK-Survival-Ascended-Traduzione-Italiana.exe`:\r\n\r\n```text\r\nB05D685FD1698A1E65ABC11C00ABF8CAE0C255BF8B257EEDA968E3ABDAA1BBBC\r\n```\r\n",
+     "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/tag/v1.0.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+       "size": 10575828,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.0.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+      }
+     ],
+     "download": {
+      "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
+      "size": 10575828,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v1.0.0/ARK-Survival-Ascended-Traduzione-Italiana.exe"
+     },
+     "downloads": 3
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "SC-Italian-Translation",
+    "description": "Traduzione italiana non ufficiale e installer per Star Citizen LIVE 4.9",
+    "html_url": "https://github.com/Sici29/SC-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [
+     "fan-translation",
+     "italian-translation",
+     "localization",
+     "star-citizen",
+     "windows-installer"
+    ],
+    "pushed_at": "2026-09-21T19:18:05Z"
+   },
+   "marker": {
+    "nome_gioco": "Star Citizen",
+    "steam_appid": null,
+    "cover_url": "https://robertsspaceindustries.com/media/x2o0x2o0x2o0x2o0x2o0x2o0/source/Star-Citizen.jpg",
+    "motore_installazione": "global_ini"
+   },
+   "releases": [
+    {
+     "tag": "sc-4.10-r2",
+     "name": "Traduzione italiana Star Citizen 4.10 - R2 (4.10.0-live.12660092)",
+     "date": "2026-09-17T15:59:28Z",
+     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 2\n\nSeconda revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10 (build `4.10.193.11644`, change `12660092`, aggiornamento del 17 settembre 2026).\n\n## Novità della 4.10-R2\n\n- **Copertura 100% manuale umana:** Tutte le 87 chiavi aggiunte o modificate dalla patch CIG sono state tradotte e revisionate professionalmente.\n- **Nuovi contenuti inclusi:**\n  - Distintivi e titoli evento *Orison Relief* (Tier 1-6).\n  - Schede informative e parametri comparativi dei processi di raffinazione (resa, tempo, costo).\n  - Nuovi veicoli, armature e armi (*Sabre Raven EX*, *ATLS IKTI Akuma*, livree esclusive).\n  - Testi aggiornati per missioni di costruzione e ascensori di Orison.\n- **Installer potenziato:**\n  - **Confronto patch automatico:** rileva e confronta la build installata con quelle convalidate.\n  - **Fallback dinamico all'inglese (Zero blocchi):** se CIG rilascia una nuova build non ancora convalidata, l'installer estrae automaticamente il catalogo inglese dal `Data.p4k` locale e compone al volo un payload ibrido funzionante (testi noti in italiano, testi inediti in inglese) senza bloccare il giocatore.\n  - **Rilevamento intelligente:** auto-rilevamento della cartella LIVE tramite registro Windows, percorsi standard o variabile d'ambiente.\n  - **Preservazione differenziale:** conserva intatte le impostazioni video e comandi personalizzate in `user.cfg`.\n  - **Backup & Ripristino atomico:** salvataggio automatico prima di qualsiasi modifica e ripristino sicuro vincolato allo stato attivo.\n  - **Aggiornamento automatico integrato:** verifica della presenza di nuove release GitHub all'avvio con download sicuro HTTPS e controllo dell'impronta SHA-256 prima dell'esecuzione.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.193.11644`, change `12660092`\n- Build precedentemente verificate: `12519617`, `12572603`\n- Chiavi inglesi: `90.437`\n- Delta rispetto alla 4.10-R1: `83` aggiunte, `9` rimosse, `4` modificate e `90.350` invariate\n- Chiavi aggiunte o modificate revisionate: `87 / 87` (100%)\n- SHA-256 sorgente inglese:\n  `037071E9FC8F402FEE87E76B5CA175F4AE7BEF5CF443A3A89727DB9B139AE2F3`\n\n## Integrità\n\n- Righe italiane: `90.437`\n- Traduzioni approvate manualmente: `89.511`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- SHA-256 payload italiano:\n  `CE0FBEA65B404B7E17293E76F1F1DD28344753239EAA7FDA37B9E2A1F58B492F`\n- SHA-256 installer:\n  `282F1ADA8BE89631C81018C5C155F8CADF4406308F6CFB3D3840C6E9EA30B521`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R2.exe\n```\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release (oppure avvia la versione precedente che lo aggiornerà automaticamente).\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen mostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release prima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto indipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il progetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o Roberts Space Industries. Per utilizzarla è necessaria una copia legittima e installata di Star Citizen.\r\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
+       "size": 17229751,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
+      "size": 17229751,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "sc-4.10-r1",
+     "name": "Traduzione italiana Star Citizen 4.10 - R1",
+     "date": "2026-08-31T05:34:08Z",
+     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 1\n\nPrima revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10.\n\n## Novità della 4.10-R1\n\nLa 4.10-R1 aggiorna integralmente la base della traduzione alla nuova LIVE e\nintroduce l'aggiornamento automatico e verificato dell'installer.\n\n- Controllo delle nuove revisioni GitHub eseguito automaticamente all'avvio.\n- Download diretto del nuovo EXE, senza aprire il browser.\n- Conferma esplicita dell'utente prima del download e dell'avvio.\n- Selezione vincolata all'unico installer Windows della release stabile.\n- Verifica di provenienza HTTPS, dimensione dichiarata e impronta SHA-256\n  pubblicata da GitHub.\n- Blocco e cancellazione dei download incompleti o alterati.\n- Riutilizzo di un file già scaricato solo dopo una nuova verifica completa.\n\nLa R4 non contiene questa funzione: il passaggio alla 4.10-R1 richiede quindi\nun ultimo download manuale. Dalla 4.10-R1 in avanti le revisioni successive\npotranno essere rilevate, scaricate e avviate direttamente dall'installer,\nsempre dopo conferma dell'utente.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.191.2241`, change `12519617`\n- Chiavi inglesi: `90.363`\n- Delta rispetto alla 4.9: `287` aggiunte, `45` rimosse, `156` modificate e\n  `89.920` invariate\n- Chiavi aggiunte o modificate revisionate: `443 / 443`\n- SHA-256 sorgente inglese:\n  `7DF68893F0EC8564D9E123024CF06C6C731DD7ACC36B528C7CAA06104AD74E11`\n\nIl `global.ini` inglese è stato estratto direttamente dalla LIVE installata. Le\nchiavi nuove e modificate sono state revisionate prima della generazione del\npayload; le `89.920` chiavi invariate conservano il lavoro già approvato.\n\n## Integrità\n\n- Righe italiane: `90.363`\n- Traduzioni approvate manualmente: `89.437`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- Chiavi condivise sottoposte a controllo conservativo: `79`\n- Valori con accenti normalizzati: `22`\n- SHA-256 payload italiano:\n  `96CAB8C9053F2B85D2D2AE2F7A8E231EEE8F993392CF680E36A70ED2C9DFCB08`\n- SHA-256 installer:\n  `D53244B9284B372D89B361F538B987AD9C54BCAA65A629AC76AD013CD52DB4C5`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R1.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la compatibilità della\nbuild, verifica il payload, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il\nprogetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o\nRoberts Space Industries. Per utilizzarla è necessaria una copia legittima e\ninstallata di Star Citizen.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
+       "size": 18125315,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
+      "size": 18125315,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "sc-4.9-r4",
+     "name": "Traduzione italiana Star Citizen 4.9 - R4",
+     "date": "2026-07-19T08:52:37Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 4\n\nQuarta revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R4\n\nLa R4 raccoglie il grande ciclo di verifica visiva svolto direttamente in\ngioco dopo la R3. Il payload differisce su 1.212 chiavi: 1.190 revisioni\neditoriali e 22 normalizzazioni tecniche mirate.\n\n- Testi compatti e pulsanti rivisti per evitare troncamenti, sovrapposizioni e\n  ritorni a capo innaturali.\n- Correzioni estese a creazione del personaggio, menu principale, impostazioni,\n  inventario, Gestione flotta, mobiGlas, terminali, chioschi e Arena Commander.\n- Terminologia resa più naturale e coerente, senza tradurre nomi propri,\n  località o riferimenti utili per mappe e guide.\n- Nomi canonici di navi, aziende, avamposti, città, pubblicazioni ed elementi di\n  lore mantenuti nella forma originale.\n- Revisione delle categorie degli incarichi e delle etichette operative.\n- Uniformazione di `Online`, `Offline`, `Equipaggiamento`, `Multitool`,\n  `Hangar`, `Centro Cargo`, `Area di atterraggio` e `Piattaforma di\n  atterraggio`.\n\n## Maiuscole accentate\n\nIl client trasforma dinamicamente in maiuscolo alcune etichette senza\nsegnalarlo nel file di localizzazione. La R4 estende la protezione tecnica a\n2.066 chiavi UI confermate.\n\n- Inclusi suggerimenti comandi, frontend, creazione del personaggio, Arena\n  Commander, mobiGlas, terminali medici e avvisi HUD.\n- Riesaminate 79 chiavi condivise fra campi maiuscoli e normali.\n- Nessun caso condiviso lasciato senza decisione.\n- Nessuna forma residua confermata come `MODALITà`, `LOCALITà` o `QUANTITà`.\n- Descrizioni e frasi normali non vengono modificate indiscriminatamente.\n\n## Ripristino più sicuro\n\nL'installer non cerca più semplicemente il backup più recente presente su\ndisco. Usa soltanto quello registrato come attivo per la cartella LIVE\nselezionata.\n\n- I backup vecchi non vengono applicati automaticamente.\n- Stati riferiti a un'altra installazione o a una revisione incoerente vengono\n  rifiutati.\n- Dal menu è richiesta una conferma esplicita prima del ripristino.\n- Le impostazioni aggiunte in seguito dall'utente continuano a essere\n  preservate.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R4.exe\n```\n\nL'installer rileva la cartella del gioco, verifica la sorgente inglese,\ncontrolla il payload italiano, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Build verificata: `4.9.186.58667`, change `12248363`\n- Chiavi inglesi: `90.121`\n- Stringhe inglesi aggiunte, rimosse o modificate rispetto alla base\n  revisionata: `0`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `9C8FC68AF677D84FB490852D359BCBF417B39699E61F14EEAEB0699FFD7E5E68`\n- SHA-256 installer:\n  `509E7438435A482050E9D09CE8272014E8FA16F1507AED6AD84A0B506529E009`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r4",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
+       "size": 17066622,
+       "downloads": 11,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
+      "size": 17066622,
+      "downloads": 11,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
+     },
+     "downloads": 11
+    },
+    {
+     "tag": "sc-4.9-r3",
+     "name": "Traduzione italiana Star Citizen 4.9 - R3",
+     "date": "2026-07-18T12:21:28Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 3\n\nTerza revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R3\n\nLa traduzione non cambia rispetto alla R2: il payload italiano resta completo,\nrevisionato e identico. Questa revisione rende invece l'installer più autonomo\ne sicuro dopo gli aggiornamenti del gioco.\n\n- Non blocca più automaticamente una build soltanto perché il numero di change\n  è nuovo.\n- Estrae esclusivamente il `global.ini` inglese dal `Data.p4k` installato.\n- Confronta dimensione e SHA-256 con la sorgente usata per la traduzione.\n- Se il contenuto è identico, considera compatibile anche una nuova build o una\n  nuova versione del gioco.\n- Se cambia anche una sola parte del file inglese, interrompe l'installazione e\n  richiede una revisione aggiornata.\n- Usa una nuova icona trasparente con badge della bandiera italiana più grande\n  e leggibile.\n\nIl controllo non carica file del gioco in rete: avviene interamente sul computer\ndell'utente e il file temporaneo viene eliminato al termine.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R3.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la sorgente inglese, verifica\nil payload italiano, crea un backup, configura testo italiano e audio inglese e\noffre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Versione precedente: `4.9.186.42610`, change `12232306`\n- Nuova versione verificata: `4.9.186.58667`, change `12248363`\n- Stringhe inglesi aggiunte, rimosse o modificate: `0`\n- Chiavi: `90.121`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer:\n  `0EBEA17BAF25400B1715DE3F13ED54BC7533D0927A8C1BBB196173CE33B40390`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r3",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
+       "size": 17068746,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
+      "size": 17068746,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
+     },
+     "downloads": 3
+    },
+    {
+     "tag": "sc-4.9-r2",
+     "name": "Traduzione italiana Star Citizen 4.9 - R2",
+     "date": "2026-07-16T21:21:19Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 2\n\nSeconda revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Novità della R2\n\n- 546 stringhe aggiornate rispetto alla R1 dopo la verifica diretta nel gioco.\n- 280 di queste appartengono all'audit UI finale.\n- Rifinita la creazione del personaggio e corretti menu principale e impostazioni.\n- Eliminati testi troncati e sovrapposti nell'inventario.\n- Revisionati stati, pulsanti e preventivo del terminale Gestione flotta.\n- Compattate le statistiche dei tooltip senza perdere il significato tecnico.\n- Corretti i pulsanti e la ricerca del mobiGlas.\n- Normalizzate le maiuscole accentate in 187 voci di comandi e categorie.\n- Consolidato il glossario a 4.733 decisioni terminologiche.\n\nLa copertura resta completa: 90.121 / 90.121 chiavi, con 89.193 stringhe\ntraducibili approvate manualmente e nessuna stringa in sospeso.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R2.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer: `2BF58313B367D097FD038CD47B83938B804819952A47E57C558DD623FF512800`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
+       "size": 10701204,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
+      "size": 10701204,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
+     },
+     "downloads": 0
+    },
+    {
+     "tag": "sc-4.9-r1",
+     "name": "Traduzione italiana Star Citizen 4.9 — Revisione 1",
+     "date": "2026-07-16T15:49:03Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 1\n\nPrima release pubblica completa della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Contenuto\n\n- Copertura completa di 90.121 / 90.121 chiavi.\n- 89.193 stringhe traducibili approvate manualmente.\n- Glossario vincolante con 4.690 decisioni terminologiche.\n- Dialoghi revisionati preservando la voce dei singoli personaggi.\n- Nomi canonici e riferimenti di orientamento mantenuti per mappe e guide.\n- Terminologia coerente per interfaccia, volo, missioni, oggetti, veicoli e lore.\n- Didascalie attoriali visibili tradotte e veri parametri runtime conservati.\n- Apostrofi e virgolette limitati ai caratteri ASCII supportati dal gioco.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R1.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `CEB1189451F36F07F9A9A2C9D39E5FFF8FB9100D81B760094F72E357040062C8`\n- SHA-256 installer: `9A6DAC324BA786BA78157AEAD3C4F42EEDDEFA49F1AE9D2BBE6E107CD8F0F86F`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
+       "size": 10701355,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
+      "size": 10701355,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
+     },
+     "downloads": 3
+    }
+   ]
+  }
+ ],
+ "proposals": [],
+ "hub_release": {}
+}
