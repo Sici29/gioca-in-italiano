@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-27T21:25:11+00:00",
+ "generated_at": "2026-09-28T21:16:01+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 5,
     "topics": [],
-    "pushed_at": "2026-09-26T07:47:30Z"
+    "pushed_at": "2026-09-28T19:25:46Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3616231.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3616231.0",
+     "date": "2026-09-28T19:27:29Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3616231.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3616231.0** (build 3616231) con supporto alla selezione della lingua da sostituire.\n\n### Novità dell'aggiornamento:\n\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)** *(grazie a @Kaen89 — PR #22)*:\n  - Ora puoi scegliere quale lingua sostituire con l'Italiano: puoi mantenere l'Inglese intatto e sacrificare un'altra lingua che non utilizzi (ad es. il Portoghese `pt_PT`, lo Spagnolo `es_ES`, il Francese `fr_FR`, il Tedesco `de_DE`, ecc.).\n  - Nelle impostazioni di lingua di Aniimo rimarranno disponibili sia **English** che **Italiano**, permettendoti di passare comodamente dall'uno all'altro in qualunque momento senza disinstallare nulla (ideale per giocare con amici esteri o confrontare termini).\n  - La lingua da sostituire può essere selezionata dall'installer interattivo (opzione `8`) oppure tramite riga di comando (`--target <slot>`).\n  - **100% retrocompatibile**: premendo semplicemente Invio al primo avvio, l'installer continua a sostituire l'inglese di default come sempre.\n- **Supporto ufficiale alla build Steam 3616231**:\n  - Piena compatibilità con l'aggiornamento di Aniimo rilasciato il 28 settembre 2026.\n  - Catalogo aggiornato a **112.214 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n  - Tradotta la nuova funzione di emergenza **Unstuck** (*\"Sbloccati\"*) presente nei menu e nelle impostazioni per liberare il personaggio o l'Aniimo dalla mappa.\n  - Tradotta la nuova notifica per i pigmenti speciali (*\"Questo Aniimo è una variante speciale e non può usare questo Pigmento Scintillante.\"*).\n  - Aggiornate le descrizioni dei trasformatori di Forma Prismana (per Whisperwake Isles e Breezy Plains) per riflettere le nuove regole sulle forme sbloccate e il mantenimento dei Potenziali Acquisiti.\n- **Guardia automatica sul download del patcher di gioco**:\n  - L'installer rileva automaticamente se Steam ha aggiornato l'eseguibile mentre la cartella `cvs` deve ancora essere sincronizzata dal client di gioco, evitando che la traduzione venga inavvertitamente sovrascritta al primo avvio.\n- **Qualità e test**:\n  - Suite di test estesa a **159 test unitari** interamente superati (copertura totale di regressione, integrità dei 13 slot lingua e sicurezza dei backup).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3616231.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45216651,
+       "downloads": 17,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45216651,
+      "downloads": 17,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 17
+    },
     {
      "tag": "v1.0.3603741.0",
      "name": "Release 1.0.3603741.0",
@@ -27,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 42919319,
-       "downloads": 120,
+       "downloads": 158,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 42919319,
-      "downloads": 120,
+      "downloads": 158,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 120
+     "downloads": 158
     },
     {
      "tag": "v1.0.3595896.0",
@@ -165,17 +188,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 267,
+       "downloads": 271,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 267,
+      "downloads": 271,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 267
+     "downloads": 271
     },
     {
      "tag": "v0.4.1",
@@ -268,76 +291,168 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.16-beta/Aniimo-Italian-Translation.exe"
      },
      "downloads": 4
-    },
-    {
-     "tag": "v0.3.15-beta",
-     "name": "Aniimo - Traduzione italiana v0.3.15 beta",
-     "date": "2026-07-13T22:07:14Z",
-     "body": "# Aniimo — Traduzione italiana v0.3.15 Beta\n\nQuesta release corregge definitivamente i formati data visibili e il conto alla rovescia con unità cinesi, oltre a due segnalazioni sulla traduzione.\n\n## Novità principali\n\n- Tutte le superfici data verificate usano ora `GG/MM/AAAA`: capitoli missione, `Astra Era`, posta, album, dettagli foto, registri attività e pannelli evento.\n- L'installer gestisce entrambe le copie degli archivi Lua presenti nella build 3048640, ricostruendole separatamente e verificandole dopo la copia.\n- Il timer delle card del negozio passa da un formato come `15分0秒` a `15 m 0 s`.\n- `Gratis` viene ridimensionato soltanto nelle otto etichette strette, così non viene più spezzato su due righe.\n- Jilly si riferisce correttamente a sé stessa con `Sono impressionata`.\n\n## Sicurezza dell'installazione\n\n- Backup e ripristino includono ora entrambe le coppie `LuaScripts.xdf/xdt` e i metadati runtime del timer.\n- Ogni backup registra gli hash SHA-256 dei file aggiuntivi.\n- Gli archivi generati vengono aperti, verificati e confrontati con i relativi indici prima e dopo l'installazione.\n- La patch delle date e quella del timer sono idempotenti e vengono rifiutate se il file del gioco non corrisponde esattamente alla struttura verificata.\n- I backup creati dalle versioni precedenti dell'installer restano ripristinabili.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nLa release contiene un solo file EXE. Non servono Python, estrazioni manuali o programmi aggiuntivi.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.15-beta",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 34171559,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.15-beta/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 34171559,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.15-beta/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 1
     }
    ]
   },
   {
    "repo": {
-    "name": "NTE-Italian-Translation",
-    "description": "Traduzione italiana completa per Neverness to Everness con installer automatico",
-    "html_url": "https://github.com/Sici29/NTE-Italian-Translation",
+    "name": "SC-Italian-Translation",
+    "description": "Traduzione italiana non ufficiale e installer per Star Citizen LIVE 4.9",
+    "html_url": "https://github.com/Sici29/SC-Italian-Translation",
     "stargazers_count": 0,
-    "topics": [],
-    "pushed_at": "2026-09-22T05:16:02Z"
+    "topics": [
+     "fan-translation",
+     "italian-translation",
+     "localization",
+     "star-citizen",
+     "windows-installer"
+    ],
+    "pushed_at": "2026-09-28T15:42:15Z"
    },
    "marker": {
-    "nome_gioco": "Neverness to Everness",
-    "steam_appid": 4508340,
-    "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
-    "motore_installazione": "unreal_pak"
+    "nome_gioco": "Star Citizen",
+    "steam_appid": null,
+    "cover_url": "https://robertsspaceindustries.com/media/x2o0x2o0x2o0x2o0x2o0x2o0/source/Star-Citizen.jpg",
+    "motore_installazione": "global_ini"
    },
    "releases": [
     {
-     "tag": "v1.0",
-     "name": "Traduzione Italiana NTE (Release Definitiva 1.0)",
-     "date": "2026-09-21T17:41:09Z",
-     "body": "Prima release completa della traduzione italiana per Neverness to Everness.\n\nInclude:\n- Interfaccia, menu e statistiche completamente in italiano.\n- Dialoghi, missioni e descrizioni oggetti tradotti con cura (100.800+ stringhe).\n- Risolto il 'misgendering' in cui i PNG (es. Mint) venivano scambiati per uomini nei dialoghi originali in inglese.\n- Nessun file personale nei sorgenti.\n- Installer interattivo automatizzato per installare e pulire cache/mod vecchie senza conflitti.",
-     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.0",
+     "tag": "sc-4.10-r2",
+     "name": "Traduzione italiana Star Citizen 4.10 - R2 (4.10.0-live.12660092)",
+     "date": "2026-09-17T15:59:28Z",
+     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 2\n\nSeconda revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10 (build `4.10.193.11644`, change `12660092`, aggiornamento del 17 settembre 2026).\n\n## Novità della 4.10-R2\n\n- **Copertura 100% manuale umana:** Tutte le 87 chiavi aggiunte o modificate dalla patch CIG sono state tradotte e revisionate professionalmente.\n- **Nuovi contenuti inclusi:**\n  - Distintivi e titoli evento *Orison Relief* (Tier 1-6).\n  - Schede informative e parametri comparativi dei processi di raffinazione (resa, tempo, costo).\n  - Nuovi veicoli, armature e armi (*Sabre Raven EX*, *ATLS IKTI Akuma*, livree esclusive).\n  - Testi aggiornati per missioni di costruzione e ascensori di Orison.\n- **Installer potenziato:**\n  - **Confronto patch automatico:** rileva e confronta la build installata con quelle convalidate.\n  - **Fallback dinamico all'inglese (Zero blocchi):** se CIG rilascia una nuova build non ancora convalidata, l'installer estrae automaticamente il catalogo inglese dal `Data.p4k` locale e compone al volo un payload ibrido funzionante (testi noti in italiano, testi inediti in inglese) senza bloccare il giocatore.\n  - **Rilevamento intelligente:** auto-rilevamento della cartella LIVE tramite registro Windows, percorsi standard o variabile d'ambiente.\n  - **Preservazione differenziale:** conserva intatte le impostazioni video e comandi personalizzate in `user.cfg`.\n  - **Backup & Ripristino atomico:** salvataggio automatico prima di qualsiasi modifica e ripristino sicuro vincolato allo stato attivo.\n  - **Aggiornamento automatico integrato:** verifica della presenza di nuove release GitHub all'avvio con download sicuro HTTPS e controllo dell'impronta SHA-256 prima dell'esecuzione.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.193.11644`, change `12660092`\n- Build precedentemente verificate: `12519617`, `12572603`\n- Chiavi inglesi: `90.437`\n- Delta rispetto alla 4.10-R1: `83` aggiunte, `9` rimosse, `4` modificate e `90.350` invariate\n- Chiavi aggiunte o modificate revisionate: `87 / 87` (100%)\n- SHA-256 sorgente inglese:\n  `037071E9FC8F402FEE87E76B5CA175F4AE7BEF5CF443A3A89727DB9B139AE2F3`\n\n## Integrità\n\n- Righe italiane: `90.437`\n- Traduzioni approvate manualmente: `89.511`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- SHA-256 payload italiano:\n  `CE0FBEA65B404B7E17293E76F1F1DD28344753239EAA7FDA37B9E2A1F58B492F`\n- SHA-256 installer:\n  `282F1ADA8BE89631C81018C5C155F8CADF4406308F6CFB3D3840C6E9EA30B521`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R2.exe\n```\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release (oppure avvia la versione precedente che lo aggiornerà automaticamente).\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen mostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release prima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto indipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il progetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o Roberts Space Industries. Per utilizzarla è necessaria una copia legittima e installata di Star Citizen.\r\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r2",
      "prerelease": false,
      "assets": [
       {
-       "name": "Installatore_Traduzione_NTE.exe",
-       "size": 16274265,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
-      },
-      {
-       "name": "pakchunk999-Windows_999_P.pak",
-       "size": 16284026,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/pakchunk999-Windows_999_P.pak"
+       "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
+       "size": 17229751,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
       }
      ],
      "download": {
-      "name": "Installatore_Traduzione_NTE.exe",
-      "size": 16274265,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+      "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
+      "size": 17229751,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
+     },
+     "downloads": 3
+    },
+    {
+     "tag": "sc-4.10-r1",
+     "name": "Traduzione italiana Star Citizen 4.10 - R1",
+     "date": "2026-08-31T05:34:08Z",
+     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 1\n\nPrima revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10.\n\n## Novità della 4.10-R1\n\nLa 4.10-R1 aggiorna integralmente la base della traduzione alla nuova LIVE e\nintroduce l'aggiornamento automatico e verificato dell'installer.\n\n- Controllo delle nuove revisioni GitHub eseguito automaticamente all'avvio.\n- Download diretto del nuovo EXE, senza aprire il browser.\n- Conferma esplicita dell'utente prima del download e dell'avvio.\n- Selezione vincolata all'unico installer Windows della release stabile.\n- Verifica di provenienza HTTPS, dimensione dichiarata e impronta SHA-256\n  pubblicata da GitHub.\n- Blocco e cancellazione dei download incompleti o alterati.\n- Riutilizzo di un file già scaricato solo dopo una nuova verifica completa.\n\nLa R4 non contiene questa funzione: il passaggio alla 4.10-R1 richiede quindi\nun ultimo download manuale. Dalla 4.10-R1 in avanti le revisioni successive\npotranno essere rilevate, scaricate e avviate direttamente dall'installer,\nsempre dopo conferma dell'utente.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.191.2241`, change `12519617`\n- Chiavi inglesi: `90.363`\n- Delta rispetto alla 4.9: `287` aggiunte, `45` rimosse, `156` modificate e\n  `89.920` invariate\n- Chiavi aggiunte o modificate revisionate: `443 / 443`\n- SHA-256 sorgente inglese:\n  `7DF68893F0EC8564D9E123024CF06C6C731DD7ACC36B528C7CAA06104AD74E11`\n\nIl `global.ini` inglese è stato estratto direttamente dalla LIVE installata. Le\nchiavi nuove e modificate sono state revisionate prima della generazione del\npayload; le `89.920` chiavi invariate conservano il lavoro già approvato.\n\n## Integrità\n\n- Righe italiane: `90.363`\n- Traduzioni approvate manualmente: `89.437`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- Chiavi condivise sottoposte a controllo conservativo: `79`\n- Valori con accenti normalizzati: `22`\n- SHA-256 payload italiano:\n  `96CAB8C9053F2B85D2D2AE2F7A8E231EEE8F993392CF680E36A70ED2C9DFCB08`\n- SHA-256 installer:\n  `D53244B9284B372D89B361F538B987AD9C54BCAA65A629AC76AD013CD52DB4C5`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R1.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la compatibilità della\nbuild, verifica il payload, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il\nprogetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o\nRoberts Space Industries. Per utilizzarla è necessaria una copia legittima e\ninstallata di Star Citizen.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
+       "size": 18125315,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
+      "size": 18125315,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
      },
      "downloads": 2
+    },
+    {
+     "tag": "sc-4.9-r4",
+     "name": "Traduzione italiana Star Citizen 4.9 - R4",
+     "date": "2026-07-19T08:52:37Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 4\n\nQuarta revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R4\n\nLa R4 raccoglie il grande ciclo di verifica visiva svolto direttamente in\ngioco dopo la R3. Il payload differisce su 1.212 chiavi: 1.190 revisioni\neditoriali e 22 normalizzazioni tecniche mirate.\n\n- Testi compatti e pulsanti rivisti per evitare troncamenti, sovrapposizioni e\n  ritorni a capo innaturali.\n- Correzioni estese a creazione del personaggio, menu principale, impostazioni,\n  inventario, Gestione flotta, mobiGlas, terminali, chioschi e Arena Commander.\n- Terminologia resa più naturale e coerente, senza tradurre nomi propri,\n  località o riferimenti utili per mappe e guide.\n- Nomi canonici di navi, aziende, avamposti, città, pubblicazioni ed elementi di\n  lore mantenuti nella forma originale.\n- Revisione delle categorie degli incarichi e delle etichette operative.\n- Uniformazione di `Online`, `Offline`, `Equipaggiamento`, `Multitool`,\n  `Hangar`, `Centro Cargo`, `Area di atterraggio` e `Piattaforma di\n  atterraggio`.\n\n## Maiuscole accentate\n\nIl client trasforma dinamicamente in maiuscolo alcune etichette senza\nsegnalarlo nel file di localizzazione. La R4 estende la protezione tecnica a\n2.066 chiavi UI confermate.\n\n- Inclusi suggerimenti comandi, frontend, creazione del personaggio, Arena\n  Commander, mobiGlas, terminali medici e avvisi HUD.\n- Riesaminate 79 chiavi condivise fra campi maiuscoli e normali.\n- Nessun caso condiviso lasciato senza decisione.\n- Nessuna forma residua confermata come `MODALITà`, `LOCALITà` o `QUANTITà`.\n- Descrizioni e frasi normali non vengono modificate indiscriminatamente.\n\n## Ripristino più sicuro\n\nL'installer non cerca più semplicemente il backup più recente presente su\ndisco. Usa soltanto quello registrato come attivo per la cartella LIVE\nselezionata.\n\n- I backup vecchi non vengono applicati automaticamente.\n- Stati riferiti a un'altra installazione o a una revisione incoerente vengono\n  rifiutati.\n- Dal menu è richiesta una conferma esplicita prima del ripristino.\n- Le impostazioni aggiunte in seguito dall'utente continuano a essere\n  preservate.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R4.exe\n```\n\nL'installer rileva la cartella del gioco, verifica la sorgente inglese,\ncontrolla il payload italiano, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Build verificata: `4.9.186.58667`, change `12248363`\n- Chiavi inglesi: `90.121`\n- Stringhe inglesi aggiunte, rimosse o modificate rispetto alla base\n  revisionata: `0`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `9C8FC68AF677D84FB490852D359BCBF417B39699E61F14EEAEB0699FFD7E5E68`\n- SHA-256 installer:\n  `509E7438435A482050E9D09CE8272014E8FA16F1507AED6AD84A0B506529E009`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r4",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
+       "size": 17066622,
+       "downloads": 11,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
+      "size": 17066622,
+      "downloads": 11,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
+     },
+     "downloads": 11
+    },
+    {
+     "tag": "sc-4.9-r3",
+     "name": "Traduzione italiana Star Citizen 4.9 - R3",
+     "date": "2026-07-18T12:21:28Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 3\n\nTerza revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R3\n\nLa traduzione non cambia rispetto alla R2: il payload italiano resta completo,\nrevisionato e identico. Questa revisione rende invece l'installer più autonomo\ne sicuro dopo gli aggiornamenti del gioco.\n\n- Non blocca più automaticamente una build soltanto perché il numero di change\n  è nuovo.\n- Estrae esclusivamente il `global.ini` inglese dal `Data.p4k` installato.\n- Confronta dimensione e SHA-256 con la sorgente usata per la traduzione.\n- Se il contenuto è identico, considera compatibile anche una nuova build o una\n  nuova versione del gioco.\n- Se cambia anche una sola parte del file inglese, interrompe l'installazione e\n  richiede una revisione aggiornata.\n- Usa una nuova icona trasparente con badge della bandiera italiana più grande\n  e leggibile.\n\nIl controllo non carica file del gioco in rete: avviene interamente sul computer\ndell'utente e il file temporaneo viene eliminato al termine.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R3.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la sorgente inglese, verifica\nil payload italiano, crea un backup, configura testo italiano e audio inglese e\noffre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Versione precedente: `4.9.186.42610`, change `12232306`\n- Nuova versione verificata: `4.9.186.58667`, change `12248363`\n- Stringhe inglesi aggiunte, rimosse o modificate: `0`\n- Chiavi: `90.121`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer:\n  `0EBEA17BAF25400B1715DE3F13ED54BC7533D0927A8C1BBB196173CE33B40390`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r3",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
+       "size": 17068746,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
+      "size": 17068746,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
+     },
+     "downloads": 3
+    },
+    {
+     "tag": "sc-4.9-r2",
+     "name": "Traduzione italiana Star Citizen 4.9 - R2",
+     "date": "2026-07-16T21:21:19Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 2\n\nSeconda revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Novità della R2\n\n- 546 stringhe aggiornate rispetto alla R1 dopo la verifica diretta nel gioco.\n- 280 di queste appartengono all'audit UI finale.\n- Rifinita la creazione del personaggio e corretti menu principale e impostazioni.\n- Eliminati testi troncati e sovrapposti nell'inventario.\n- Revisionati stati, pulsanti e preventivo del terminale Gestione flotta.\n- Compattate le statistiche dei tooltip senza perdere il significato tecnico.\n- Corretti i pulsanti e la ricerca del mobiGlas.\n- Normalizzate le maiuscole accentate in 187 voci di comandi e categorie.\n- Consolidato il glossario a 4.733 decisioni terminologiche.\n\nLa copertura resta completa: 90.121 / 90.121 chiavi, con 89.193 stringhe\ntraducibili approvate manualmente e nessuna stringa in sospeso.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R2.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer: `2BF58313B367D097FD038CD47B83938B804819952A47E57C558DD623FF512800`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r2",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
+       "size": 10701204,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
+      "size": 10701204,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
+     },
+     "downloads": 0
+    },
+    {
+     "tag": "sc-4.9-r1",
+     "name": "Traduzione italiana Star Citizen 4.9 — Revisione 1",
+     "date": "2026-07-16T15:49:03Z",
+     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 1\n\nPrima release pubblica completa della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Contenuto\n\n- Copertura completa di 90.121 / 90.121 chiavi.\n- 89.193 stringhe traducibili approvate manualmente.\n- Glossario vincolante con 4.690 decisioni terminologiche.\n- Dialoghi revisionati preservando la voce dei singoli personaggi.\n- Nomi canonici e riferimenti di orientamento mantenuti per mappe e guide.\n- Terminologia coerente per interfaccia, volo, missioni, oggetti, veicoli e lore.\n- Didascalie attoriali visibili tradotte e veri parametri runtime conservati.\n- Apostrofi e virgolette limitati ai caratteri ASCII supportati dal gioco.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R1.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `CEB1189451F36F07F9A9A2C9D39E5FFF8FB9100D81B760094F72E357040062C8`\n- SHA-256 installer: `9A6DAC324BA786BA78157AEAD3C4F42EEDDEFA49F1AE9D2BBE6E107CD8F0F86F`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
+     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
+       "size": 10701355,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
+      }
+     ],
+     "download": {
+      "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
+      "size": 10701355,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
+     },
+     "downloads": 3
     }
    ]
   },
@@ -348,7 +463,7 @@
     "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-09-21T19:18:17Z"
+    "pushed_at": "2026-09-28T15:42:11Z"
    },
    "marker": {
     "nome_gioco": "Fatekeeper",
@@ -389,7 +504,7 @@
     "html_url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-09-21T19:18:13Z"
+    "pushed_at": "2026-09-28T15:42:13Z"
    },
    "marker": {
     "nome_gioco": "ARK: Survival Ascended",
@@ -609,163 +724,48 @@
   },
   {
    "repo": {
-    "name": "SC-Italian-Translation",
-    "description": "Traduzione italiana non ufficiale e installer per Star Citizen LIVE 4.9",
-    "html_url": "https://github.com/Sici29/SC-Italian-Translation",
+    "name": "NTE-Italian-Translation",
+    "description": "Traduzione italiana completa per Neverness to Everness con installer automatico",
+    "html_url": "https://github.com/Sici29/NTE-Italian-Translation",
     "stargazers_count": 0,
-    "topics": [
-     "fan-translation",
-     "italian-translation",
-     "localization",
-     "star-citizen",
-     "windows-installer"
-    ],
-    "pushed_at": "2026-09-21T19:18:05Z"
+    "topics": [],
+    "pushed_at": "2026-09-28T15:42:09Z"
    },
    "marker": {
-    "nome_gioco": "Star Citizen",
-    "steam_appid": null,
-    "cover_url": "https://robertsspaceindustries.com/media/x2o0x2o0x2o0x2o0x2o0x2o0/source/Star-Citizen.jpg",
-    "motore_installazione": "global_ini"
+    "nome_gioco": "Neverness to Everness",
+    "steam_appid": 4508340,
+    "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
+    "motore_installazione": "unreal_pak"
    },
    "releases": [
     {
-     "tag": "sc-4.10-r2",
-     "name": "Traduzione italiana Star Citizen 4.10 - R2 (4.10.0-live.12660092)",
-     "date": "2026-09-17T15:59:28Z",
-     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 2\n\nSeconda revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10 (build `4.10.193.11644`, change `12660092`, aggiornamento del 17 settembre 2026).\n\n## Novità della 4.10-R2\n\n- **Copertura 100% manuale umana:** Tutte le 87 chiavi aggiunte o modificate dalla patch CIG sono state tradotte e revisionate professionalmente.\n- **Nuovi contenuti inclusi:**\n  - Distintivi e titoli evento *Orison Relief* (Tier 1-6).\n  - Schede informative e parametri comparativi dei processi di raffinazione (resa, tempo, costo).\n  - Nuovi veicoli, armature e armi (*Sabre Raven EX*, *ATLS IKTI Akuma*, livree esclusive).\n  - Testi aggiornati per missioni di costruzione e ascensori di Orison.\n- **Installer potenziato:**\n  - **Confronto patch automatico:** rileva e confronta la build installata con quelle convalidate.\n  - **Fallback dinamico all'inglese (Zero blocchi):** se CIG rilascia una nuova build non ancora convalidata, l'installer estrae automaticamente il catalogo inglese dal `Data.p4k` locale e compone al volo un payload ibrido funzionante (testi noti in italiano, testi inediti in inglese) senza bloccare il giocatore.\n  - **Rilevamento intelligente:** auto-rilevamento della cartella LIVE tramite registro Windows, percorsi standard o variabile d'ambiente.\n  - **Preservazione differenziale:** conserva intatte le impostazioni video e comandi personalizzate in `user.cfg`.\n  - **Backup & Ripristino atomico:** salvataggio automatico prima di qualsiasi modifica e ripristino sicuro vincolato allo stato attivo.\n  - **Aggiornamento automatico integrato:** verifica della presenza di nuove release GitHub all'avvio con download sicuro HTTPS e controllo dell'impronta SHA-256 prima dell'esecuzione.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.193.11644`, change `12660092`\n- Build precedentemente verificate: `12519617`, `12572603`\n- Chiavi inglesi: `90.437`\n- Delta rispetto alla 4.10-R1: `83` aggiunte, `9` rimosse, `4` modificate e `90.350` invariate\n- Chiavi aggiunte o modificate revisionate: `87 / 87` (100%)\n- SHA-256 sorgente inglese:\n  `037071E9FC8F402FEE87E76B5CA175F4AE7BEF5CF443A3A89727DB9B139AE2F3`\n\n## Integrità\n\n- Righe italiane: `90.437`\n- Traduzioni approvate manualmente: `89.511`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- SHA-256 payload italiano:\n  `CE0FBEA65B404B7E17293E76F1F1DD28344753239EAA7FDA37B9E2A1F58B492F`\n- SHA-256 installer:\n  `282F1ADA8BE89631C81018C5C155F8CADF4406308F6CFB3D3840C6E9EA30B521`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R2.exe\n```\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release (oppure avvia la versione precedente che lo aggiornerà automaticamente).\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen mostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release prima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto indipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il progetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o Roberts Space Industries. Per utilizzarla è necessaria una copia legittima e installata di Star Citizen.\r\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r2",
+     "tag": "v1.0",
+     "name": "Traduzione Italiana NTE (Release Definitiva 1.0)",
+     "date": "2026-09-21T17:41:09Z",
+     "body": "Prima release completa della traduzione italiana per Neverness to Everness.\n\nInclude:\n- Interfaccia, menu e statistiche completamente in italiano.\n- Dialoghi, missioni e descrizioni oggetti tradotti con cura (100.800+ stringhe).\n- Risolto il 'misgendering' in cui i PNG (es. Mint) venivano scambiati per uomini nei dialoghi originali in inglese.\n- Nessun file personale nei sorgenti.\n- Installer interattivo automatizzato per installare e pulire cache/mod vecchie senza conflitti.",
+     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.0",
      "prerelease": false,
      "assets": [
       {
-       "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
-       "size": 17229751,
-       "downloads": 3,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
-      }
-     ],
-     "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
-      "size": 17229751,
-      "downloads": 3,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
-     },
-     "downloads": 3
-    },
-    {
-     "tag": "sc-4.10-r1",
-     "name": "Traduzione italiana Star Citizen 4.10 - R1",
-     "date": "2026-08-31T05:34:08Z",
-     "body": "# Traduzione italiana Star Citizen 4.10 — Revisione 1\n\nPrima revisione della localizzazione italiana non ufficiale per Star Citizen\nLIVE 4.10.\n\n## Novità della 4.10-R1\n\nLa 4.10-R1 aggiorna integralmente la base della traduzione alla nuova LIVE e\nintroduce l'aggiornamento automatico e verificato dell'installer.\n\n- Controllo delle nuove revisioni GitHub eseguito automaticamente all'avvio.\n- Download diretto del nuovo EXE, senza aprire il browser.\n- Conferma esplicita dell'utente prima del download e dell'avvio.\n- Selezione vincolata all'unico installer Windows della release stabile.\n- Verifica di provenienza HTTPS, dimensione dichiarata e impronta SHA-256\n  pubblicata da GitHub.\n- Blocco e cancellazione dei download incompleti o alterati.\n- Riutilizzo di un file già scaricato solo dopo una nuova verifica completa.\n\nLa R4 non contiene questa funzione: il passaggio alla 4.10-R1 richiede quindi\nun ultimo download manuale. Dalla 4.10-R1 in avanti le revisioni successive\npotranno essere rilevate, scaricate e avviate direttamente dall'installer,\nsempre dopo conferma dell'utente.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.10.0`\n- Build verificata: `4.10.191.2241`, change `12519617`\n- Chiavi inglesi: `90.363`\n- Delta rispetto alla 4.9: `287` aggiunte, `45` rimosse, `156` modificate e\n  `89.920` invariate\n- Chiavi aggiunte o modificate revisionate: `443 / 443`\n- SHA-256 sorgente inglese:\n  `7DF68893F0EC8564D9E123024CF06C6C731DD7ACC36B528C7CAA06104AD74E11`\n\nIl `global.ini` inglese è stato estratto direttamente dalla LIVE installata. Le\nchiavi nuove e modificate sono state revisionate prima della generazione del\npayload; le `89.920` chiavi invariate conservano il lavoro già approvato.\n\n## Integrità\n\n- Righe italiane: `90.363`\n- Traduzioni approvate manualmente: `89.437`\n- Integrazioni manuali prive di sorgente inglese: `636`\n- Stringhe non traducibili: `114`\n- Stringhe intenzionalmente vuote: `176`\n- Glossario vincolante: `4.743` voci\n- Chiavi UI protette per le maiuscole accentate: `2.066`\n- Chiavi condivise sottoposte a controllo conservativo: `79`\n- Valori con accenti normalizzati: `22`\n- SHA-256 payload italiano:\n  `96CAB8C9053F2B85D2D2AE2F7A8E231EEE8F993392CF680E36A70ED2C9DFCB08`\n- SHA-256 installer:\n  `D53244B9284B372D89B361F538B987AD9C54BCAA65A629AC76AD013CD52DB4C5`\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.10_R1.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la compatibilità della\nbuild, verifica il payload, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n\n## Nota legale\n\nQuesta è una traduzione fan non ufficiale, gratuita e non commerciale. Il\nprogetto non è approvato, sponsorizzato o affiliato a Cloud Imperium Games o\nRoberts Space Industries. Per utilizzarla è necessaria una copia legittima e\ninstallata di Star Citizen.\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.10-r1",
-     "prerelease": false,
-     "assets": [
+       "name": "Installatore_Traduzione_NTE.exe",
+       "size": 16274265,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+      },
       {
-       "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
-       "size": 18125315,
-       "downloads": 2,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
+       "name": "pakchunk999-Windows_999_P.pak",
+       "size": 16284026,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/pakchunk999-Windows_999_P.pak"
       }
      ],
      "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.10_R1.exe",
-      "size": 18125315,
-      "downloads": 2,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r1/StarCitizen_Traduzione_Italiana_4.10_R1.exe"
+      "name": "Installatore_Traduzione_NTE.exe",
+      "size": 16274265,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
      },
      "downloads": 2
-    },
-    {
-     "tag": "sc-4.9-r4",
-     "name": "Traduzione italiana Star Citizen 4.9 - R4",
-     "date": "2026-07-19T08:52:37Z",
-     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 4\n\nQuarta revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R4\n\nLa R4 raccoglie il grande ciclo di verifica visiva svolto direttamente in\ngioco dopo la R3. Il payload differisce su 1.212 chiavi: 1.190 revisioni\neditoriali e 22 normalizzazioni tecniche mirate.\n\n- Testi compatti e pulsanti rivisti per evitare troncamenti, sovrapposizioni e\n  ritorni a capo innaturali.\n- Correzioni estese a creazione del personaggio, menu principale, impostazioni,\n  inventario, Gestione flotta, mobiGlas, terminali, chioschi e Arena Commander.\n- Terminologia resa più naturale e coerente, senza tradurre nomi propri,\n  località o riferimenti utili per mappe e guide.\n- Nomi canonici di navi, aziende, avamposti, città, pubblicazioni ed elementi di\n  lore mantenuti nella forma originale.\n- Revisione delle categorie degli incarichi e delle etichette operative.\n- Uniformazione di `Online`, `Offline`, `Equipaggiamento`, `Multitool`,\n  `Hangar`, `Centro Cargo`, `Area di atterraggio` e `Piattaforma di\n  atterraggio`.\n\n## Maiuscole accentate\n\nIl client trasforma dinamicamente in maiuscolo alcune etichette senza\nsegnalarlo nel file di localizzazione. La R4 estende la protezione tecnica a\n2.066 chiavi UI confermate.\n\n- Inclusi suggerimenti comandi, frontend, creazione del personaggio, Arena\n  Commander, mobiGlas, terminali medici e avvisi HUD.\n- Riesaminate 79 chiavi condivise fra campi maiuscoli e normali.\n- Nessun caso condiviso lasciato senza decisione.\n- Nessuna forma residua confermata come `MODALITà`, `LOCALITà` o `QUANTITà`.\n- Descrizioni e frasi normali non vengono modificate indiscriminatamente.\n\n## Ripristino più sicuro\n\nL'installer non cerca più semplicemente il backup più recente presente su\ndisco. Usa soltanto quello registrato come attivo per la cartella LIVE\nselezionata.\n\n- I backup vecchi non vengono applicati automaticamente.\n- Stati riferiti a un'altra installazione o a una revisione incoerente vengono\n  rifiutati.\n- Dal menu è richiesta una conferma esplicita prima del ripristino.\n- Le impostazioni aggiunte in seguito dall'utente continuano a essere\n  preservate.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R4.exe\n```\n\nL'installer rileva la cartella del gioco, verifica la sorgente inglese,\ncontrolla il payload italiano, crea un backup, configura testo italiano e audio\ninglese e verifica nuovamente l'installazione al termine.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Build verificata: `4.9.186.58667`, change `12248363`\n- Chiavi inglesi: `90.121`\n- Stringhe inglesi aggiunte, rimosse o modificate rispetto alla base\n  revisionata: `0`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `9C8FC68AF677D84FB490852D359BCBF417B39699E61F14EEAEB0699FFD7E5E68`\n- SHA-256 installer:\n  `509E7438435A482050E9D09CE8272014E8FA16F1507AED6AD84A0B506529E009`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r4",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
-       "size": 17066622,
-       "downloads": 11,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
-      }
-     ],
-     "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.9_R4.exe",
-      "size": 17066622,
-      "downloads": 11,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r4/StarCitizen_Traduzione_Italiana_4.9_R4.exe"
-     },
-     "downloads": 11
-    },
-    {
-     "tag": "sc-4.9-r3",
-     "name": "Traduzione italiana Star Citizen 4.9 - R3",
-     "date": "2026-07-18T12:21:28Z",
-     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 3\n\nTerza revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen.\n\n## Novità della R3\n\nLa traduzione non cambia rispetto alla R2: il payload italiano resta completo,\nrevisionato e identico. Questa revisione rende invece l'installer più autonomo\ne sicuro dopo gli aggiornamenti del gioco.\n\n- Non blocca più automaticamente una build soltanto perché il numero di change\n  è nuovo.\n- Estrae esclusivamente il `global.ini` inglese dal `Data.p4k` installato.\n- Confronta dimensione e SHA-256 con la sorgente usata per la traduzione.\n- Se il contenuto è identico, considera compatibile anche una nuova build o una\n  nuova versione del gioco.\n- Se cambia anche una sola parte del file inglese, interrompe l'installazione e\n  richiede una revisione aggiornata.\n- Usa una nuova icona trasparente con badge della bandiera italiana più grande\n  e leggibile.\n\nIl controllo non carica file del gioco in rete: avviene interamente sul computer\ndell'utente e il file temporaneo viene eliminato al termine.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R3.exe\n```\n\nL'installer rileva la cartella del gioco, controlla la sorgente inglese, verifica\nil payload italiano, crea un backup, configura testo italiano e audio inglese e\noffre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo di riferimento: `sc-alpha-4.9.0`\n- Versione precedente: `4.9.186.42610`, change `12232306`\n- Nuova versione verificata: `4.9.186.58667`, change `12248363`\n- Stringhe inglesi aggiunte, rimosse o modificate: `0`\n- Chiavi: `90.121`\n- SHA-256 sorgente inglese:\n  `E5574DF1178A980C4B8CFA1FB812D813B527CBC65BC613631EB0ABBFECBDD1A5`\n- SHA-256 payload italiano:\n  `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer:\n  `0EBEA17BAF25400B1715DE3F13ED54BC7533D0927A8C1BBB196173CE33B40390`\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, programmi separati, archivi da estrarre o configurazioni\nmanuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello pubblicato nella release\nprima di scegliere `Ulteriori informazioni` e `Esegui comunque`.\n\n## Componente incluso\n\nPer leggere il `Data.p4k`, l'installer incorpora StarBreaker 0.3.2, progetto\nindipendente distribuito con licenza MIT:\nhttps://github.com/diogotr7/StarBreaker\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r3",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
-       "size": 17068746,
-       "downloads": 3,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
-      }
-     ],
-     "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.9_R3.exe",
-      "size": 17068746,
-      "downloads": 3,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r3/StarCitizen_Traduzione_Italiana_4.9_R3.exe"
-     },
-     "downloads": 3
-    },
-    {
-     "tag": "sc-4.9-r2",
-     "name": "Traduzione italiana Star Citizen 4.9 - R2",
-     "date": "2026-07-16T21:21:19Z",
-     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 2\n\nSeconda revisione pubblica della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Novità della R2\n\n- 546 stringhe aggiornate rispetto alla R1 dopo la verifica diretta nel gioco.\n- 280 di queste appartengono all'audit UI finale.\n- Rifinita la creazione del personaggio e corretti menu principale e impostazioni.\n- Eliminati testi troncati e sovrapposti nell'inventario.\n- Revisionati stati, pulsanti e preventivo del terminale Gestione flotta.\n- Compattate le statistiche dei tooltip senza perdere il significato tecnico.\n- Corretti i pulsanti e la ricerca del mobiGlas.\n- Normalizzate le maiuscole accentate in 187 voci di comandi e categorie.\n- Consolidato il glossario a 4.733 decisioni terminologiche.\n\nLa copertura resta completa: 90.121 / 90.121 chiavi, con 89.193 stringhe\ntraducibili approvate manualmente e nessuna stringa in sospeso.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R2.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `6F482EE99E1692128EEC8F13CFD0F335237789D00E7D75C2147B9CBEC2D19B42`\n- SHA-256 installer: `2BF58313B367D097FD038CD47B83938B804819952A47E57C558DD623FF512800`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r2",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
-       "size": 10701204,
-       "downloads": 0,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
-      }
-     ],
-     "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.9_R2.exe",
-      "size": 10701204,
-      "downloads": 0,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r2/StarCitizen_Traduzione_Italiana_4.9_R2.exe"
-     },
-     "downloads": 0
-    },
-    {
-     "tag": "sc-4.9-r1",
-     "name": "Traduzione italiana Star Citizen 4.9 — Revisione 1",
-     "date": "2026-07-16T15:49:03Z",
-     "body": "# Traduzione italiana Star Citizen 4.9 — Revisione 1\n\nPrima release pubblica completa della localizzazione italiana non ufficiale per\nStar Citizen LIVE 4.9.\n\n## Contenuto\n\n- Copertura completa di 90.121 / 90.121 chiavi.\n- 89.193 stringhe traducibili approvate manualmente.\n- Glossario vincolante con 4.690 decisioni terminologiche.\n- Dialoghi revisionati preservando la voce dei singoli personaggi.\n- Nomi canonici e riferimenti di orientamento mantenuti per mappe e guide.\n- Terminologia coerente per interfaccia, volo, missioni, oggetti, veicoli e lore.\n- Didascalie attoriali visibili tradotte e veri parametri runtime conservati.\n- Apostrofi e virgolette limitati ai caratteri ASCII supportati dal gioco.\n\n## Installer unico\n\nLa release contiene un solo file:\n\n```text\nStarCitizen_Traduzione_Italiana_4.9_R1.exe\n```\n\nL'installer rileva la cartella LIVE, verifica la build, controlla il payload,\ncrea un backup, configura testo italiano e audio inglese e offre il ripristino.\n\n## Compatibilità verificata\n\n- Ramo: `sc-alpha-4.9.0`\n- Versione interna: `4.9.186.42610`\n- Change: `12232306`\n- Chiavi: `90.121`\n- SHA-256 payload: `CEB1189451F36F07F9A9A2C9D39E5FFF8FB9100D81B760094F72E357040062C8`\n- SHA-256 installer: `9A6DAC324BA786BA78157AEAD3C4F42EEDDEFA49F1AE9D2BBE6E107CD8F0F86F`\n\nL'installer blocca per impostazione predefinita le build future non ancora\nverificate.\n\n## Installazione\n\n1. Chiudi Star Citizen e RSI Launcher.\n2. Scarica l'EXE della release.\n3. Aprilo e premi Invio.\n4. Avvia il gioco.\n\nNon servono Python, archivi da estrarre o configurazioni manuali.\n\nL'eseguibile non dispone di una firma digitale commerciale. Se SmartScreen\nmostra un avviso, confronta l'hash SHA-256 con quello indicato qui sopra prima\ndi scegliere `Ulteriori informazioni` e `Esegui comunque`.\n",
-     "url": "https://github.com/Sici29/SC-Italian-Translation/releases/tag/sc-4.9-r1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
-       "size": 10701355,
-       "downloads": 3,
-       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
-      }
-     ],
-     "download": {
-      "name": "StarCitizen_Traduzione_Italiana_4.9_R1.exe",
-      "size": 10701355,
-      "downloads": 3,
-      "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.9-r1/StarCitizen_Traduzione_Italiana_4.9_R1.exe"
-     },
-     "downloads": 3
     }
    ]
   }
