@@ -1030,6 +1030,51 @@ def immagini_del_sito(giochi, uscita: Path) -> None:
         d.text((88, 440), "Traduzioni italiane gratuite di videogiochi", font=medio, fill=(255, 176, 32))
     tela.save(uscita / "img" / "condivisione.jpg", "JPEG", quality=86, optimize=True, progressive=True)
 
+    striscia(copertine, draw_icon).save(
+        uscita / "img" / BANNER, "JPEG", quality=86, optimize=True, progressive=True
+    )
+
+
+# La striscia in cima ai README delle traduzioni (tools/readme_traduzioni.py):
+# la stessa idea dell'anteprima, ma bassa, per non spingere troppo in giu' il
+# resto della pagina. Sta sul sito, cosi' segue da sola copertine nuove.
+BANNER = "banner.jpg"
+
+
+def striscia(copertine: list, draw_icon):
+    from PIL import Image, ImageDraw, ImageFilter
+
+    W, H = 1280, 320
+    tela = Image.new("RGB", (W, H), (11, 16, 21))
+    if copertine:
+        cw, ch, spazio = 276, 129, 12
+        piccole = [c.resize((cw, ch), Image.LANCZOS) for c in copertine]
+        piano = Image.new("RGB", (W + 2 * cw, H + 4 * ch), (11, 16, 21))
+        righe = piano.height // (ch + spazio) + 1
+        colonne = piano.width // (cw + spazio) + 2
+        for riga in range(righe):
+            for col in range(colonne):
+                c = piccole[(riga * colonne + col + riga) % len(piccole)]
+                piano.paste(c, (col * (cw + spazio) - (riga % 2) * (cw // 2), riga * (ch + spazio)))
+        piano = piano.rotate(-12, resample=Image.BICUBIC, expand=False, fillcolor=(11, 16, 21))
+        x0, y0 = (piano.width - W) // 2, (piano.height - H) // 2
+        tela.paste(piano.crop((x0, y0, x0 + W, y0 + H)), (0, 0))
+        velo = Image.new("L", (W, H))
+        dv = ImageDraw.Draw(velo)
+        for x in range(W):
+            dv.line([(x, 0), (x, H)], fill=int(250 - 170 * min(1, x / (W * 0.9))))
+        tela = Image.composite(Image.new("RGB", (W, H), (9, 13, 18)), tela, velo)
+        tela = tela.filter(ImageFilter.SMOOTH)
+
+    marchio = draw_icon(116)
+    tela.paste(marchio, (56, (H - 116) // 2), marchio)
+    d = ImageDraw.Draw(tela)
+    grande, medio = _font(62), _font(28)
+    if grande and medio:
+        d.text((200, 100), NOME, font=grande, fill=(231, 238, 246))
+        d.text((203, 184), "Tutte le traduzioni italiane di Sici29, in un'app sola", font=medio, fill=(255, 176, 32))
+    return tela
+
 
 # --- principale --------------------------------------------------------------
 

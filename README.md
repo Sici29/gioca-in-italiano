@@ -682,6 +682,21 @@ guide su Steam), ma ci mette settimane. Per accorciare i tempi:
    sito), poi si fa il commit e si aspetta il giro della Action;
 3. in **Sitemap** aggiungi `sitemap.xml`.
 
+### Il riquadro nei README delle traduzioni
+
+In cima al README di ogni traduzione c'è un riquadro che porta qui. Contiene
+una striscia con le copertine (`img/banner.jpg`, generata dal sito, quindi si
+aggiorna da sola), il link all'app, le altre traduzioni con le loro pagine e
+l'invito a proporre il prossimo gioco. Lo mette `tools/readme_traduzioni.py`,
+fra due commenti `gioca-in-italiano:inizio` e `:fine`. Quando arriva una
+traduzione nuova si rilancia, e tutti i README si aggiornano con l'elenco
+giusto:
+
+```powershell
+python tools/readme_traduzioni.py            # dice solo cosa cambierebbe
+python tools/readme_traduzioni.py --scrivi   # fa i commit (serve gh autenticato)
+```
+
 ### Guardarlo prima di pubblicarlo
 
 ```powershell
@@ -696,7 +711,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-329 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+338 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -800,6 +815,7 @@ hub/
 tools/
   build_catalog.py     genera catalog.json (gira in GitHub Actions)
   genera_sito.py       genera il sito (gira nella stessa Action)
+  readme_traduzioni.py il riquadro di Gioca in Italiano nei README delle traduzioni
   make_icon.py         disegna build/icon.ico
   make_version_info.py proprieta' del file per Windows
   preview.py           apre l'interfaccia nel browser con dati veri
@@ -807,7 +823,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           329 test, senza rete
+tests/           338 test, senza rete
 ```
 
 ---

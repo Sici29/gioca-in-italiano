@@ -218,6 +218,13 @@ class Generazione(unittest.TestCase):
         self.assertNotIn("<b>", indice)
         self.assertIn("&lt;b&gt;", indice)
 
+    def test_la_striscia_per_i_readme(self):
+        from PIL import Image
+
+        sito.genera(self.dati(), self.uscita)
+        with Image.open(self.uscita / "img" / sito.BANNER) as immagine:
+            self.assertEqual(immagine.size, (1280, 320))
+
     def test_file_di_verifica_nella_radice(self):
         # Il file di Google Search Console va servito cosi' com'e', ma non deve
         # poter sostituire una pagina vera.
