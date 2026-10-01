@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-09-30T20:05:40+00:00",
+ "generated_at": "2026-10-01T10:15:38+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,7 +10,7 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-09-30T19:13:59Z"
+    "pushed_at": "2026-10-01T05:18:51Z"
    },
    "marker": {
     "steam_appid": 4126040
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45222517,
-       "downloads": 43,
+       "downloads": 69,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45222517,
-      "downloads": 43,
+      "downloads": 69,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 43
+     "downloads": 69
     },
     {
      "tag": "v1.0.3616231.0",
@@ -211,17 +211,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 272,
+       "downloads": 273,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 272,
+      "downloads": 273,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 272
+     "downloads": 273
     },
     {
      "tag": "v0.4.1",
