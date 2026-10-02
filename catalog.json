@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-01T18:27:47+00:00",
+ "generated_at": "2026-10-02T17:54:13+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -30,7 +30,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17247092,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -43,10 +43,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17247092,
-      "downloads": 0,
+      "downloads": 1,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 0
+     "downloads": 1
     },
     {
      "tag": "v1.1",
@@ -132,17 +132,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45238599,
-       "downloads": 11,
+       "downloads": 56,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45238599,
-      "downloads": 11,
+      "downloads": 56,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 11
+     "downloads": 56
     },
     {
      "tag": "v1.0.3629693.0",
@@ -155,17 +155,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45222517,
-       "downloads": 100,
+       "downloads": 102,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45222517,
-      "downloads": 100,
+      "downloads": 102,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 100
+     "downloads": 102
     },
     {
      "tag": "v1.0.3616231.0",
@@ -339,17 +339,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 276,
+       "downloads": 280,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 276,
+      "downloads": 280,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 276
+     "downloads": 280
     },
     {
      "tag": "v0.4.1",
@@ -581,7 +581,7 @@
      "tag": "0.1.3-R1",
      "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
      "date": "2026-09-20T09:24:05Z",
-     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n- **Configurazione Pulita a 2 Lingue & Zero Crash**:\r\n  - Registrazione delle culture in \\Game.locmeta\\ (61 byte, culture \\en\\ e \\it\\).\r\n  - Menu impostazioni pulito con esattamente 2 selezioni disponibili: **English** e **it** (senza duplicati o voci fittizie).\r\n  - Selezione di **English** perfettamente funzionante con fallback sui testi originali in inglese di Steam.\r\n  - Pulizia automatica della cache impostazioni per prevenire qualsiasi blocco o crash dopo i trailer d'avvio.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam e gioca subito in italiano!",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam\r\n4. Imposta IT nelle impostazioni e gioca subito in italiano!",
      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
      "prerelease": false,
      "assets": [
