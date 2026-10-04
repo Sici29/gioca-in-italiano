@@ -1,113 +1,8 @@
 {
  "version": 1,
- "generated_at": "2026-10-03T21:24:09+00:00",
+ "generated_at": "2026-10-04T12:29:36+00:00",
  "user": "Sici29",
  "entries": [
-  {
-   "repo": {
-    "name": "NTE-Italian-Translation",
-    "description": "Traduzione italiana completa per Neverness to Everness con installer automatico",
-    "html_url": "https://github.com/Sici29/NTE-Italian-Translation",
-    "stargazers_count": 0,
-    "topics": [],
-    "pushed_at": "2026-10-01T15:52:15Z"
-   },
-   "marker": {
-    "nome_gioco": "Neverness to Everness",
-    "steam_appid": 4508340,
-    "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
-    "motore_installazione": "unreal_pak"
-   },
-   "releases": [
-    {
-     "tag": "v1.2",
-     "name": "Traduzione Italiana NTE v1.2 - Patch 01/10/2026",
-     "date": "2026-10-01T15:52:15Z",
-     "body": "Release v1.2 per l'aggiornamento di Neverness to Everness (Patch 01/10/2026 - Build 25643250).\n\n### Novità di questo aggiornamento:\n- **Compatibilità Totale Patch 01/10/2026**: Integrato il nuovo pacchetto locres estratto direttamente dalla build 25643250 (110.260 stringhe totali).\n- **Bilanciamento Abilità**: Aggiornate e perfezionate le descrizioni delle abilità di **Akane** (adeguamento danni da Lakshana e rimozione trigger reazione dal QTE) e di **BlackBird** (trasformazione semplificata in Uccello Solitario con schivata/mira e raccolta Pietre dell'Oracolo).\n- **Rifiniture UI & Testi di Sistema**:\n  - Aggiornate le regole e percentuali dei tabelloni lotteria (*Limited S-Class Character*, *Delitto e Castigo*, *Completo Quotidiano*).\n  - Corrette e uniformate tutte le etichette di sblocco Livello Legame per tutti i personaggi (Mint, Shinku, Linko, Akane, BlackBird, ecc.).\n  - Ottimizzate le diciture dell'Endless Trial (Fasi e punteggi record) e ripuliti i testi residui.\n- **Riferimento Incrociato Multilingua**: Verificata la concordanza di genere e la struttura dei tag Unreal Engine (</> generici).\n- **Installatore Autonomo v1.2.0**: Eseguibile aggiornato con riavvio pulito, verifica integrità e installazione automatica.",
-     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.2",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Installatore_Traduzione_NTE.exe",
-       "size": 17247092,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
-      },
-      {
-       "name": "pakchunk999-Windows_999_P.pak",
-       "size": 17841295,
-       "downloads": 0,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/pakchunk999-Windows_999_P.pak"
-      }
-     ],
-     "download": {
-      "name": "Installatore_Traduzione_NTE.exe",
-      "size": 17247092,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
-     },
-     "downloads": 1
-    },
-    {
-     "tag": "v1.1",
-     "name": "Traduzione Italiana NTE v1.1 - Patch 30/09/2026",
-     "date": "2026-09-30T09:04:11Z",
-     "body": "Release v1.1 per il nuovo aggiornamento di Neverness to Everness (Patch 30 Settembre 2026).\n\nNovità di questo aggiornamento:\n- Piena compatibilità con l'aggiornamento di gioco di oggi (90.693 stringhe interne compilate, 110.260 totali).\n- Tradotte 9.865 nuove stringhe, inclusa la nuova missione principale di BlackBird, le missioni secondarie, le abilità di Akane e BlackBird e tutti i nuovi testi di interfaccia.\n- Riferimento incrociato con Spagnolo e Francese per garantire la corretta concordanza di genere e i bivi dinamici (<male=>/<female=>) per il protagonista (Valutatore / Valutatrice).\n- File pak Unreal Engine aggiornato (pakchunk999-Windows_999_P.pak) e nuovo eseguibile dell'installatore autonomo.",
-     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Installatore_Traduzione_NTE.exe",
-       "size": 17248676,
-       "downloads": 2,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/Installatore_Traduzione_NTE.exe"
-      },
-      {
-       "name": "pakchunk999-Windows_999_P.pak",
-       "size": 17841626,
-       "downloads": 0,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/pakchunk999-Windows_999_P.pak"
-      }
-     ],
-     "download": {
-      "name": "Installatore_Traduzione_NTE.exe",
-      "size": 17248676,
-      "downloads": 2,
-      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/Installatore_Traduzione_NTE.exe"
-     },
-     "downloads": 2
-    },
-    {
-     "tag": "v1.0",
-     "name": "Traduzione Italiana NTE (Release Definitiva 1.0)",
-     "date": "2026-09-21T17:41:09Z",
-     "body": "Prima release completa della traduzione italiana per Neverness to Everness.\n\nInclude:\n- Interfaccia, menu e statistiche completamente in italiano.\n- Dialoghi, missioni e descrizioni oggetti tradotti con cura (100.800+ stringhe).\n- Risolto il 'misgendering' in cui i PNG (es. Mint) venivano scambiati per uomini nei dialoghi originali in inglese.\n- Nessun file personale nei sorgenti.\n- Installer interattivo automatizzato per installare e pulire cache/mod vecchie senza conflitti.",
-     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Installatore_Traduzione_NTE.exe",
-       "size": 16274265,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
-      },
-      {
-       "name": "pakchunk999-Windows_999_P.pak",
-       "size": 16284026,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/pakchunk999-Windows_999_P.pak"
-      }
-     ],
-     "download": {
-      "name": "Installatore_Traduzione_NTE.exe",
-      "size": 16274265,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
-     },
-     "downloads": 2
-    }
-   ]
-  },
   {
    "repo": {
     "name": "Aniimo-Italian-Translation",
@@ -115,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-10-01T15:48:41Z"
+    "pushed_at": "2026-10-04T08:05:00Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3634150.1",
+     "name": "Aniimo Traduzione Italiana 1.0.3634150.1",
+     "date": "2026-10-04T08:06:37Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3634150.1\n\nRelease correttiva per la build Steam **3634150**, incentrata sulla risoluzione completa di tutte le disallineazioni storiche segnalate nella **Issue #25** (grazie a @Kaen89!).\n\n### Novità e correzioni dell'aggiornamento:\n\n- **Risoluzione disallineamenti storici nel catalogo (Issue #25)**:\n  - Corrette **105 chiavi complessive** che presentavano testi italiani scambiati o associati a chiavi errate (ereditati dalle prime versioni beta del progetto).\n  - Tra queste:\n    - Titolo missione principale `1829593311`: corretto da *\"Ricevere un regalo da un amico conferisce 30 punti Affinità bonus.\"* a **\"Valutazione: Testimone della Luce Stellare\"** (*Assessment: Starlight's Witness*).\n    - Descrizioni dei chip, degli amplificatori d'attacco temporanei e delle unità protettive (*Illusory Attack Amplifier - Might/Tactics*, *Illusory Advanced Capacity Expansion Chip*, ecc.).\n    - Nomi, battute e descrizioni delle decorazioni dei Susuta (*Sunset Susuta*, *Splashy Susuta*, *Spring Stroll Susuta*, ecc.).\n    - Testi di sistema e di avviso manutenzione server, supporto dispositivi e personalizzazione personaggio.\n    - Casi dubbi verificati e corretti: `1173585695` *Home Girl* → **\"Ragazza Casalinga\"**, `1782344601` *Mantis Lady* → **\"Signora Mantide\"**, `1745656882` *Lin Xi's Rest Set* → **\"Set Riposo di Lin Xi\"**.\n    - Ripristinati i segnaposto e titoli invertiti per `{0} {1}` e *The Land Reawakens* (chiavi `1226459316`, `1241323712`, `1991632583`).\n    - Corretto parametro del buff per la Benedizione Spinosa (`1573680957`).\n- **Verifiche di qualità e coerenza terminologica**:\n  - Ogni stringa è stata revisionata confrontandola con i testi originali in inglese e le versioni ufficiali in francese e spagnolo per garantire coerenza contestuale e concordanza grammaticale.\n  - Tutti i tag (`<customRichText(...)>`, `<style=...>`, `<color=...>`) e segnaposto (`{0}`, `{1}`) sono stati convalidati con test di coerenza automatica al 100%.\n- **Suite di test**:\n  - Tutti i **161 test unitari superati con successo**.\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3634150.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45309973,
+       "downloads": 6,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45309973,
+      "downloads": 6,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 6
+    },
     {
      "tag": "v1.0.3634150.0",
      "name": "Aniimo Traduzione Italiana 1.0.3634150.0",
@@ -132,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45238599,
-       "downloads": 81,
+       "downloads": 88,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45238599,
-      "downloads": 81,
+      "downloads": 88,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 81
+     "downloads": 88
     },
     {
      "tag": "v1.0.3629693.0",
@@ -339,17 +257,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 282,
+       "downloads": 283,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 282,
+      "downloads": 283,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 282
+     "downloads": 283
     },
     {
      "tag": "v0.4.1",
@@ -373,29 +291,111 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.1/Aniimo-Italian-Translation.exe"
      },
      "downloads": 154
-    },
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "NTE-Italian-Translation",
+    "description": "Traduzione italiana completa per Neverness to Everness con installer automatico",
+    "html_url": "https://github.com/Sici29/NTE-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-10-01T15:52:15Z"
+   },
+   "marker": {
+    "nome_gioco": "Neverness to Everness",
+    "steam_appid": 4508340,
+    "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
+    "motore_installazione": "unreal_pak"
+   },
+   "releases": [
     {
-     "tag": "v0.3.18-beta",
-     "name": "Aniimo — Traduzione italiana v0.3.18 Beta",
-     "date": "2026-07-18T12:14:19Z",
-     "body": "# Aniimo — Traduzione italiana v0.3.18 Beta\n\nQuesta release corregge definitivamente un fallback runtime che poteva mostrare in inglese 359 battute già tradotte e conferma la compatibilità con la build Aniimo `3064863`.\n\n## Novità principali\n\n- Verificata la build `3064863`: 93.029 chiavi e contenuti English identici alla build precedente, quindi nessuna nuova stringa da tradurre.\n- Corretto l'elenco interno `AITranslatedItems_en` usato da Aniimo: tutte le 359 chiavi storicamente recuperate vengono ora abilitate esplicitamente.\n- Risolte così le cinque battute English segnalate nella sequenza introduttiva di Fannie e ogni altra riga appartenente alla stessa categoria.\n- Rilette e rifinite le cinque traduzioni, mantenendo tag, ritorni a capo e terminologia della Base.\n- Aggiunta una nuova icona dell'installer con mascotte Aniimo e badge della bandiera italiana, completa di trasparenza e dimensioni Windows da 16 a 256 pixel.\n\n## Verifiche\n\n- Copertura completa: 93.029 / 93.029 testi.\n- 359 / 359 fallback storici inclusi nell'elenco runtime italiano.\n- Le cinque chiavi segnalate sono presenti nel master, nell'archivio generato e nell'elenco runtime corretto.\n- Strutture tecniche, font accentato, date italiane e timer verificati.\n- 104 test automatici superati.\n\n## Installazione\n\n1. Chiudi Aniimo e il launcher Pawprint.\n2. Scarica `Aniimo-Italian-Translation.exe`.\n3. Apri l'installer e premi **Invio**.\n4. Nel gioco seleziona **Inglese**.\n\nChi usa una versione precedente deve reinstallare la traduzione con questo EXE per applicare la correzione ai fallback. La release contiene un solo file eseguibile.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.3.18-beta",
+     "tag": "v1.2",
+     "name": "Traduzione Italiana NTE v1.2 - Patch 01/10/2026",
+     "date": "2026-10-01T15:52:15Z",
+     "body": "Release v1.2 per l'aggiornamento di Neverness to Everness (Patch 01/10/2026 - Build 25643250).\n\n### Novità di questo aggiornamento:\n- **Compatibilità Totale Patch 01/10/2026**: Integrato il nuovo pacchetto locres estratto direttamente dalla build 25643250 (110.260 stringhe totali).\n- **Bilanciamento Abilità**: Aggiornate e perfezionate le descrizioni delle abilità di **Akane** (adeguamento danni da Lakshana e rimozione trigger reazione dal QTE) e di **BlackBird** (trasformazione semplificata in Uccello Solitario con schivata/mira e raccolta Pietre dell'Oracolo).\n- **Rifiniture UI & Testi di Sistema**:\n  - Aggiornate le regole e percentuali dei tabelloni lotteria (*Limited S-Class Character*, *Delitto e Castigo*, *Completo Quotidiano*).\n  - Corrette e uniformate tutte le etichette di sblocco Livello Legame per tutti i personaggi (Mint, Shinku, Linko, Akane, BlackBird, ecc.).\n  - Ottimizzate le diciture dell'Endless Trial (Fasi e punteggi record) e ripuliti i testi residui.\n- **Riferimento Incrociato Multilingua**: Verificata la concordanza di genere e la struttura dei tag Unreal Engine (</> generici).\n- **Installatore Autonomo v1.2.0**: Eseguibile aggiornato con riavvio pulito, verifica integrità e installazione automatica.",
+     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.2",
      "prerelease": false,
      "assets": [
       {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 34278443,
-       "downloads": 65,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.18-beta/Aniimo-Italian-Translation.exe"
+       "name": "Installatore_Traduzione_NTE.exe",
+       "size": 17247092,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
+      },
+      {
+       "name": "pakchunk999-Windows_999_P.pak",
+       "size": 17841295,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/pakchunk999-Windows_999_P.pak"
       }
      ],
      "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 34278443,
-      "downloads": 65,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.3.18-beta/Aniimo-Italian-Translation.exe"
+      "name": "Installatore_Traduzione_NTE.exe",
+      "size": 17247092,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 65
+     "downloads": 1
+    },
+    {
+     "tag": "v1.1",
+     "name": "Traduzione Italiana NTE v1.1 - Patch 30/09/2026",
+     "date": "2026-09-30T09:04:11Z",
+     "body": "Release v1.1 per il nuovo aggiornamento di Neverness to Everness (Patch 30 Settembre 2026).\n\nNovità di questo aggiornamento:\n- Piena compatibilità con l'aggiornamento di gioco di oggi (90.693 stringhe interne compilate, 110.260 totali).\n- Tradotte 9.865 nuove stringhe, inclusa la nuova missione principale di BlackBird, le missioni secondarie, le abilità di Akane e BlackBird e tutti i nuovi testi di interfaccia.\n- Riferimento incrociato con Spagnolo e Francese per garantire la corretta concordanza di genere e i bivi dinamici (<male=>/<female=>) per il protagonista (Valutatore / Valutatrice).\n- File pak Unreal Engine aggiornato (pakchunk999-Windows_999_P.pak) e nuovo eseguibile dell'installatore autonomo.",
+     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Installatore_Traduzione_NTE.exe",
+       "size": 17248676,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/Installatore_Traduzione_NTE.exe"
+      },
+      {
+       "name": "pakchunk999-Windows_999_P.pak",
+       "size": 17841626,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/pakchunk999-Windows_999_P.pak"
+      }
+     ],
+     "download": {
+      "name": "Installatore_Traduzione_NTE.exe",
+      "size": 17248676,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.1/Installatore_Traduzione_NTE.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "v1.0",
+     "name": "Traduzione Italiana NTE (Release Definitiva 1.0)",
+     "date": "2026-09-21T17:41:09Z",
+     "body": "Prima release completa della traduzione italiana per Neverness to Everness.\n\nInclude:\n- Interfaccia, menu e statistiche completamente in italiano.\n- Dialoghi, missioni e descrizioni oggetti tradotti con cura (100.800+ stringhe).\n- Risolto il 'misgendering' in cui i PNG (es. Mint) venivano scambiati per uomini nei dialoghi originali in inglese.\n- Nessun file personale nei sorgenti.\n- Installer interattivo automatizzato per installare e pulire cache/mod vecchie senza conflitti.",
+     "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/tag/v1.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Installatore_Traduzione_NTE.exe",
+       "size": 16274265,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+      },
+      {
+       "name": "pakchunk999-Windows_999_P.pak",
+       "size": 16284026,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/pakchunk999-Windows_999_P.pak"
+      }
+     ],
+     "download": {
+      "name": "Installatore_Traduzione_NTE.exe",
+      "size": 16274265,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
+     },
+     "downloads": 2
     }
    ]
   },
