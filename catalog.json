@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-04T12:29:36+00:00",
+ "generated_at": "2026-10-05T14:52:46+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45309973,
-       "downloads": 6,
+       "downloads": 29,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45309973,
-      "downloads": 6,
+      "downloads": 29,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 6
+     "downloads": 29
     },
     {
      "tag": "v1.0.3634150.0",
@@ -257,17 +257,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 283,
+       "downloads": 284,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 283,
+      "downloads": 284,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 283
+     "downloads": 284
     },
     {
      "tag": "v0.4.1",
@@ -327,7 +327,7 @@
       {
        "name": "pakchunk999-Windows_999_P.pak",
        "size": 17841295,
-       "downloads": 0,
+       "downloads": 2,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/pakchunk999-Windows_999_P.pak"
       }
      ],
@@ -337,7 +337,7 @@
       "downloads": 1,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 1
+     "downloads": 3
     },
     {
      "tag": "v1.1",
