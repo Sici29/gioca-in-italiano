@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-07T20:39:43+00:00",
+ "generated_at": "2026-10-09T01:15:40+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45309973,
-       "downloads": 55,
+       "downloads": 58,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45309973,
-      "downloads": 55,
+      "downloads": 58,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 55
+     "downloads": 58
     },
     {
      "tag": "v1.0.3634150.0",
@@ -321,7 +321,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17247092,
-       "downloads": 1,
+       "downloads": 4,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -334,10 +334,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17247092,
-      "downloads": 1,
+      "downloads": 4,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 5
+     "downloads": 8
     },
     {
      "tag": "v1.1",
@@ -629,17 +629,17 @@
       {
        "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
        "size": 10636096,
-       "downloads": 2,
+       "downloads": 3,
        "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
       }
      ],
      "download": {
       "name": "ARK-Survival-Ascended-Traduzione-Italiana.exe",
       "size": 10636096,
-      "downloads": 2,
+      "downloads": 3,
       "url": "https://github.com/Sici29/ARK-Survival-Ascended-Italian-Translation/releases/download/v2.1.2/ARK-Survival-Ascended-Traduzione-Italiana.exe"
      },
-     "downloads": 2
+     "downloads": 3
     },
     {
      "tag": "v2.1.1",
