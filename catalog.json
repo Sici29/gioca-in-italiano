@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-09T01:15:40+00:00",
+ "generated_at": "2026-10-10T00:57:12+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-10-04T08:05:00Z"
+    "pushed_at": "2026-10-09T18:41:48Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3668494.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3668494.0",
+     "date": "2026-10-09T18:43:12Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3668494.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3668494.0** (build 3668494), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3668494**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 9 ottobre 2026.\n  - Catalogo espanso a **112.308 chiavi totali** con copertura al **100,00%** (44 nuove chiavi e 99 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Evento Glamour Star (Stella Glamour)**: tradotti tutti i regolamenti delle audizioni del Polaris Institute, le anteprime dei turni preliminari e le descrizioni degli abbinamenti Aniimo/accessori.\n  - **Sistema di invio e diagnostica log**: tradotte le stringhe per l'invio dei log di gioco e i risultati del test di rete (*\"Carica registri\"*, *\"Diagnostica di rete completata\"*, *\"Risultati del test di rete caricati con successo\"*).\n  - **Revisione Oggetti Tenuti e Coltivazione**: rifinite e uniformate le descrizioni di coltivazione della Base (*\"Coltiva\"*, *\"Coltivazione\"*, *\"Coltivazione...\"*), le abilità degli Oggetti Tenuti, *\"Bosco delle Farfalle del Sogno\"* e *\"Erlath Umbrale\"*.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3668494.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45314399,
+       "downloads": 13,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45314399,
+      "downloads": 13,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 13
+    },
     {
      "tag": "v1.0.3634150.1",
      "name": "Aniimo Traduzione Italiana 1.0.3634150.1",
@@ -27,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45309973,
-       "downloads": 58,
+       "downloads": 81,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45309973,
-      "downloads": 58,
+      "downloads": 81,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 58
+     "downloads": 81
     },
     {
      "tag": "v1.0.3634150.0",
@@ -50,17 +73,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45238599,
-       "downloads": 89,
+       "downloads": 90,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45238599,
-      "downloads": 89,
+      "downloads": 90,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 89
+     "downloads": 90
     },
     {
      "tag": "v1.0.3629693.0",
@@ -257,40 +280,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 286,
+       "downloads": 287,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 286,
+      "downloads": 287,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 286
-    },
-    {
-     "tag": "v0.4.1",
-     "name": "Aniimo — Traduzione italiana v0.4.1",
-     "date": "2026-09-16T20:55:25Z",
-     "body": "# Aniimo — Traduzione italiana v0.4.1\r\n\r\nRelease per il client Steam (build 3535596).\r\n\r\n- **112.183 chiavi su 112.183 tradotte in italiano (100,00%)**, zero fallback e zero stringhe mancanti.\r\n- Revisione professionale terminologica e glossario di gioco allineati.\r\n- Un solo file EXE standalone, con ricerca automatica prioritaria Steam, fallback Pawprint, supporto selezione manuale o posizionamento nella root del gioco.\r\n- Rilevamento dinamico per future versioni di Aniimo: se i testi non cambiano dichiara compatibilità al 100%; se ci sono stringhe nuove o modificate applica per quelle sole stringhe il fallback all'inglese e avvisa l'utente.\r\n- Backup automatico a ogni installazione e ripristino immediato con opzione 2.\r\n- Verificata con successo in gioco.\r\n\r\n### Installazione\r\n\r\n1. Chiudi Aniimo e il launcher.\r\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\r\n3. In gioco seleziona **Inglese**.\r\n\r\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\r\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.4.1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 35828526,
-       "downloads": 154,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.1/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 35828526,
-      "downloads": 154,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.1/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 154
+     "downloads": 287
     }
    ]
   },
@@ -321,23 +321,23 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17247092,
-       "downloads": 4,
+       "downloads": 5,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
       },
       {
        "name": "pakchunk999-Windows_999_P.pak",
        "size": 17841295,
-       "downloads": 4,
+       "downloads": 5,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/pakchunk999-Windows_999_P.pak"
       }
      ],
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17247092,
-      "downloads": 4,
+      "downloads": 5,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 8
+     "downloads": 10
     },
     {
      "tag": "v1.1",
@@ -432,17 +432,17 @@
       {
        "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
        "size": 17229751,
-       "downloads": 4,
+       "downloads": 5,
        "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
       }
      ],
      "download": {
       "name": "StarCitizen_Traduzione_Italiana_4.10_R2.exe",
       "size": 17229751,
-      "downloads": 4,
+      "downloads": 5,
       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r2/StarCitizen_Traduzione_Italiana_4.10_R2.exe"
      },
-     "downloads": 4
+     "downloads": 5
     },
     {
      "tag": "sc-4.10-r1",
@@ -588,17 +588,17 @@
       {
        "name": "Fatekeeper-Italian-Translation.exe",
        "size": 7752041,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Fatekeeper-Italian-Translation.exe",
       "size": 7752041,
-      "downloads": 0,
+      "downloads": 1,
       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
      },
-     "downloads": 0
+     "downloads": 1
     }
    ]
   },
