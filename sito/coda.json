@@ -1,0 +1,15 @@
+{
+  "aggiornata": "2026-10-12",
+  "api_sostegni": "",
+  "progetti": [
+    {
+      "id": "aion2",
+      "titolo": "AION 2",
+      "stato": "In revisione",
+      "fase": 1,
+      "descrizione": "La traduzione è pronta. Sto revisionando i testi prima della pubblicazione.",
+      "prossimo": "Completare la revisione, poi eseguire i controlli finali.",
+      "codice": "#AION2"
+    }
+  ]
+}

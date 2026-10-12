@@ -248,6 +248,26 @@ def carica_extra() -> dict:
     return {k: v for k, v in dati.items() if not k.startswith("_") and isinstance(v, dict)}
 
 
+def carica_coda() -> dict:
+    try:
+        dati = json.loads((SORGENTI / "coda.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {"progetti": [], "api_sostegni": "", "aggiornata": ""}
+    if not isinstance(dati, dict) or not isinstance(dati.get("progetti"), list):
+        raise ValueError("sito/coda.json: struttura della coda non valida")
+    ids = set()
+    for p in dati["progetti"]:
+        if not isinstance(p, dict) or not re.fullmatch(r"[a-z0-9-]{1,40}", str(p.get("id", ""))):
+            raise ValueError("sito/coda.json: identificativo progetto non valido")
+        if p["id"] in ids or type(p.get("fase")) is not int or not 0 <= p["fase"] <= 3:
+            raise ValueError("sito/coda.json: progetto duplicato o fase non valida")
+        ids.add(p["id"])
+    api = dati.get("api_sostegni") or ""
+    if api and not api.startswith("https://"):
+        raise ValueError("sito/coda.json: l'API deve usare HTTPS")
+    return dati
+
+
 def giochi_dal_catalogo(dati: dict, extra: dict) -> list[dict]:
     from hub import catalog
 
@@ -410,14 +430,15 @@ def testata(radice: str) -> str:
     </a>
     <nav class="menu" aria-label="Sezioni">
       <a href="{radice}#giochi">Giochi</a>
+      <a href="{radice}coda/">Coda</a>
       <a href="{radice}#proponi">Proponi un gioco</a>
-      <a class="menu-caffe" href="{e(config.BMC_URL)}">Offrimi un caffè</a>
+      <a class="menu-caffe" href="{radice}sostieni/">Sostieni</a>
     </nav>
   </div>
 </header>"""
 
 
-def piede() -> str:
+def piede(radice: str = "") -> str:
     # Niente "pagina generata il...": la data di generazione cambierebbe il
     # sito a ogni giro della Action anche quando non c'e' niente di nuovo, e
     # si ripubblicherebbe tutto per niente. Le date che contano, quelle delle
@@ -430,7 +451,8 @@ def piede() -> str:
       proprietari. Per usarle serve una copia del gioco.</p>
     <p class="piede-link">
       <a href="{e(config.PROFILE_URL)}">{ICONA_GITHUB} GitHub</a>
-      <a href="{e(config.BMC_URL)}">Offrimi un caffè</a>
+      <a href="{radice}coda/">Coda delle traduzioni</a>
+      <a href="{radice}sostieni/">Sostieni il progetto</a>
     </p>
   </div>
 </footer>"""
@@ -482,7 +504,7 @@ def pagina(
 <main>
 {corpo}
 </main>
-{piede()}
+{piede(radice)}
 </body>
 </html>
 """
@@ -528,6 +550,17 @@ def scheda_gioco(g: dict, radice: str, piccola: bool = False) -> str:
 
 
 def pagina_indice(giochi, hub, proposte, versione_css) -> str:
+    coda = carica_coda()
+    in_corso = coda.get("progetti") or []
+    anteprima_coda = ""
+    if in_corso:
+        p = in_corso[0]
+        anteprima_coda = f'''<section class="sezione coda-home">
+  <div class="contenitore coda-home-riga"><div><p class="occhiello">Il prossimo progetto</p>
+    <h2>{e(p['titolo'])} <span class="coda-badge">{e(p['stato'])}</span></h2>
+    <p>{e(p['descrizione'])}</p></div>
+    <a class="bottone secondario" href="coda/">Guarda la coda {ICONA_FRECCIA}</a></div>
+</section>'''
     totale = sum(g["scaricati"] for g in giochi)
     ultimo = max((g["ultima"].get("date") or "" for g in giochi), default="")
     nomi = [g["titolo"] for g in giochi]
@@ -633,12 +666,15 @@ def pagina_indice(giochi, hub, proposte, versione_css) -> str:
   </div>
 </section>
 {sezione_hub}
+{anteprima_coda}
 <section class="sezione" id="proponi">
   <div class="contenitore proponi">
     <div>
       <h2>Quale gioco vorresti in italiano?</h2>
       <p>Proponilo: le proposte più votate sono le prime candidate a diventare la prossima traduzione.
         Si vota con un 👍 su GitHub{dove_si_vota}.</p>
+      <p>Le nuove traduzioni e lo stato dei lavori sono nella <a href="coda/">coda del progetto</a>.
+        Il sostegno dedicato ai giochi aiuta a orientare le prossime priorità.</p>
       <a class="bottone" href="{e(url_proposta())}">Proponi un gioco {ICONA_FRECCIA}</a>
     </div>
     {righe_proposte}
@@ -647,9 +683,10 @@ def pagina_indice(giochi, hub, proposte, versione_css) -> str:
 
 <section class="sezione caffe">
   <div class="contenitore caffe-riga">
-    <p>Le traduzioni sono gratuite e restano gratuite. Se ti hanno fatto comodo e vuoi aiutarmi a tenerle
-      aggiornate, puoi offrirmi un caffè.</p>
-    <a class="bottone bottone-caffe" href="{e(config.BMC_URL)}">☕ Offrimi un caffè</a>
+    <div><h2>Aiutami a tenerle aggiornate</h2>
+    <p>Una patch del gioco può cambiare i testi e richiedere nuove traduzioni, controlli e prove.
+      Se il progetto ti è utile, puoi sostenerne la manutenzione. App e traduzioni restano gratuite.</p></div>
+    <a class="bottone bottone-caffe" href="sostieni/">Sostieni il progetto {ICONA_FRECCIA}</a>
   </div>
 </section>"""
 
@@ -916,6 +953,117 @@ def pagina_gioco(g, altri, hub, versione_css) -> str:
     )
 
 
+def pagina_coda(versione_css) -> str:
+    dati = carica_coda()
+    fasi = ("Traduzione", "Revisione", "Controlli finali", "Pubblicazione")
+    schede = []
+    for i, p in enumerate(dati["progetti"], 1):
+        passi = "".join(
+            f'<li class="{"completa" if n < p["fase"] else "attuale" if n == p["fase"] else ""}">'
+            f'{e(f)}{" · completata" if n < p["fase"] else " · in corso" if n == p["fase"] else ""}</li>'
+            for n, f in enumerate(fasi)
+        )
+        schede.append(f'''<article class="coda-progetto" id="{e(p['id'])}">
+      <div class="coda-titolo"><div><p class="occhiello">{i:02d} · In lavorazione</p>
+        <h2>{e(p['titolo'])}</h2></div><span class="coda-badge">{e(p['stato'])}</span></div>
+      <p class="attacco">{e(p['descrizione'])}</p>
+      <ol class="coda-fasi" aria-label="Fasi del progetto">{passi}</ol>
+      <p><strong>Il prossimo passo:</strong> {e(p['prossimo'])}</p>
+      <div class="coda-sostegno"><div><h3>Dai una mano a questo progetto</h3>
+        <p>Se vuoi dedicarci il tuo sostegno, scrivi <strong>{e(p['codice'])}</strong>
+          nel messaggio su Buy Me a Coffee.</p>
+        <p class="coda-conteggio" data-progetto="{e(p['id'])}" hidden aria-live="polite"></p></div>
+        <a class="bottone bottone-caffe" href="{e(config.BMC_URL)}">Sostieni {e(p['titolo'])} {ICONA_FRECCIA}</a></div>
+    </article>''')
+    elenco = "".join(schede) or '<p>Le prossime traduzioni saranno annunciate qui.</p>'
+    script = ""
+    if dati.get("api_sostegni"):
+        script = f'<script defer src="../coda.js" data-api="{e(dati["api_sostegni"])}"></script>'
+    corpo = f'''<section class="sezione coda-intro"><div class="contenitore stretto">
+    <p class="occhiello">Il lavoro, passo dopo passo</p>
+    <h1>Le prossime traduzioni, <span class="evidenzia">in chiaro</span>.</h1>
+    <p class="attacco">Qui trovi l'ordine dei progetti e la fase di ciascuno. Il sostegno della community
+      mi aiuta a dedicare tempo alla revisione, agli strumenti e alle prossime traduzioni.</p>
+    <p class="nota-sotto">Stato aggiornato il {e(data_it(dati.get('aggiornata')))}.</p>
+  </div></section>
+  <section class="sezione coda-elenco"><div class="contenitore">{elenco}</div></section>
+  <section class="sezione"><div class="contenitore stretto sostegno-testo">
+    <h2>Come scelgo le priorità</h2>
+    <p>Per le nuove traduzioni considero fattibilità tecnica, interesse della community e sostegno dedicato
+      al gioco. I contributi possono aiutare un progetto a ottenere precedenza, dopo la verifica di fattibilità.</p>
+    <p>I lavori già avviati e gli aggiornamenti continuano normalmente. La coda non cambia automaticamente
+      a ogni pagamento: pubblicherò qui gli eventuali cambiamenti di priorità.</p>
+    <p>Un contributo sostiene il progetto e non acquista una traduzione o una data di consegna.
+      Le proposte restano aperte a tutti, e app e traduzioni restano gratuite.</p>
+    <p>Nel conteggio del sostegno dedicato ogni persona conta una volta per gioco, anche con più contributi.
+      Sul sito vengono mostrati solo conteggi aggregati, senza nomi, email o importi individuali.</p>
+    <a class="bottone secondario" href="../#proponi">Proponi il prossimo gioco {ICONA_FRECCIA}</a>
+  </div></section>{script}'''
+    return pagina(titolo=f"Coda delle traduzioni | {NOME}",
+        descrizione="Segui le prossime traduzioni italiane, lo stato della revisione e le priorità del progetto.",
+        percorso="coda/", radice="../", corpo=corpo, versione_css=versione_css)
+
+
+def pagina_sostieni(versione_css) -> str:
+    corpo = f"""<section class="sezione sostegno-intro">
+  <div class="contenitore stretto">
+    <p class="occhiello">Il progetto cresce con chi lo usa</p>
+    <h1>Aiutami a tenere i tuoi giochi <span class="evidenzia">in italiano</span>.</h1>
+    <p class="attacco">Dietro ogni aggiornamento ci sono testi da tradurre, errori da correggere
+      e un installer da mantenere. Se Gioca in Italiano ti è utile, puoi dare una mano.</p>
+    <div class="azioni"><a class="bottone bottone-caffe grande" href="{e(config.BMC_URL)}">☕ Sostieni su Buy Me a Coffee</a>
+      <a class="bottone secondario" href="../#giochi">Torna alle traduzioni</a></div>
+    <p class="nota-sotto">Il contributo è facoltativo. App, traduzioni e aggiornamenti restano gratuiti per tutti.</p>
+  </div>
+</section>
+<section class="sezione sostegno-dettagli">
+  <div class="contenitore">
+    <h2>A cosa contribuisce il tuo sostegno</h2>
+    <div class="sostegno-griglia">
+      <article class="sostegno-card"><span class="occhiello">01 · Testi</span><h3>Traduzione e revisione</h3>
+        <p>Aggiungere i testi delle nuove patch, correggere le frasi e mantenere coerenti i termini del gioco.</p></article>
+      <article class="sostegno-card"><span class="occhiello">02 · Strumenti</span><h3>Installazione e aggiornamenti</h3>
+        <p>Mantenere l'app e gli installer, migliorare il riconoscimento dei giochi e il ripristino dei file originali.</p></article>
+      <article class="sostegno-card"><span class="occhiello">03 · Giocatori</span><h3>Verifiche e istruzioni</h3>
+        <p>Controllare le segnalazioni e aggiornare le guide quando cambia il gioco o il modo di installare la traduzione.</p></article>
+    </div>
+  </div>
+</section>
+<section class="sezione">
+  <div class="contenitore stretto sostegno-testo">
+    <h2>Un caffè quando vuoi</h2>
+    <p>Puoi lasciare un contributo singolo su Buy Me a Coffee, scegliendo l'importo nella pagina di pagamento.
+      Con «Rendilo mensile» puoi scegliere un sostegno continuativo: controlla importo e frequenza prima di confermare.</p>
+    <p>Il sostegno aiuta il lavoro sul progetto e non acquista una traduzione su commissione,
+      una data di consegna o assistenza personale. Gli aggiornamenti vengono pubblicati per tutti.</p>
+    <a class="bottone bottone-caffe" href="{e(config.BMC_URL)}">Apri la pagina di sostegno {ICONA_FRECCIA}</a>
+    <section class="sostegno-amici" id="coda">
+      <p class="occhiello">Le prossime traduzioni</p>
+      <h2>Dai impulso al gioco che aspetti</h2>
+      <p>Nella <a href="../coda/">coda delle traduzioni</a> trovi i progetti in lavorazione e lo stato dei lavori.
+        Per dedicare il tuo contributo a uno di loro, usa nel messaggio il codice indicato sulla sua scheda.</p>
+      <p>Il sostegno dedicato è uno dei criteri nella scelta delle prossime priorità, insieme a fattibilità
+        e interesse della community. Un contributo non garantisce una traduzione o una data di uscita:
+        app e traduzioni restano gratuite per tutti.</p>
+      <a class="bottone" href="../coda/">Guarda la coda {ICONA_FRECCIA}</a>
+    </section>
+    <h2>Puoi aiutare anche condividendo</h2>
+    <p>Mostra il progetto a un amico, condividi la pagina del gioco nella tua community o segnala
+      una frase da migliorare. Sono tutti modi utili per far crescere Gioca in Italiano.</p>
+    <p><a href="../#giochi">Scegli una traduzione</a> · <a href="../#proponi">Proponi un gioco</a> ·
+      <a href="{e(config.PROFILE_URL)}">Segui Sici29 su GitHub</a></p>
+  </div>
+</section>"""
+    return pagina(
+        titolo=f"Sostieni il progetto | {NOME}",
+        descrizione="Aiuta Sici29 a mantenere traduzioni, installer e guide. Il sostegno è facoltativo: app e traduzioni restano gratuite.",
+        percorso="sostieni/",
+        radice="../",
+        corpo=corpo,
+        versione_css=versione_css,
+    )
+
+
 def pagina_404(giochi, versione_css) -> str:
     # GitHub Pages la serve per qualunque indirizzo sbagliato, a qualunque
     # profondita': i link devono quindi essere assoluti.
@@ -942,7 +1090,7 @@ def pagina_404(giochi, versione_css) -> str:
 def mappa(giochi) -> str:
     """sitemap.xml: da dare a Google Search Console, che la legge da li'."""
     ultimo = max((g["ultima"].get("date") or "" for g in giochi), default="")[:10]
-    voci = [(SITO, ultimo)] + [(f"{SITO}{g['slug']}/", (g["ultima"].get("date") or "")[:10]) for g in giochi]
+    voci = [(SITO, ultimo), (f"{SITO}sostieni/", ""), (f"{SITO}coda/", "")] + [(f"{SITO}{g['slug']}/", (g["ultima"].get("date") or "")[:10]) for g in giochi]
     righe = "".join(
         f"<url><loc>{e(u)}</loc>" + (f"<lastmod>{d}</lastmod>" if d else "") + "</url>\n" for u, d in voci
     )
@@ -1120,6 +1268,14 @@ def genera(dati: dict, uscita: Path) -> list[dict]:
         (cartella / "index.html").write_text(
             pagina_gioco(g, altri, hub, versione_css), encoding="utf-8"
         )
+    sostieni = uscita / "sostieni"
+    sostieni.mkdir(exist_ok=True)
+    (sostieni / "index.html").write_text(pagina_sostieni(versione_css), encoding="utf-8")
+    coda = uscita / "coda"
+    coda.mkdir(exist_ok=True)
+    (coda / "index.html").write_text(pagina_coda(versione_css), encoding="utf-8")
+    if (SORGENTI / "coda.js").exists():
+        shutil.copyfile(SORGENTI / "coda.js", uscita / "coda.js")
     (uscita / "404.html").write_text(pagina_404(giochi, versione_css), encoding="utf-8")
     (uscita / "sitemap.xml").write_text(mappa(giochi), encoding="utf-8")
     (uscita / IMPRONTA).write_text(impronta(uscita) + "\n", encoding="utf-8")

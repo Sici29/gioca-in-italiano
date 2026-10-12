@@ -16,3 +16,9 @@ _sito/
 _site/
 _lavoro/
 _catalogo-fresco.json
+
+# Collegamento Buy Me a Coffee: dipendenze, dati locali e segreti.
+node_modules/
+.wrangler/
+.dev.vars*
+.env*

@@ -1,0 +1,15 @@
+{
+  "name": "gioca-in-italiano-coda",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "vars": {
+    "PUBLIC_ORIGIN": "https://sici29.github.io",
+    "PROJECT_CODES": "{\"AION2\":\"aion2\"}"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "gioca-in-italiano-sostegni",
+    "database_id": "DA_CONFIGURARE"
+  }]
+}
