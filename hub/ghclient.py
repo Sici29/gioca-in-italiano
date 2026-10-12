@@ -247,7 +247,10 @@ class GitHubClient:
             data = self.get_json(url)
         except requests.HTTPError:
             return []
-        return data if isinstance(data, list) else []
+        # Le bozze le vede solo chi ha accesso in scrittura al repo, cioe'
+        # l'autore collegato all'hub. Non sono uscite: una bozza vuota lasciata
+        # li' passerebbe per l'ultima versione, senza niente da scaricare.
+        return [r for r in data if not r.get("draft")] if isinstance(data, list) else []
 
     def list_issues(self, repo: str, labels: str = "", limit: int = 50) -> list[dict]:
         """Issue aperte, usate come bacheca delle proposte di traduzione.

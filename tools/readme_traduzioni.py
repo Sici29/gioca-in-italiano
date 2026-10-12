@@ -7,8 +7,9 @@ traduzioni (con il link alle loro pagine) e che puo' proporre il prossimo gioco.
 Il riquadro sta fra due commenti, inizio e fine: se c'e' gia' viene sostituito,
 altrimenti si mette sotto il titolo e i badge. Cosi' lo strumento si rilancia
 quando arriva una traduzione nuova, e tutti i README si aggiornano con
-l'elenco giusto. Legge le traduzioni dal catalogo pubblicato, e scrive con la
-CLI di GitHub (gh), che deve essere autenticata.
+l'elenco giusto. Legge le traduzioni dal catalogo nel repo dell'hub, e legge
+e scrive con la CLI di GitHub (gh), che deve essere autenticata. Per una
+traduzione appena uscita, prima tools/aggiorna_sito.py: la mette in catalogo.
 
     python tools/readme_traduzioni.py            # dice solo cosa cambierebbe
     python tools/readme_traduzioni.py --scrivi   # fa i commit
@@ -23,8 +24,6 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-
-import requests
 
 RADICE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RADICE))
@@ -121,11 +120,18 @@ def inserisci(readme: str, riquadro: str) -> str:
 
 def traduzioni() -> list[tuple[str, str, str]]:
     """(repo, nome del gioco, cartella sul sito) di ogni traduzione pubblicata."""
-    dati = requests.get(config.FEED_URL, timeout=30).json()
+    # Dall'API e non da raw.githubusercontent, che tiene in cache il file per
+    # qualche minuto: subito dopo tools/aggiorna_sito.py darebbe ancora
+    # l'elenco di prima, senza la traduzione appena uscita.
+    dati = _gh(
+        "-H", "Accept: application/vnd.github.raw+json",
+        f"repos/{config.GITHUB_USER}/{config.FEED_REPO}/contents/catalog.json",
+    )
     out = []
     for voce in dati.get("entries") or []:
         repo = (voce.get("repo") or {}).get("name") or ""
-        if not repo or not voce.get("releases"):
+        # Come il sito: senza una release vera non c'e' una pagina a cui portare.
+        if not repo or not [r for r in voce.get("releases") or [] if not r.get("prerelease")]:
             continue
         marker = voce.get("marker") or {}
         nome = marker.get("nome_gioco") or config.pretty_game_name(repo)

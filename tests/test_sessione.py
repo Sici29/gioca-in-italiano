@@ -223,3 +223,23 @@ class RiprovaDaSolo(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BozzeDiRelease(unittest.TestCase):
+    """Il caso reale: Lost Light, pubblicata con una bozza vuota rimasta li'.
+
+    GitHub mostra le bozze solo all'autore, e l'elenco le mette in cima: la
+    bozza passava per l'ultima versione e il sito diceva che non c'era niente
+    da scaricare.
+    """
+
+    def test_le_bozze_non_arrivano_al_catalogo(self):
+        client = ghclient.GitHubClient()
+        elenco = [
+            {"tag_name": "v1.0.0", "draft": True, "assets": []},
+            {"tag_name": "v1.0.0", "draft": False, "assets": [{"name": "x.exe"}]},
+        ]
+        with mock.patch.object(client, "get_json", return_value=elenco):
+            uscite = client.list_releases("Lost-Light-Italian-Translation")
+        self.assertEqual(len(uscite), 1)
+        self.assertFalse(uscite[0]["draft"])

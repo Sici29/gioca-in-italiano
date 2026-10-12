@@ -164,7 +164,7 @@ RINFRESCO_ORE = 24
 def da_riscrivere(vecchio: dict | None, nuovo: dict) -> bool:
     """Se il catalogo nel repo va sostituito.
 
-    Riscriverlo a ogni giro vorrebbe dire un commit ogni tre ore anche senza
+    Riscriverlo a ogni giro vorrebbe dire un commit ogni ora anche senza
     novita'. Cosi' si riscrive quando cambia qualcosa che conta (una release,
     un hub.json, una proposta) e comunque una volta al giorno, che tiene
     fresca la data e aggiorna i download.

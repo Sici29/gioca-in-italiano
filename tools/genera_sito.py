@@ -502,17 +502,23 @@ def scheda_gioco(g: dict, radice: str, piccola: bool = False) -> str:
         if piccola
         else f"""
   <div class="scheda-azioni">
-    <a class="bottone" href="{e(file['url'])}">{ICONA_SCARICA} Scarica <span class="tenue">· {peso(file.get('size'))}</span></a>
+    <a class="bottone" href="{e(file['url'])}">{ICONA_SCARICA} Scarica</a>
     <a class="link-freccia" href="{radice}{g['slug']}/">Come si installa {ICONA_FRECCIA}</a>
   </div>"""
     )
     descr = "" if piccola else f"\n      <p>{e(testo)}</p>"
+    # Il peso sta nella riga della versione e non nel pulsante: cosi' i
+    # pulsanti sono identici in tutte le schede e restano sulla riga del link.
+    # Con il peso dentro, "7,8 MB" accanto a "45 MB" ne mandava a capo uno solo.
+    meta = f"Versione {e(ultima.get('tag'))} · {e(data_it(ultima.get('date')))}"
+    if not piccola and file.get("size"):
+        meta += f" · {peso(file['size'])}"
     return f"""<article class="scheda{' scheda-piccola' if piccola else ''}" style="--tinta:{e(g['tinta'])}">
   <a class="scheda-link" href="{radice}{g['slug']}/">
     <div class="scheda-img">{img}</div>
     <div class="scheda-testo">
       <h3>{e(g['titolo'])} in italiano</h3>{descr}
-      <p class="scheda-meta">Versione {e(ultima.get('tag'))} · {e(data_it(ultima.get('date')))}</p>
+      <p class="scheda-meta">{meta}</p>
     </div>
   </a>{azioni}
 </article>"""

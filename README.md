@@ -594,7 +594,7 @@ meno di 8 richieste.
 
 Due strade, cumulabili:
 
-**Il catalogo pre-generato.** La Action `catalogo-e-sito.yml` gira ogni tre ore
+**Il catalogo pre-generato.** La Action `catalogo-e-sito.yml` gira ogni ora
 qui su GitHub — dove il `GITHUB_TOKEN` concede 5.000 richieste all'ora — e
 scrive `catalog.json` con dentro repo, release e AppID Steam già risolti.
 L'hub lo scarica da `raw.githubusercontent`, che **sta fuori dall'API e non ha
@@ -604,7 +604,7 @@ Se il file manca o ha più di 36 ore, l'hub torna da solo all'API.
 Il file si riscrive solo quando cambia qualcosa che conta (una release, un
 `hub.json`, una proposta) e comunque una volta al giorno, per tenere fresca la
 data: la data di generazione e i contatori di download, che cambiano a ogni
-giro, da soli non bastano. Altrimenti sarebbe un commit ogni tre ore.
+giro, da soli non bastano. Altrimenti sarebbe un commit ogni ora.
 
 Il generatore controlla anche gli AppID dichiarati nei `hub.json`: se un numero
 punta a un gioco con un altro nome lo scarta e lo cerca di nuovo, così un
@@ -629,7 +629,7 @@ dell'ultima versione.
 
 Lo genera `tools/genera_sito.py` dagli stessi dati del catalogo, con le stesse
 copertine e gli stessi colori dell'hub, e lo pubblica la stessa Action del
-catalogo, ogni tre ore. Non c'è niente da fare a mano: una release nuova, o una
+catalogo, ogni ora. Non c'è niente da fare a mano: una release nuova, o una
 traduzione nuova, finisce sul sito al giro successivo. La Action pubblica solo
 se il sito è cambiato davvero: confronta l'impronta di quello appena generato
 (`impronta.txt`) con quella del sito online.
@@ -643,7 +643,16 @@ release con dentro l'exe. Finché non c'è, il sito non ne parla.
 
 ### Cosa si aggiorna da solo
 
-Tutto, a ogni giro della Action (ogni tre ore):
+Tutto, a ogni giro della Action. I giri sono programmati ogni ora, ma GitHub
+non ne garantisce l'orario: nei momenti di carico li ritarda, a volte di ore, o
+li salta. Con "ogni tre ore" ne partivano tre o quattro al giorno, e una
+traduzione nuova poteva restare fuori per mezza giornata. Per non aspettare:
+
+```powershell
+python tools/aggiorna_sito.py   # fa partire il giro subito e aspetta che finisca
+```
+
+A ogni giro si aggiornano:
 
 - **i numeri in cima**: i giochi tradotti (i repo con almeno una release), i
   download (la somma delle ultime 12 release di ogni traduzione, arrotondata
@@ -690,9 +699,11 @@ aggiorna da sola), il link all'app, le altre traduzioni con le loro pagine e
 l'invito a proporre il prossimo gioco. Lo mette `tools/readme_traduzioni.py`,
 fra due commenti `gioca-in-italiano:inizio` e `:fine`. Quando arriva una
 traduzione nuova si rilancia, e tutti i README si aggiornano con l'elenco
-giusto:
+giusto. L'elenco viene dal catalogo, quindi prima la traduzione nuova ci deve
+essere: subito dopo la release si passa da `tools/aggiorna_sito.py`.
 
 ```powershell
+python tools/aggiorna_sito.py                # mette in catalogo la traduzione nuova
 python tools/readme_traduzioni.py            # dice solo cosa cambierebbe
 python tools/readme_traduzioni.py --scrivi   # fa i commit (serve gh autenticato)
 ```
@@ -711,7 +722,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-338 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+339 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -815,6 +826,7 @@ hub/
 tools/
   build_catalog.py     genera catalog.json (gira in GitHub Actions)
   genera_sito.py       genera il sito (gira nella stessa Action)
+  aggiorna_sito.py     fa partire subito la Action, senza aspettare il giro
   readme_traduzioni.py il riquadro di Gioca in Italiano nei README delle traduzioni
   make_icon.py         disegna build/icon.ico
   make_version_info.py proprieta' del file per Windows
@@ -823,7 +835,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           338 test, senza rete
+tests/           339 test, senza rete
 ```
 
 ---

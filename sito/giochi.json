@@ -54,5 +54,15 @@
     "ripristino": "Chiudi gioco e launcher, riapri l'installer, scrivi 2 e premi Invio.",
     "sviluppatore": "Cloud Imperium Games",
     "sito_gioco": "https://robertsspaceindustries.com/"
+  },
+
+  "Lost-Light-Italian-Translation": {
+    "cosa": "Interfaccia, rifugio, armi, accessori e banchi da lavoro, abilità e classi, missioni dei mercanti, tutorial, oggetti, dialoghi e lore: tutte le 63.217 righe di testo del gioco.",
+    "lingua": "Inglese",
+    "nota_lingua": "La traduzione prende il posto dell'inglese: nelle impostazioni del gioco la lingua deve restare English.",
+    "chiudi": "Lost Light e il suo launcher",
+    "avvio": "Avvia il file e scegli 1 (Installa la traduzione italiana): l'installer trova il gioco nelle librerie di Steam e fa un backup prima di toccare qualsiasi file.",
+    "non_trova": "Se il gioco non viene trovato, scegli l'opzione 3 e incolla il percorso della cartella di Lost Light, quella che contiene Package\\lazy_code\\Encrypt_Python: per esempio D:\\SteamLibrary\\steamapps\\common\\Lost Light.",
+    "ripristino": "Chiudi il gioco, riapri l'installer e scegli 2, oppure avvia Ripristina_Originale.bat: tornano i file originali."
   }
 }

@@ -1,4 +1,4 @@
-# Ogni tre ore rigenera, dagli stessi dati, due cose:
+# Ogni ora rigenera, dagli stessi dati, due cose:
 #
 #  - catalog.json, il catalogo che l'hub scarica al posto di interrogare l'API
 #    di GitHub. Qui c'e' il GITHUB_TOKEN (5.000 richieste/ora), cosi' l'hub
@@ -6,15 +6,21 @@
 #  - il sito su GitHub Pages, una pagina per ogni traduzione.
 #
 # Una release nuova in uno qualunque dei repo delle traduzioni arriva cosi'
-# all'hub e al sito entro tre ore, senza toccare niente.
+# all'hub e al sito senza toccare niente. Per non aspettare il giro c'e'
+# tools/aggiorna_sito.py, che lo fa partire subito.
 
 name: Catalogo e sito
 
 on:
   schedule:
+    # Ogni ora, e non ogni tre: GitHub non garantisce l'orario dei giri
+    # programmati, li ritarda anche di ore e nei momenti di carico ne salta
+    # parecchi. Con "ogni tre ore" ne partivano tre o quattro al giorno, e una
+    # traduzione nuova poteva restare fuori dal sito per mezza giornata.
+    # Un giro che non trova niente di nuovo non fa commit e non ripubblica.
     # Il catalogo resta valido 36 ore lato hub: anche saltando qualche giro,
     # nessuno resta senza dati.
-    - cron: "17 */3 * * *"
+    - cron: "41 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
