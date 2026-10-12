@@ -1,0 +1,49 @@
+COLLEGAMENTO BUY ME A COFFEE — CODA DELLE TRADUZIONI
+
+Il sito resta su GitHub Pages. Il Worker su Cloudflare riceve gli eventi
+firmati di Buy Me a Coffee, aggiorna D1 e restituisce soltanto conteggi aggregati.
+
+URL pubblico: /public/support
+Webhook: /webhooks/bmc
+Verifica configurazione e ultimo test: /health
+
+REGOLE
+- La coda è in sito/coda.json. Ordine e stato sono decisioni editoriali;
+  il ricevitore non li modifica dopo i pagamenti.
+- Il codice scritto nella support_note, per esempio #AION2, associa il contributo
+  al progetto. Una nota con due codici riconosciuti non viene attribuita.
+- Una identità pseudonimizzata conta una sola volta per gioco, indipendentemente
+  dal numero di contributi o dall'importo. I contributi senza identità o senza
+  codice non aumentano i conteggi dedicati; continuano a sostenere il progetto.
+- I rimborsi non vengono contati e non sono riattivati da eventi ripetuti.
+- Le sottoscrizioni mensili attive con codice sono contate; le cancellazioni e
+  sospensioni vengono gestite dagli eventi di aggiornamento/cancellazione.
+- Gli eventi con live_mode=false confermano il collegamento senza gonfiare i dati.
+- Non si salvano nome, email, messaggio o importi. Restano identificativi di
+  pagamento/sottoscrizione, progetto, stato, timestamp e hash dell'identità.
+
+AGGIUNGERE UN PROGETTO
+1. Confermare la fattibilità e aggiungerlo a sito/coda.json, con un id univoco,
+   codice, stato e fase (0 traduzione, 1 revisione, 2 controlli, 3 pubblicazione).
+2. Aggiungere codice e id alla variabile PROJECT_CODES in wrangler.jsonc.
+3. Eseguire i test Node e pubblicare il Worker; pubblicare la modifica del sito.
+4. Comunicare il nuovo codice nel sito e nella pagina Buy Me a Coffee.
+
+SE MANCA IL CODICE
+I contributi non vengono attribuiti automaticamente a un titolo. Non dedurre il
+gioco dal nome del sostenitore o da altri dati personali. Gestire eventuali
+richieste di correzione con una procedura esplicita e documentata.
+
+SEGRETI
+BMC_SIGNING_SECRET e SUPPORTER_HASH_KEY sono segreti del Worker. Non inserirli
+nei sorgenti, nei commit o nelle istruzioni pubbliche. La seconda chiave deve
+restare stabile, anche quando si ruota la chiave del webhook, per non duplicare
+le identità già conteggiate.
+
+TEST
+node --test test/*.test.mjs
+Inviare anche un evento di prova dal pannello Buy Me a Coffee e verificare che
+la consegna abbia risposta HTTP 200 e /health riporti last_test_at.
+
+La coda pubblica e le guide restano utilizzabili anche se il servizio dei
+conteggi è temporaneamente indisponibile.
