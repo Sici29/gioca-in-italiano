@@ -1,8 +1,49 @@
 {
  "version": 1,
- "generated_at": "2026-10-12T11:01:13+00:00",
+ "generated_at": "2026-10-12T17:19:51+00:00",
  "user": "Sici29",
  "entries": [
+  {
+   "repo": {
+    "name": "Lost-Light-Italian-Translation",
+    "description": "Traduzione italiana completa per Lost Light con installer automatico",
+    "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-10-12T17:16:23Z"
+   },
+   "marker": {
+    "nome_gioco": "Lost Light",
+    "steam_appid": 1797880,
+    "cover_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1797880/header.jpg",
+    "motore_installazione": "bindict_patch"
+   },
+   "releases": [
+    {
+     "tag": "v1.0.0",
+     "name": "Lost Light — Traduzione italiana 1.0.0",
+     "date": "2026-10-12T17:16:23Z",
+     "body": "# Lost Light — Traduzione italiana 1.0.0\n\nTraduzione italiana completa al **100,00%** per Lost Light (hot patch **570**, build Steam **25184116**).\n\n## Installazione\n\n1. Chiudi **Lost Light**.\n2. Apri **Lost-Light-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona **English**: i testi saranno in italiano.\n\nPer ripristinare: riapri l'installer e scegli **2**.\n\n**63.217 / 63.217 stringhe (100,00%)** — Traduzione amatoriale non ufficiale.",
+     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/v1.0.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Lost-Light-Italian-Translation.exe",
+       "size": 32090879,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Lost-Light-Italian-Translation.exe",
+      "size": 32090879,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
+     },
+     "downloads": 0
+    }
+   ]
+  },
   {
    "repo": {
     "name": "Aniimo-Italian-Translation",
@@ -27,17 +68,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45314399,
-       "downloads": 63,
+       "downloads": 66,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45314399,
-      "downloads": 63,
+      "downloads": 66,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 63
+     "downloads": 66
     },
     {
      "tag": "v1.0.3634150.1",
@@ -280,17 +321,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 289,
+       "downloads": 291,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 289,
+      "downloads": 291,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 289
+     "downloads": 291
     }
    ]
   },
