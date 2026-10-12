@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-12T17:19:51+00:00",
+ "generated_at": "2026-10-12T17:31:48+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,7 +10,7 @@
     "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-10-12T17:16:23Z"
+    "pushed_at": "2026-10-12T17:24:28Z"
    },
    "marker": {
     "nome_gioco": "Lost Light",
@@ -29,14 +29,14 @@
      "assets": [
       {
        "name": "Lost-Light-Italian-Translation.exe",
-       "size": 32090879,
+       "size": 32089908,
        "downloads": 0,
        "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Lost-Light-Italian-Translation.exe",
-      "size": 32090879,
+      "size": 32089908,
       "downloads": 0,
       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
      },
