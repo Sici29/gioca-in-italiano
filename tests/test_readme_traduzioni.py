@@ -47,6 +47,43 @@ class Riquadro(unittest.TestCase):
         self.assertNotIn("scoprire", rt.blocco([]))
 
 
+def _cento():
+    tutte = [(f"Gioco{i}-Italian-Translation", f"Gioco {i}", f"gioco-{i}", i) for i in range(100)]
+    return tutte + [("Nuovo-Italian-Translation", "Nuovo", "nuovo", 0)]
+
+
+class PiuScaricate(unittest.TestCase):
+    """Con cento traduzioni il riquadro ne nomina cinque, non cento."""
+
+    def test_le_cinque_piu_scaricate_in_ordine(self):
+        altri, totale = rt.da_mostrare(_cento(), "Nuovo-Italian-Translation")
+        self.assertEqual([n for n, _ in altri], ["Gioco 99", "Gioco 98", "Gioco 97", "Gioco 96", "Gioco 95"])
+        self.assertEqual(totale, 100)
+
+    def test_non_nomina_se_stessa(self):
+        altri, totale = rt.da_mostrare(_cento(), "Gioco99-Italian-Translation")
+        self.assertNotIn("Gioco 99", [n for n, _ in altri])
+        self.assertEqual(altri[0][0], "Gioco 98")
+        self.assertEqual(totale, 100)
+
+    def test_a_pari_download_ordine_di_nome(self):
+        tutte = [("B", "Beta", "beta", 3), ("A", "Alfa", "alfa", 3), ("C", "Gamma", "gamma", 9)]
+        altri, _ = rt.da_mostrare(tutte, "X")
+        self.assertEqual([n for n, _ in altri], ["Gamma", "Alfa", "Beta"])
+
+    def test_se_sono_di_piu_porta_al_sito(self):
+        altri, totale = rt.da_mostrare(_cento(), "Nuovo-Italian-Translation")
+        testo = rt.blocco(altri, totale)
+        self.assertIn("le altre 100", testo)
+        self.assertIn(f"[Guardale tutte]({rt.SITO}#giochi)", testo)
+        self.assertEqual(testo.count(rt.SITO + "gioco-"), 5)
+
+    def test_se_ci_stanno_tutte_niente_rimando(self):
+        tutte = _cento()[:4]
+        altri, totale = rt.da_mostrare(tutte, "X")
+        self.assertNotIn("Guardale tutte", rt.blocco(altri, totale))
+
+
 class Inserimento(unittest.TestCase):
     def test_sotto_titolo_e_badge(self):
         nuovo = rt.inserisci(CON_BADGE, rt.blocco(ALTRI))

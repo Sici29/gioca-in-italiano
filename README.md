@@ -696,7 +696,9 @@ guide su Steam), ma ci mette settimane. Per accorciare i tempi:
 In cima al README di ogni traduzione c'è un riquadro che porta qui. Contiene
 una striscia con le copertine (`img/banner.jpg`, generata dal sito, quindi si
 aggiorna da sola), il link all'app, le altre traduzioni con le loro pagine e
-l'invito a proporre il prossimo gioco. Lo mette `tools/readme_traduzioni.py`,
+l'invito a proporre il prossimo gioco. Delle altre traduzioni nomina le cinque
+più scaricate, in ordine di download (`QUANTE_NEL_RIQUADRO`): quando sono di
+più, aggiunge quante sono in tutto e il link per guardarle tutte sul sito. Lo mette `tools/readme_traduzioni.py`,
 fra due commenti `gioca-in-italiano:inizio` e `:fine`. Quando arriva una
 traduzione nuova si rilancia, e tutti i README si aggiornano con l'elenco
 giusto. L'elenco viene dal catalogo, quindi prima la traduzione nuova ci deve
@@ -722,7 +724,7 @@ già scaricato invece di interrogare GitHub.
 
 ## Test
 
-339 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
+344 test, nessuna rete: tutto cio' che tocca GitHub o Steam e' simulato,
 quindi girano in pochi secondi e anche su Linux (la Action `test.yml` li
 esegue a ogni push). Si saltano da soli i sei che cifrano davvero con DPAPI,
 che e' di Windows, e quelli che eseguono `app.js` se manca Node.
@@ -835,7 +837,7 @@ sito/
   stile.css            l'aspetto del sito
   giochi.json          lingua, ripristino e note di ogni traduzione
   radice/              file copiati tali e quali nella radice del sito
-tests/           339 test, senza rete
+tests/           344 test, senza rete
 ```
 
 ---

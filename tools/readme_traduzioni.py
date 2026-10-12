@@ -43,6 +43,11 @@ SCARICA = (
 MESSAGGIO = "README: il riquadro di Gioca in Italiano, l'app con tutte le traduzioni"
 FIRMA = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
+# Quante altre traduzioni nomina il riquadro: le piu' scaricate. Con cento
+# traduzioni un elenco completo sarebbe un muro di link; le altre si trovano
+# sul sito, a cui il riquadro porta comunque.
+QUANTE_NEL_RIQUADRO = 5
+
 _RIGA_BADGE = re.compile(r"^\s*(\[!\[|!\[|<a\s|<img\s|<p\s+align)", re.I)
 
 
@@ -52,13 +57,22 @@ def elenco(nomi: list[str]) -> str:
     return ", ".join(nomi[:-1]) + " e " + nomi[-1]
 
 
-def blocco(altri: list[tuple[str, str]]) -> str:
+def blocco(altri: list[tuple[str, str]], totale: int | None = None) -> str:
     """Il riquadro, con i link alle pagine delle altre traduzioni.
 
-    `altri` e' una lista di (nome del gioco, cartella della pagina sul sito).
+    `altri` e' una lista di (nome del gioco, cartella della pagina sul sito),
+    gia' in ordine; `totale` quante sono le altre in tutto, se sono di piu'.
     """
     giochi = elenco([f"[{nome}]({SITO}{cartella}/)" for nome, cartella in altri])
-    scoperta = f" e ti fa scoprire le altre: {giochi}." if altri else "."
+    if totale and totale > len(altri):
+        scoperta = (
+            f" e ti fa scoprire le altre {totale}. Le più scaricate: {giochi}. "
+            f"[Guardale tutte]({SITO}#giochi)."
+        )
+    elif altri:
+        scoperta = f" e ti fa scoprire le altre: {giochi}."
+    else:
+        scoperta = "."
     return "\n".join(
         [
             INIZIO,
@@ -118,8 +132,20 @@ def inserisci(readme: str, riquadro: str) -> str:
 # --- GitHub ------------------------------------------------------------------
 
 
-def traduzioni() -> list[tuple[str, str, str]]:
-    """(repo, nome del gioco, cartella sul sito) di ogni traduzione pubblicata."""
+def da_mostrare(
+    tutte: list[tuple[str, str, str, int]], repo: str, quante: int = QUANTE_NEL_RIQUADRO
+) -> tuple[list[tuple[str, str]], int]:
+    """Le altre traduzioni da nominare nel README di `repo`, e quante sono in tutto.
+
+    Le piu' scaricate per prime; a pari download, in ordine di nome, cosi'
+    l'ordine non cambia da un giro all'altro senza motivo.
+    """
+    altre = sorted((t for t in tutte if t[0] != repo), key=lambda t: (-t[3], t[1].lower()))
+    return [(nome, cartella) for _, nome, cartella, _ in altre[:quante]], len(altre)
+
+
+def traduzioni() -> list[tuple[str, str, str, int]]:
+    """(repo, nome del gioco, cartella sul sito, download) di ogni traduzione pubblicata."""
     # Dall'API e non da raw.githubusercontent, che tiene in cache il file per
     # qualche minuto: subito dopo tools/aggiorna_sito.py darebbe ancora
     # l'elenco di prima, senza la traduzione appena uscita.
@@ -135,7 +161,9 @@ def traduzioni() -> list[tuple[str, str, str]]:
             continue
         marker = voce.get("marker") or {}
         nome = marker.get("nome_gioco") or config.pretty_game_name(repo)
-        out.append((repo, nome, slug(nome)))
+        # Gli stessi del sito: tutti gli allegati delle release in catalogo.
+        scaricati = sum(int(r.get("downloads") or 0) for r in voce.get("releases") or [])
+        out.append((repo, nome, slug(nome), scaricati))
     return out
 
 
@@ -181,9 +209,13 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     tutte = traduzioni()
-    for repo, nome, _ in tutte:
-        altri = [(n, c) for r, n, c in tutte if r != repo]
-        print(f"{repo}: {aggiorna(repo, blocco(altri), args.scrivi)}")
+    print("Le piu' scaricate:")
+    for _, nome, _, scaricati in sorted(tutte, key=lambda t: (-t[3], t[1].lower())):
+        print(f"  {scaricati:>6}  {nome}")
+    print()
+    for repo, *_ in tutte:
+        altri, totale = da_mostrare(tutte, repo)
+        print(f"{repo}: {aggiorna(repo, blocco(altri, totale), args.scrivi)}")
     if not args.scrivi:
         print("\nNiente e' stato scritto: rilancia con --scrivi per fare i commit.")
     return 0
