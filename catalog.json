@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-12T19:31:07+00:00",
+ "generated_at": "2026-10-12T23:45:17+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,7 +10,7 @@
     "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-10-12T17:53:58Z"
+    "pushed_at": "2026-10-12T20:04:01Z"
    },
    "marker": {
     "nome_gioco": "Lost Light",
@@ -30,29 +30,29 @@
       {
        "name": "Lost-Light-Italian-Payload-1.0.1.zip",
        "size": 24909919,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Payload-1.0.1.zip"
       },
       {
        "name": "Lost-Light-Italian-Translation.exe",
        "size": 43583538,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Translation.exe"
       },
       {
        "name": "SHA256SUMS.txt",
        "size": 206,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/SHA256SUMS.txt"
       }
      ],
      "download": {
       "name": "Lost-Light-Italian-Translation.exe",
       "size": 43583538,
-      "downloads": 0,
+      "downloads": 1,
       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Translation.exe"
      },
-     "downloads": 0
+     "downloads": 3
     },
     {
      "tag": "v1.0.0",
@@ -65,17 +65,17 @@
       {
        "name": "Lost-Light-Italian-Translation.exe",
        "size": 42534278,
-       "downloads": 2,
+       "downloads": 3,
        "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Lost-Light-Italian-Translation.exe",
       "size": 42534278,
-      "downloads": 2,
+      "downloads": 3,
       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
      },
-     "downloads": 2
+     "downloads": 3
     }
    ]
   },
@@ -103,17 +103,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45314399,
-       "downloads": 69,
+       "downloads": 72,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45314399,
-      "downloads": 69,
+      "downloads": 72,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 69
+     "downloads": 72
     },
     {
      "tag": "v1.0.3634150.1",
