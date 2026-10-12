@@ -48,15 +48,19 @@ class Riquadro(unittest.TestCase):
 
 
 def _cento():
-    tutte = [(f"Gioco{i}-Italian-Translation", f"Gioco {i}", f"gioco-{i}", i) for i in range(100)]
-    return tutte + [("Nuovo-Italian-Translation", "Nuovo", "nuovo", 0)]
+    # Gioco 0 e' uscito il 1 gennaio 2026, Gioco 99 il 10 aprile.
+    tutte = [
+        (f"Gioco{i}-Italian-Translation", f"Gioco {i}", f"gioco-{i}", f"2026-{1 + i // 31:02d}-{1 + i % 31:02d}T10:00:00Z")
+        for i in range(100)
+    ]
+    return tutte + [("Vecchio-Italian-Translation", "Vecchio", "vecchio", "2025-06-01T10:00:00Z")]
 
 
-class PiuScaricate(unittest.TestCase):
-    """Con cento traduzioni il riquadro ne nomina cinque, non cento."""
+class PiuRecenti(unittest.TestCase):
+    """Con cento traduzioni il riquadro ne nomina cinque, le ultime uscite."""
 
-    def test_le_cinque_piu_scaricate_in_ordine(self):
-        altri, totale = rt.da_mostrare(_cento(), "Nuovo-Italian-Translation")
+    def test_le_cinque_piu_recenti_in_ordine(self):
+        altri, totale = rt.da_mostrare(_cento(), "Vecchio-Italian-Translation")
         self.assertEqual([n for n, _ in altri], ["Gioco 99", "Gioco 98", "Gioco 97", "Gioco 96", "Gioco 95"])
         self.assertEqual(totale, 100)
 
@@ -66,21 +70,24 @@ class PiuScaricate(unittest.TestCase):
         self.assertEqual(altri[0][0], "Gioco 98")
         self.assertEqual(totale, 100)
 
-    def test_a_pari_download_ordine_di_nome(self):
-        tutte = [("B", "Beta", "beta", 3), ("A", "Alfa", "alfa", 3), ("C", "Gamma", "gamma", 9)]
+    def test_a_pari_data_ordine_di_nome(self):
+        tutte = [
+            ("B", "Beta", "beta", "2026-05-01T00:00:00Z"),
+            ("A", "Alfa", "alfa", "2026-05-01T00:00:00Z"),
+            ("C", "Gamma", "gamma", "2026-09-01T00:00:00Z"),
+        ]
         altri, _ = rt.da_mostrare(tutte, "X")
         self.assertEqual([n for n, _ in altri], ["Gamma", "Alfa", "Beta"])
 
     def test_se_sono_di_piu_porta_al_sito(self):
-        altri, totale = rt.da_mostrare(_cento(), "Nuovo-Italian-Translation")
+        altri, totale = rt.da_mostrare(_cento(), "Vecchio-Italian-Translation")
         testo = rt.blocco(altri, totale)
-        self.assertIn("le altre 100", testo)
+        self.assertIn("le altre 100. Le più recenti:", testo)
         self.assertIn(f"[Guardale tutte]({rt.SITO}#giochi)", testo)
         self.assertEqual(testo.count(rt.SITO + "gioco-"), 5)
 
     def test_se_ci_stanno_tutte_niente_rimando(self):
-        tutte = _cento()[:4]
-        altri, totale = rt.da_mostrare(tutte, "X")
+        altri, totale = rt.da_mostrare(_cento()[:4], "X")
         self.assertNotIn("Guardale tutte", rt.blocco(altri, totale))
 
 

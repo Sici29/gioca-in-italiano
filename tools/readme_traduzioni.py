@@ -43,9 +43,10 @@ SCARICA = (
 MESSAGGIO = "README: il riquadro di Gioca in Italiano, l'app con tutte le traduzioni"
 FIRMA = "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
 
-# Quante altre traduzioni nomina il riquadro: le piu' scaricate. Con cento
-# traduzioni un elenco completo sarebbe un muro di link; le altre si trovano
-# sul sito, a cui il riquadro porta comunque.
+# Quante altre traduzioni nomina il riquadro: le piu' recenti, cosi' chi
+# arriva su un repo scopre le novita'. Con cento traduzioni un elenco completo
+# sarebbe un muro di link; le altre si trovano sul sito, a cui il riquadro
+# porta comunque.
 QUANTE_NEL_RIQUADRO = 5
 
 _RIGA_BADGE = re.compile(r"^\s*(\[!\[|!\[|<a\s|<img\s|<p\s+align)", re.I)
@@ -66,7 +67,7 @@ def blocco(altri: list[tuple[str, str]], totale: int | None = None) -> str:
     giochi = elenco([f"[{nome}]({SITO}{cartella}/)" for nome, cartella in altri])
     if totale and totale > len(altri):
         scoperta = (
-            f" e ti fa scoprire le altre {totale}. Le più scaricate: {giochi}. "
+            f" e ti fa scoprire le altre {totale}. Le più recenti: {giochi}. "
             f"[Guardale tutte]({SITO}#giochi)."
         )
     elif altri:
@@ -133,19 +134,24 @@ def inserisci(readme: str, riquadro: str) -> str:
 
 
 def da_mostrare(
-    tutte: list[tuple[str, str, str, int]], repo: str, quante: int = QUANTE_NEL_RIQUADRO
+    tutte: list[tuple[str, str, str, str]], repo: str, quante: int = QUANTE_NEL_RIQUADRO
 ) -> tuple[list[tuple[str, str]], int]:
     """Le altre traduzioni da nominare nel README di `repo`, e quante sono in tutto.
 
-    Le piu' scaricate per prime; a pari download, in ordine di nome, cosi'
-    l'ordine non cambia da un giro all'altro senza motivo.
+    Le piu' recenti per prime, cioe' quelle uscite per ultime.
     """
-    altre = sorted((t for t in tutte if t[0] != repo), key=lambda t: (-t[3], t[1].lower()))
-    return [(nome, cartella) for _, nome, cartella, _ in altre[:quante]], len(altre)
+    altre = [t for t in tutte if t[0] != repo]
+    return [(nome, cartella) for _, nome, cartella, _ in in_ordine(altre)[:quante]], len(altre)
+
+
+def in_ordine(tutte: list[tuple[str, str, str, str]]) -> list[tuple[str, str, str, str]]:
+    """Dalla traduzione uscita per ultima alla prima; a pari data, per nome."""
+    per_nome = sorted(tutte, key=lambda t: t[1].lower())
+    return sorted(per_nome, key=lambda t: t[3], reverse=True)
 
 
 def traduzioni() -> list[tuple[str, str, str, int]]:
-    """(repo, nome del gioco, cartella sul sito, download) di ogni traduzione pubblicata."""
+    """(repo, nome del gioco, cartella sul sito, uscita) di ogni traduzione pubblicata."""
     # Dall'API e non da raw.githubusercontent, che tiene in cache il file per
     # qualche minuto: subito dopo tools/aggiorna_sito.py darebbe ancora
     # l'elenco di prima, senza la traduzione appena uscita.
@@ -161,10 +167,31 @@ def traduzioni() -> list[tuple[str, str, str, int]]:
             continue
         marker = voce.get("marker") or {}
         nome = marker.get("nome_gioco") or config.pretty_game_name(repo)
-        # Gli stessi del sito: tutti gli allegati delle release in catalogo.
-        scaricati = sum(int(r.get("downloads") or 0) for r in voce.get("releases") or [])
-        out.append((repo, nome, slug(nome), scaricati))
+        out.append((repo, nome, slug(nome), prima_uscita(repo)))
     return out
+
+
+def prima_uscita(repo: str) -> str:
+    """Quando e' uscita la traduzione: la data della sua prima release.
+
+    Non dal catalogo, che di ogni repo tiene solo le release recenti: per una
+    traduzione aggiornata spesso la piu' vecchia rimasta e' di poche settimane
+    fa, e passerebbe per nuova.
+    """
+    esito = subprocess.run(
+        [
+            "gh", "api", "--paginate",
+            f"repos/{config.GITHUB_USER}/{repo}/releases?per_page=100",
+            "--jq", ".[] | select((.draft or .prerelease) | not) | .published_at",
+        ],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    if esito.returncode != 0:
+        raise RuntimeError(esito.stderr.strip() or esito.stdout.strip())
+    date = esito.stdout.split()
+    return min(date) if date else ""
 
 
 def _gh(*argomenti: str, dati: dict | None = None) -> dict:
@@ -209,9 +236,9 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     tutte = traduzioni()
-    print("Le piu' scaricate:")
-    for _, nome, _, scaricati in sorted(tutte, key=lambda t: (-t[3], t[1].lower())):
-        print(f"  {scaricati:>6}  {nome}")
+    print("Dalla piu' recente:")
+    for _, nome, _, uscita in in_ordine(tutte):
+        print(f"  {uscita[:10]}  {nome}")
     print()
     for repo, *_ in tutte:
         altri, totale = da_mostrare(tutte, repo)

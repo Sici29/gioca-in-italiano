@@ -697,8 +697,9 @@ In cima al README di ogni traduzione c'è un riquadro che porta qui. Contiene
 una striscia con le copertine (`img/banner.jpg`, generata dal sito, quindi si
 aggiorna da sola), il link all'app, le altre traduzioni con le loro pagine e
 l'invito a proporre il prossimo gioco. Delle altre traduzioni nomina le cinque
-più scaricate, in ordine di download (`QUANTE_NEL_RIQUADRO`): quando sono di
-più, aggiunge quante sono in tutto e il link per guardarle tutte sul sito. Lo mette `tools/readme_traduzioni.py`,
+più recenti, dalla prima release più nuova (`QUANTE_NEL_RIQUADRO`): così chi
+arriva su un repo scopre le novità. Quando sono di più, aggiunge quante sono in
+tutto e il link per guardarle tutte sul sito. Lo mette `tools/readme_traduzioni.py`,
 fra due commenti `gioca-in-italiano:inizio` e `:fine`. Quando arriva una
 traduzione nuova si rilancia, e tutti i README si aggiornano con l'elenco
 giusto. L'elenco viene dal catalogo, quindi prima la traduzione nuova ci deve
