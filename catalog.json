@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-12T23:45:17+00:00",
+ "generated_at": "2026-10-13T15:15:20+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,7 +10,7 @@
     "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-10-12T20:04:01Z"
+    "pushed_at": "2026-10-13T08:55:44Z"
    },
    "marker": {
     "nome_gioco": "Lost Light",
@@ -20,62 +20,27 @@
    },
    "releases": [
     {
-     "tag": "v1.0.1",
-     "name": "Lost Light — Traduzione italiana 1.0.1: installer corretto",
-     "date": "2026-10-12T17:50:50Z",
-     "body": "Corregge la traduzione che risultava installata ma non veniva caricata: ora vengono aggiornati tutti e quattro i file in LocalData/Patch, comprese le copie lazy_code.\r\n\r\n- Migrazione automatica dalla 1.0.0 con ripristino verificato dei vecchi file Package.\r\n- Verifica hash del payload, integrità dei file installati e compatibilità della hot patch 570.\r\n- Backup e ripristino; rifiuto dei file aggiornati o sconosciuti.\r\n- Interfaccia aggiornata con pulsante principale evidenziato e link cliccabili ad altre traduzioni, Offrimi un caffè e sorgenti.\r\n\r\nTest: installazione/ripristino su quattro copie distinte, rilevamento modifiche e rifiuto versione sconosciuta; eseguibile inspect/status e avvio GUI verificati. Applicazione locale verificata 4/4. La prova in gioco resta da effettuare: selezionare English.\r\n\r\nLa traduzione del payload è invariata rispetto alla 1.0.0; questa release corregge l’installer.\r\n\r\nInstaller grafico Windows senza finestra del terminale; spec e checklist aggiornati per le build future.\r\n\r\nConferma verde dopo verifica dei quattro file, errori rossi, riepilogo non modificabile e chiusura bloccata durante le operazioni.\r\n",
-     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/v1.0.1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Lost-Light-Italian-Payload-1.0.1.zip",
-       "size": 24909919,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Payload-1.0.1.zip"
-      },
-      {
-       "name": "Lost-Light-Italian-Translation.exe",
-       "size": 43583538,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Translation.exe"
-      },
-      {
-       "name": "SHA256SUMS.txt",
-       "size": 206,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/SHA256SUMS.txt"
-      }
-     ],
-     "download": {
-      "name": "Lost-Light-Italian-Translation.exe",
-      "size": 43583538,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.1/Lost-Light-Italian-Translation.exe"
-     },
-     "downloads": 3
-    },
-    {
-     "tag": "v1.0.0",
+     "tag": "1.0.0",
      "name": "Lost Light — Traduzione italiana 1.0.0",
-     "date": "2026-10-12T17:16:23Z",
-     "body": "# Lost Light — Traduzione italiana 1.0.0\n\nTraduzione italiana completa al **100,00%** per Lost Light (hot patch **570**, build Steam **25184116**).\n\n## Installazione\n\n1. Chiudi **Lost Light**.\n2. Apri **Lost-Light-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona **English**: i testi saranno in italiano.\n\nPer ripristinare: riapri l'installer e scegli **2**.\n\n**63.217 / 63.217 stringhe (100,00%)** — Traduzione amatoriale non ufficiale.",
-     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/v1.0.0",
+     "date": "2026-10-13T08:51:50Z",
+     "body": "Traduzione italiana amatoriale dei testi di Lost Light.\r\n\r\nScarica Lost-Light-Italian-Setup-1.0.0.exe, chiudi gioco e launcher, installa e seleziona English.\r\n\r\nQuattro tabelle, 63.217 unità incluse le varianti. Layout e atlanti rimangono originali: alcune etichette possono restare cinesi o inglesi. Versione dei soli testi verificata in gioco. Installer grafico con icona, conferma verde, backup e ripristino.\r\n\r\nBuild Steam 25184116 / hot patch 570. Aggiornamenti del gioco possono richiedere una nuova versione compatibile.\r\n\r\nAltre traduzioni: https://sici29.github.io/gioca-in-italiano/\r\nSupporto: https://buymeacoffee.com/sici29\r\n",
+     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/1.0.0",
      "prerelease": false,
      "assets": [
       {
-       "name": "Lost-Light-Italian-Translation.exe",
-       "size": 42534278,
-       "downloads": 3,
-       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
+       "name": "Lost-Light-Italian-Setup-1.0.0.exe",
+       "size": 45484054,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
       }
      ],
      "download": {
-      "name": "Lost-Light-Italian-Translation.exe",
-      "size": 42534278,
-      "downloads": 3,
-      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/v1.0.0/Lost-Light-Italian-Translation.exe"
+      "name": "Lost-Light-Italian-Setup-1.0.0.exe",
+      "size": 45484054,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
      },
-     "downloads": 3
+     "downloads": 1
     }
    ]
   },
@@ -103,17 +68,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45314399,
-       "downloads": 72,
+       "downloads": 73,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45314399,
-      "downloads": 72,
+      "downloads": 73,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 72
+     "downloads": 73
     },
     {
      "tag": "v1.0.3634150.1",
@@ -356,17 +321,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 35828800,
-       "downloads": 291,
+       "downloads": 292,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 35828800,
-      "downloads": 291,
+      "downloads": 292,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 291
+     "downloads": 292
     }
    ]
   },
