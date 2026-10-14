@@ -57,12 +57,12 @@
   },
 
   "Lost-Light-Italian-Translation": {
-    "cosa": "Interfaccia, rifugio, armi, accessori e banchi da lavoro, abilità e classi, missioni dei mercanti, tutorial, oggetti, dialoghi e lore: tutte le 63.217 righe di testo del gioco.",
-    "lingua": "Inglese",
-    "nota_lingua": "La traduzione prende il posto dell'inglese: nelle impostazioni del gioco la lingua deve restare English.",
+    "cosa": "Traduzione italiana delle quattro tabelle di testo di Lost Light: 63.217 unità, comprese le varianti. Layout, atlanti e immagini restano originali: alcune etichette possono ancora apparire in cinese o inglese.",
+    "lingua": "English",
+    "nota_lingua": "La traduzione prende il posto dell'inglese: nelle impostazioni del gioco lascia English. La versione 1.0.0 è destinata alla build Steam 25184116 con hot patch 570; gli aggiornamenti del gioco possono richiedere una nuova versione compatibile.",
     "chiudi": "Lost Light e il suo launcher",
-    "avvio": "Avvia il file e scegli 1 (Installa la traduzione italiana): l'installer trova il gioco nelle librerie di Steam e fa un backup prima di toccare qualsiasi file.",
-    "non_trova": "Se il gioco non viene trovato, scegli l'opzione 3 e incolla il percorso della cartella di Lost Light, quella che contiene Package\\lazy_code\\Encrypt_Python: per esempio D:\\SteamLibrary\\steamapps\\common\\Lost Light.",
-    "ripristino": "Chiudi il gioco, riapri l'installer e scegli 2, oppure avvia Ripristina_Originale.bat: tornano i file originali."
+    "avvio": "Apri l'installer grafico, seleziona la cartella Steam di Lost Light e premi Installa Traduzione. Attendi la conferma verde prima di avviare il gioco: l'installer crea un backup e verifica i file copiati.",
+    "non_trova": "Indica la cartella principale di Lost Light nel selettore dell'installer, per esempio D:\\SteamLibrary\\steamapps\\common\\Lost Light. Su Steam la trovi da Libreria → Lost Light → Gestisci → Sfoglia i file locali.",
+    "ripristino": "Chiudi gioco e launcher, riapri l'installer e premi Ripristina Originali. I backup sono conservati in %LOCALAPPDATA%\\LostLightItalianTranslation. Installazione e ripristino rifiutano risorse aggiornate o sconosciute: dopo un aggiornamento del gioco può servire una versione compatibile."
   }
 }
