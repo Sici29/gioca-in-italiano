@@ -1,49 +1,8 @@
 {
  "version": 1,
- "generated_at": "2026-10-14T15:26:59+00:00",
+ "generated_at": "2026-10-15T17:19:31+00:00",
  "user": "Sici29",
  "entries": [
-  {
-   "repo": {
-    "name": "Lost-Light-Italian-Translation",
-    "description": "Traduzione italiana completa per Lost Light con installer automatico",
-    "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
-    "stargazers_count": 0,
-    "topics": [],
-    "pushed_at": "2026-10-13T08:55:44Z"
-   },
-   "marker": {
-    "nome_gioco": "Lost Light",
-    "steam_appid": 1797880,
-    "cover_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1797880/header.jpg",
-    "motore_installazione": "bindict_patch"
-   },
-   "releases": [
-    {
-     "tag": "1.0.0",
-     "name": "Lost Light — Traduzione italiana 1.0.0",
-     "date": "2026-10-13T08:51:50Z",
-     "body": "Traduzione italiana amatoriale dei testi di Lost Light.\r\n\r\nScarica Lost-Light-Italian-Setup-1.0.0.exe, chiudi gioco e launcher, installa e seleziona English.\r\n\r\nQuattro tabelle, 63.217 unità incluse le varianti. Layout e atlanti rimangono originali: alcune etichette possono restare cinesi o inglesi. Versione dei soli testi verificata in gioco. Installer grafico con icona, conferma verde, backup e ripristino.\r\n\r\nBuild Steam 25184116 / hot patch 570. Aggiornamenti del gioco possono richiedere una nuova versione compatibile.\r\n\r\nAltre traduzioni: https://sici29.github.io/gioca-in-italiano/\r\nSupporto: https://buymeacoffee.com/sici29\r\n",
-     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/1.0.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Lost-Light-Italian-Setup-1.0.0.exe",
-       "size": 45484054,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
-      }
-     ],
-     "download": {
-      "name": "Lost-Light-Italian-Setup-1.0.0.exe",
-      "size": 45484054,
-      "downloads": 1,
-      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
-     },
-     "downloads": 1
-    }
-   ]
-  },
   {
    "repo": {
     "name": "Aniimo-Italian-Translation",
@@ -51,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-10-09T18:41:48Z"
+    "pushed_at": "2026-10-15T16:39:11Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3732728.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3732728.0",
+     "date": "2026-10-15T16:40:13Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3732728.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3732728.0** (build 3732728), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3732728**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 15 ottobre 2026.\n  - Catalogo espanso a **112.365 chiavi totali** con copertura al **100,00%** (59 nuove chiavi e 211 stringhe modificate, interamente tradotte e revisionate; 2 stringhe obsolete rimosse dagli sviluppatori).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Set e accessori tematici Detective (Batlock Holmes)**: tradotte tutte le nuove voci di personalizzazione, acconciature, accessori, descrizioni e citazioni tematiche investigative (*\"Batlock Holmes\"*, *\"Asso delle Indagini\"*, *\"Deduzione Brillante\"*, *\"Deduzione Elementare\"*, *\"Treccia della Lucidità\"*, *\"Orecchie da Pipistrello Spione\"*).\n  - **Boss Omega**: tradotte e uniformate tutte le varianti boss Omega (*\"Infergon Omega\"*, *\"Tuckin Omega\"*, *\"Sherro Omega\"*, *\"Glynsera Omega\"*, *\"BOSS Infergon\"*).\n  - **Costruzione e combo della Base**: tradotti e corretti i comandi per la gestione e posizionamento arredi (*\"Premi la scheda Combo\"*, *\"Premi un arredo per aprire direttamente il Negozio di Arredamento e acquistarlo\"*, *\"Categoria Combo di Sistema\"*, *\"Raduno della Luna del Raccolto - Insieme\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3732728.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45275512,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45275512,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 0
+    },
     {
      "tag": "v1.0.3668494.0",
      "name": "Aniimo Traduzione Italiana 1.0.3668494.0",
@@ -68,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45314399,
-       "downloads": 92,
+       "downloads": 109,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45314399,
-      "downloads": 92,
+      "downloads": 109,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 92
+     "downloads": 109
     },
     {
      "tag": "v1.0.3634150.1",
@@ -309,29 +291,47 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0/Aniimo-Italian-Translation.exe"
      },
      "downloads": 71
-    },
+    }
+   ]
+  },
+  {
+   "repo": {
+    "name": "Lost-Light-Italian-Translation",
+    "description": "Traduzione italiana completa per Lost Light con installer automatico",
+    "html_url": "https://github.com/Sici29/Lost-Light-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-10-13T08:55:44Z"
+   },
+   "marker": {
+    "nome_gioco": "Lost Light",
+    "steam_appid": 1797880,
+    "cover_url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1797880/header.jpg",
+    "motore_installazione": "bindict_patch"
+   },
+   "releases": [
     {
-     "tag": "v0.4.2",
-     "name": "Aniimo - Traduzione Italiana v0.4.2 (Build Steam 3544783)",
-     "date": "2026-09-17T18:32:59Z",
-     "body": "# Aniimo — Traduzione italiana v0.4.2\r\n\r\nRelease per il client Steam (build 3544783).\r\n\r\n- **112.187 chiavi su 112.187 tradotte in italiano (100,00%)**, zero fallback e zero stringhe mancanti.\r\n- Supporto e traduzione completa della nuova build Steam **3544783**:\r\n  - Integrate le 4 nuove stringhe introdotte dagli sviluppatori (oggetti vincolati Sol Lion/Lunara, sblocco desideri, Edizione contratto Zanna Feroce).\r\n  - Revisionate e aggiornate tutte le 97 stringhe modificate (aggiornamento terminologico Hexxin, eventi crossover Sparkelf, requisiti livello 45/50/55, limiti settimanali Monete Voxel, nutrizione degli ecosistemi ai Rami).\r\n- Installer aggiornato con sincronizzazione tra StreamingAssets e cache cvs: garantisce priorità automatica all'archivio più recente quando Steam rilascia una nuova versione, applicando la traduzione a tutti gli archivi di gioco.\r\n- Un solo file EXE standalone con rilevamento prioritario automatico di Steam, fallback Pawprint e supporto a selezione manuale o posizionamento nella root del gioco.\r\n- Rilevamento dinamico per future versioni di Aniimo: compatibilità automatica 100% se i testi non cambiano, fallback selettivo all'inglese con avviso per eventuali nuove stringhe.\r\n- Backup automatico ad ogni installazione e ripristino immediato con opzione 2.\r\n\r\n### Installazione\r\n\r\n1. Chiudi Aniimo e il launcher.\r\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\r\n3. In gioco seleziona **Inglese**.\r\n\r\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\r\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v0.4.2",
+     "tag": "1.0.0",
+     "name": "Lost Light — Traduzione italiana 1.0.0",
+     "date": "2026-10-13T08:51:50Z",
+     "body": "Traduzione italiana amatoriale dei testi di Lost Light.\r\n\r\nScarica Lost-Light-Italian-Setup-1.0.0.exe, chiudi gioco e launcher, installa e seleziona English.\r\n\r\nQuattro tabelle, 63.217 unità incluse le varianti. Layout e atlanti rimangono originali: alcune etichette possono restare cinesi o inglesi. Versione dei soli testi verificata in gioco. Installer grafico con icona, conferma verde, backup e ripristino.\r\n\r\nBuild Steam 25184116 / hot patch 570. Aggiornamenti del gioco possono richiedere una nuova versione compatibile.\r\n\r\nAltre traduzioni: https://sici29.github.io/gioca-in-italiano/\r\nSupporto: https://buymeacoffee.com/sici29\r\n",
+     "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/tag/1.0.0",
      "prerelease": false,
      "assets": [
       {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 35828800,
-       "downloads": 292,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
+       "name": "Lost-Light-Italian-Setup-1.0.0.exe",
+       "size": 45484054,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
       }
      ],
      "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 35828800,
-      "downloads": 292,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v0.4.2/Aniimo-Italian-Translation.exe"
+      "name": "Lost-Light-Italian-Setup-1.0.0.exe",
+      "size": 45484054,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
      },
-     "downloads": 292
+     "downloads": 1
     }
    ]
   },
@@ -362,7 +362,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17247092,
-       "downloads": 5,
+       "downloads": 6,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -375,10 +375,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17247092,
-      "downloads": 5,
+      "downloads": 6,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.2/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 10
+     "downloads": 11
     },
     {
      "tag": "v1.1",
