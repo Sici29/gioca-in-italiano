@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-17T11:08:46+00:00",
+ "generated_at": "2026-10-17T22:37:38+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-10-17T07:26:47Z"
+    "pushed_at": "2026-10-17T20:01:47Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3746914.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3746914.0",
+     "date": "2026-10-17T20:03:24Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3746914.0\n\nAggiornamento completo per la nuova patch hotfix del client Steam **1.0.3746914.0** (build 3746914), con compatibilità confermata e testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3746914**:\n  - Piena compatibilità con l'aggiornamento hotfix di Aniimo rilasciato su Steam la sera del 17 ottobre 2026 (aggiornamento runtime e formule di calcolo).\n  - Catalogo confermato a **112.418 chiavi totali** con copertura al **100,00%**.\n  - 0 stringhe mancanti o non tradotte (0 fallback).\n- **Riepilogo contenuti supportati**:\n  - **Pacchetti a scaglioni e doni del negozio**: tradotte tutte le voci di progressione dei pacchetti consecutivi del negozio (*\"A Scaglioni\"*, *\"Grandi Doni a Scaglioni\"*, *\"Dopo aver ottenuto il pacchetto precedente, sblocca il successivo in ordine!\"*, *\"Acquistato\"*, *\"Tempo Rimanente\"*, numerazione sequenziale).\n  - **Nuove espressioni e accessori cosmetici**: tradotti i nuovi accessori per personaggi e Aniimo ed espressioni (*\"Domanda Profonda\"*, *\"Sudore Tattico\"*, *\"Stizzito\"*, con le relative descrizioni contestuali).\n  - **Oggetti Tenuti Leggendari e forzieri**: tradotti i selettori e le descrizioni degli Oggetti Tenuti di qualità Leggendaria (*\"Selezione Oggetto Tenuto Leggendario\"*, *\"Puoi scegliere come ricompensa uno degli Oggetti Tenuti di qualità Leggendaria.\"*, *\"L'elenco degli Oggetti Tenuti Leggendari è il seguente...\"*, *\"Questo Forziere è già stato aperto da qualcun altro.\"*).\n  - **Evento Raduno del Raccolto e bonus ESP**: tradotte le ricompense evento e la lettera di ringraziamento per l'organizzazione del Raduno del Raccolto, oltre alla notifica del bonus ESP raddoppiato sotto il livello 70 (*\"Bonus attivo: la quota di ESP ottenuta al di sotto del livello 70 è raddoppiata.\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3746914.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45279179,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45279179,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 2
+    },
     {
      "tag": "v1.0.3743667.0",
      "name": "Aniimo Traduzione Italiana 1.0.3743667.0",
@@ -27,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45276215,
-       "downloads": 8,
+       "downloads": 25,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45276215,
-      "downloads": 8,
+      "downloads": 25,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 8
+     "downloads": 25
     },
     {
      "tag": "v1.0.3732728.0",
@@ -268,29 +291,6 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R2/Aniimo-Italian-Translation.exe"
      },
      "downloads": 183
-    },
-    {
-     "tag": "1.0.3551601.0-R1",
-     "name": "Aniimo - Traduzione Italiana 1.0.3551601.0-R1 (Build Steam 3551601)",
-     "date": "2026-09-19T07:11:12Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3551601.0-R1\n\nRevisione R1 per la patch del client Steam **1.0.3551601.0** (build 3551601).\n\nQuesta revisione introduce importanti correzioni di compatibilità e usabilità emerse dai test della community su GitHub:\n\n- **Risolto errore `[WinError 2]` con Windows Defender (Accesso alle cartelle controllato)**:\n  - Spostata la cartella predefinita per backup, impostazioni, cache di aggiornamento e lock in `%LOCALAPPDATA%\\AniimoItalianTranslation`.\n  - Windows Defender Controlled Folder Access protegge `%USERPROFILE%\\Documents` bloccando le creazioni di directory; `%LOCALAPPDATA%` non è soggetto a questi blocchi ed è il percorso standard raccomandato su Windows.\n  - Aggiunto il supporto alla variabile d'ambiente `ANIIMO_WORK_DIR` e al parametro da riga di comando `--work-dir <percorso>` per consentire una configurazione completamente personalizzata.\n  - Mantenuta la lettura automatica e trasparente dei backup precedenti in `Documents`, protetta da eccezioni di sicurezza.\n- **Risolto disallineamento al ripristino di `LuaCacheVer.txt`**:\n  - `LuaCacheVer.txt` viene ora salvato nel backup di ciascun archivio Lua e verificato tramite hash SHA-256 nel manifest.\n  - Durante l'installazione, `LuaCacheVer.txt` viene sincronizzato con la dimensione e l'hash del nuovo `LuaScripts.xdt`.\n  - Durante il ripristino (opzione 2), `LuaCacheVer.txt` viene ripristinato fedelmente dal backup. Per eventuali backup creati con versioni precedenti, l'installer risincronizza automaticamente la riga con la versione, dimensione e hash del file originale ripristinato.\n- **Accesso immediato alla cartella dei backup (opzione 5)**:\n  - Aggiunta l'opzione **5** nel menu principale per mostrare il percorso esatto ed aprire direttamente la cartella dei backup in Esplora file di Windows.\n- **Traduzione invariata al 100,00%**: 112.187 chiavi su 112.187 tradotte con zero fallback e piena compatibilità terminologica.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. In gioco seleziona **Inglese**.\n\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/1.0.3551601.0-R1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 35830773,
-       "downloads": 47,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R1/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 35830773,
-      "downloads": 47,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R1/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 47
     }
    ]
   },
