@@ -8,10 +8,10 @@
   "Aniimo-Italian-Translation": {
     "cosa": "Tutti i testi del gioco in italiano: interfaccia, dialoghi, missioni, oggetti e tutorial, con gli accenti giusti e le date nel formato italiano.",
     "lingua": "Inglese",
-    "nota_lingua": "Per impostazione predefinita la traduzione sostituisce l'inglese. Con l'opzione 8 dell'installer puoi scegliere un'altra lingua da sostituire e mantenere l'inglese disponibile: la voce della lingua sostituita diventa Italiano. In questo caso seleziona Italiano nel gioco. Se la traduzione è già installata, ripristina i file originali prima di cambiare la lingua da sostituire.",
+    "nota_lingua": "La traduzione è sviluppata e verificata per la versione Steam di Aniimo. Le versioni Pawprint e standalone non sono state verificate. Per impostazione predefinita la traduzione sostituisce l'inglese. Con l'opzione 8 dell'installer puoi scegliere un'altra lingua da sostituire e mantenere l'inglese disponibile: la voce della lingua sostituita diventa Italiano. In questo caso seleziona Italiano nel gioco. Se la traduzione è già installata, ripristina i file originali prima di cambiare la lingua da sostituire.",
     "chiudi": "Aniimo e il suo launcher",
     "avvio": "Fai doppio clic sul file e premi Invio per l'installazione predefinita. Per mantenere anche l'inglese, scegli prima l'opzione 8 e indica un'altra lingua da sostituire. L'installer trova il gioco da solo e fa un backup prima di toccare qualsiasi file.",
-    "non_trova": "Se il gioco non viene trovato, sposta l'installer nella stessa cartella di Aniimo.exe e riaprilo, oppure scegli la cartella dalla finestra che compare. Su Steam la trovi da Libreria → Aniimo → Gestisci → Sfoglia i file locali.",
+    "non_trova": "Se il gioco non viene trovato, sposta l'installer nella stessa cartella di Aniimo.exe e riaprilo, oppure scegli l'opzione 4 dell'installer e indica la cartella del gioco. Su Steam la trovi da Libreria → Aniimo → Gestisci → Sfoglia i file locali.",
     "ripristino": "Chiudi il gioco, riapri l'installer, scrivi 2 e premi Invio: torna l'ultimo backup dei file originali.",
     "avvertenza": "È una modifica non ufficiale dei file del gioco: i termini di Pawprint limitano le modifiche non autorizzate e nessuno può garantire che non ci siano conseguenze sull'account."
   },
