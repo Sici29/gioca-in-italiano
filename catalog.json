@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-28T19:50:59+00:00",
+ "generated_at": "2026-10-28T23:28:09+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -48,10 +48,10 @@
       }
      ],
      "download": {
-      "name": "AION2_Genera_Patch_1.0.0.exe",
-      "size": 42221188,
+      "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
+      "size": 27246276,
       "downloads": 1,
-      "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Genera_Patch_1.0.0.exe"
+      "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
      },
      "downloads": 5
     }
