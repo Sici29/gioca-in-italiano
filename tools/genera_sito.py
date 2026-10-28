@@ -261,6 +261,8 @@ def carica_coda() -> dict:
             raise ValueError("sito/coda.json: identificativo progetto non valido")
         if p["id"] in ids or type(p.get("fase")) is not int or not 0 <= p["fase"] <= 3:
             raise ValueError("sito/coda.json: progetto duplicato o fase non valida")
+        if p.get("pagina") and not re.fullmatch(r"[a-z0-9-]+", str(p["pagina"])):
+            raise ValueError("sito/coda.json: pagina progetto non valida")
         ids.add(p["id"])
     api = dati.get("api_sostegni") or ""
     if api and not api.startswith("https://"):
@@ -555,8 +557,9 @@ def pagina_indice(giochi, hub, proposte, versione_css) -> str:
     anteprima_coda = ""
     if in_corso:
         p = in_corso[0]
+        occhiello_coda = "Disponibile, in aggiornamento" if p.get("pubblicata") is True else "Il prossimo progetto"
         anteprima_coda = f'''<section class="sezione coda-home">
-  <div class="contenitore coda-home-riga"><div><p class="occhiello">Il prossimo progetto</p>
+  <div class="contenitore coda-home-riga"><div><p class="occhiello">{occhiello_coda}</p>
     <h2>{e(p['titolo'])} <span class="coda-badge">{e(p['stato'])}</span></h2>
     <p>{e(p['descrizione'])}</p></div>
     <a class="bottone secondario" href="coda/">Guarda la coda {ICONA_FRECCIA}</a></div>
@@ -955,18 +958,24 @@ def pagina_gioco(g, altri, hub, versione_css) -> str:
 
 def pagina_coda(versione_css) -> str:
     dati = carica_coda()
-    fasi = ("Traduzione", "Revisione", "Controlli finali", "Pubblicazione")
     schede = []
     for i, p in enumerate(dati["progetti"], 1):
+        pubblicata = p.get("pubblicata") is True
+        fasi = (("Traduzione", "Revisione continua", "Prossimi controlli", "Prossimo aggiornamento")
+                if pubblicata else ("Traduzione", "Revisione", "Controlli finali", "Pubblicazione"))
+        etichetta = "Disponibile" if pubblicata else "In lavorazione"
+        collegamento = (f'<p><a class="bottone" href="../{e(p["pagina"])}/">Scarica e leggi le istruzioni {ICONA_FRECCIA}</a></p>'
+                        if p.get("pagina") else "")
         passi = "".join(
             f'<li class="{"completa" if n < p["fase"] else "attuale" if n == p["fase"] else ""}">'
             f'{e(f)}{" · completata" if n < p["fase"] else " · in corso" if n == p["fase"] else ""}</li>'
             for n, f in enumerate(fasi)
         )
         schede.append(f'''<article class="coda-progetto" id="{e(p['id'])}">
-      <div class="coda-titolo"><div><p class="occhiello">{i:02d} · In lavorazione</p>
+      <div class="coda-titolo"><div><p class="occhiello">{i:02d} · {etichetta}</p>
         <h2>{e(p['titolo'])}</h2></div><span class="coda-badge">{e(p['stato'])}</span></div>
       <p class="attacco">{e(p['descrizione'])}</p>
+      {collegamento}
       <ol class="coda-fasi" aria-label="Fasi del progetto">{passi}</ol>
       <p><strong>Il prossimo passo:</strong> {e(p['prossimo'])}</p>
       <div class="coda-sostegno"><div><h3>Dai una mano a questo progetto</h3>
@@ -981,7 +990,7 @@ def pagina_coda(versione_css) -> str:
         script = f'<script defer src="../coda.js" data-api="{e(dati["api_sostegni"])}"></script>'
     corpo = f'''<section class="sezione coda-intro"><div class="contenitore stretto">
     <p class="occhiello">Il lavoro, passo dopo passo</p>
-    <h1>Le prossime traduzioni, <span class="evidenzia">in chiaro</span>.</h1>
+    <h1>Traduzioni e aggiornamenti, <span class="evidenzia">in chiaro</span>.</h1>
     <p class="attacco">Qui trovi l'ordine dei progetti e la fase di ciascuno. Il sostegno della community
       mi aiuta a dedicare tempo alla revisione, agli strumenti e alle prossime traduzioni.</p>
     <p class="nota-sotto">Stato aggiornato il {e(data_it(dati.get('aggiornata')))}.</p>
@@ -1000,7 +1009,7 @@ def pagina_coda(versione_css) -> str:
     <a class="bottone secondario" href="../#proponi">Proponi il prossimo gioco {ICONA_FRECCIA}</a>
   </div></section>{script}'''
     return pagina(titolo=f"Coda delle traduzioni | {NOME}",
-        descrizione="Segui le prossime traduzioni italiane, lo stato della revisione e le priorità del progetto.",
+        descrizione="Segui le traduzioni italiane, lo stato della revisione e le priorità degli aggiornamenti.",
         percorso="coda/", radice="../", corpo=corpo, versione_css=versione_css)
 
 

@@ -1,14 +1,16 @@
 {
-  "aggiornata": "2026-10-12",
+  "aggiornata": "2026-10-29",
   "api_sostegni": "https://gioca-in-italiano-coda.antonio-de-matteo92.workers.dev/public/support",
   "progetti": [
     {
       "id": "aion2",
       "titolo": "AION 2",
-      "stato": "In revisione",
+      "stato": "Disponibile · revisione in corso",
+      "pubblicata": true,
+      "pagina": "aion2",
       "fase": 1,
-      "descrizione": "La traduzione è pronta. Sto revisionando i testi prima della pubblicazione.",
-      "prossimo": "Completare la revisione, poi eseguire i controlli finali.",
+      "descrizione": "La prima release per Steam è disponibile dal 28 ottobre. La revisione umana continua: non è dichiarata una verifica completa in gioco della build pubblicata.",
+      "prossimo": "Raccogliere le segnalazioni, proseguire la revisione e verificare i prossimi aggiornamenti del gioco.",
       "codice": "#AION2"
     }
   ]

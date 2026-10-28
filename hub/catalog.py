@@ -30,9 +30,15 @@ def _pick_asset(assets: list[dict]) -> dict | None:
     """Sceglie l'allegato da scaricare: prima un installer, poi il resto."""
     if not assets:
         return None
-    for asset in assets:
-        if str(asset.get("name", "")).lower().endswith(INSTALLER_EXT):
+    installers = [a for a in assets if str(a.get("name", "")).lower().endswith(INSTALLER_EXT)]
+    # Una release puo' includere anche strumenti per i revisori: il primo EXE
+    # alfabetico (per esempio Genera_Patch) non e' necessariamente l'installer.
+    for asset in installers:
+        name = str(asset.get("name", "")).lower()
+        if "setup" in name or ("install" in name and "uninstall" not in name):
             return asset
+    if installers:
+        return installers[0]
     return assets[0]
 
 

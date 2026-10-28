@@ -20,6 +20,19 @@ class SceltaAllegato(unittest.TestCase):
         assets = [{"name": "traduzione.zip", "size": 1, "downloads": 0, "url": "a"}]
         self.assertEqual(catalog._pick_asset(assets)["name"], "traduzione.zip")
 
+    def test_release_con_generatore_e_installer_per_giocatori(self):
+        # Ordine reale della prima release AION 2: il generatore precede il setup.
+        release = catalog._clean_release({"assets": [
+            {"name": "AION2_Genera_Patch_1.0.0.exe", "browser_download_url": "generatore"},
+            {"name": "AION2_Italiano_Setup_1.0.0_build26262663.exe", "browser_download_url": "installer"},
+            {"name": "AION2_Kit_Revisori.zip", "browser_download_url": "kit"},
+        ]})
+        self.assertEqual(release["download"]["url"], "installer")
+
+    def test_nome_installazione_non_fa_preferire_un_archivio(self):
+        assets = [{"name": "Setup.zip"}, {"name": "Traduzione.exe"}]
+        self.assertEqual(catalog._pick_asset(assets)["name"], "Traduzione.exe")
+
     def test_nessun_allegato(self):
         self.assertIsNone(catalog._pick_asset([]))
 

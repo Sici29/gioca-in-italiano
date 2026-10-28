@@ -5,6 +5,16 @@
     "Tutti i campi sono facoltativi. Il nome della chiave e' quello del repository su GitHub."
   ],
 
+  "AION2-Italian-Translation": {
+    "cosa": "Traduzione italiana amatoriale di AION 2 per Steam. La prima release comprende 153.297 testi; la revisione umana continua e non è dichiarata una verifica completa in gioco.",
+    "lingua": "Español",
+    "nota_lingua": "La release 1.0.0 è compatibile con la build Steam 26262663 e sostituisce i testi dello slot Español. La patch rifiuta build diverse: dopo un aggiornamento Steam attendi una release compatibile. La disponibilità della traduzione non significa che tutti i dubbi di contesto siano risolti.",
+    "chiudi": "AION 2 e lascia terminare gli aggiornamenti Steam",
+    "avvio": "Apri AION2_Italiano_Setup_1.0.0_build26262663.exe. L'installer cerca la cartella Steam automaticamente: premi Installare la traduzione, oppure Aggiornare la traduzione se già presente. Il generatore di patch e il kit revisori sono strumenti separati per chi modifica i testi e non servono per giocare.",
+    "non_trova": "Indica manualmente la cartella del gioco nell'installer. Puoi trovarla da Steam → Libreria → AION 2 → Gestisci → Sfoglia i file locali.",
+    "ripristino": "Chiudi il gioco, riapri lo stesso installer e usa la funzione di ripristino degli originali. Conserva il backup automatico. Lo stesso programma permette anche di controllare i file."
+  },
+
   "Aniimo-Italian-Translation": {
     "cosa": "Tutti i testi del gioco in italiano: interfaccia, dialoghi, missioni, oggetti e tutorial, con gli accenti giusti e le date nel formato italiano.",
     "lingua": "Inglese",

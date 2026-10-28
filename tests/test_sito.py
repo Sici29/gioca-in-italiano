@@ -250,6 +250,41 @@ class Generazione(unittest.TestCase):
         self.assertNotEqual(self.leggi("impronta.txt"), prima)
 
 
+class CodaPubblica(unittest.TestCase):
+    def progetto(self, pubblicata=False):
+        return {"id": "aion2", "titolo": "AION 2", "stato": "Disponibile" if pubblicata else "In revisione",
+                "fase": 1, "pubblicata": pubblicata, "pagina": "aion2", "codice": "#AION2",
+                "descrizione": "La revisione continua.", "prossimo": "Esaminare le segnalazioni."}
+
+    def test_release_disponibile_non_dichiara_la_revisione_completata(self):
+        dati = {"progetti": [self.progetto(True)]}
+        with mock.patch.object(sito, "carica_coda", return_value=dati):
+            pagina = sito.pagina_coda("test")
+            home = sito.pagina_indice([], None, [], "test")
+        self.assertIn("01 · Disponibile", pagina)
+        self.assertIn('href="../aion2/"', pagina)
+        self.assertIn("Revisione continua · in corso", pagina)
+        self.assertNotIn("Revisione continua · completata", pagina)
+        self.assertIn("Disponibile, in aggiornamento", home)
+        self.assertNotIn("Il prossimo progetto", home)
+
+    def test_progetto_non_pubblicato_conserva_le_fasi(self):
+        with mock.patch.object(sito, "carica_coda", return_value={"progetti": [self.progetto()]}):
+            pagina = sito.pagina_coda("test")
+        self.assertIn("01 · In lavorazione", pagina)
+        self.assertIn("Revisione · in corso", pagina)
+        self.assertNotIn("Prossimo aggiornamento", pagina)
+
+    def test_pagina_di_progetto_non_puo_uscire_dal_sito(self):
+        with tempfile.TemporaryDirectory() as cartella:
+            progetto = self.progetto(True)
+            progetto["pagina"] = "../../esterno"
+            Path(cartella, "coda.json").write_text(json.dumps({"progetti": [progetto]}), encoding="utf-8")
+            with mock.patch.object(sito, "SORGENTI", Path(cartella)):
+                with self.assertRaises(ValueError):
+                    sito.carica_coda()
+
+
 class CatalogoNelRepo(unittest.TestCase):
     """Il commit di catalog.json solo quando serve, non a ogni giro."""
 
