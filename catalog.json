@@ -1,8 +1,299 @@
 {
  "version": 1,
- "generated_at": "2026-10-28T23:28:09+00:00",
+ "generated_at": "2026-10-29T23:33:31+00:00",
  "user": "Sici29",
  "entries": [
+  {
+   "repo": {
+    "name": "Aniimo-Italian-Translation",
+    "description": "Traduzione italiana Aniimo",
+    "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
+    "stargazers_count": 8,
+    "topics": [],
+    "pushed_at": "2026-10-29T19:38:10Z"
+   },
+   "marker": {
+    "steam_appid": 4126040
+   },
+   "releases": [
+    {
+     "tag": "v1.0.3846247.0",
+     "name": "v1.0.3846247.0 - Autumn Wonderfest & Halloween Update",
+     "date": "2026-10-29T19:39:01Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3846247.0\n\nAggiornamento completo per la grande patch client Steam **1.0.3846247.0** (build 3846247) — **Autumn Wonderfest & Halloween Update**, con compatibilità confermata e testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3846247 (Autumn Wonderfest & Halloween Update)**:\n  - Catalogo espanso a **134.277 chiavi totali** (+21.859 tra nuove chiavi ed espansioni di contenuti).\n  - Copertura di traduzione confermata al **100,00%** con **0 stringhe mancanti** e **0 fallback**.\n  - Piena compatibilità con l'aggiornamento autunnale e di Halloween rilasciato su Steam il 29 ottobre 2026.\n- **Grandi contenuti tradotti**:\n  - **Festival delle Meraviglie Autunnale (Autumn Wonderfest)**: missioni evento, gare, stand, raduni, spettacoli di gorgoglii, festival dell'acqua dei Lilipole e Sugarfish, ricompense celebrative.\n  - **Speciale Halloween**: missioni e dialoghi dell'incredibile Aeon Zucca (*Pumpkin Aeon*), decorazioni a tema, forzieri misteriosi e oggetti da collezione.\n  - **Nuova area campeggio / Parco camper (RV Park)**: tradotte tutte le interazioni, descrizioni e missioni dell'area camper (*Sea of Flowers*), gestione delle piattaforme dell'avamposto e spedizioni degli Aniimo.\n  - **Nuove aree, isole e dungeon**: Cascate Sfioranubi (*Cloudreach Falls*), Gola delle Acque Selvagge, Faglia di Squarciocielo, Villaggio Marespecchio (*Mirrorsea Village*), Prova delle Rapide Impetuose (*Rushing Rapids Trial*), Secche Appiccicose (*Sticky Shoals*).\n  - **Nuove creature Aniimo e varianti Alfa/Omega**: Sugartini, Dewple, Ekrim, Jeglid, Lilipole, Popapus, Crocobask, Jeburst, Jabster, Scarlite e relative forme e abilità.\n  - **Nuove storie ed indagini**: dialoghi e missioni narrative di Ben, Capovillaggio Antara, Dr. Lewis, Nicole, Thesseo, Fannie, Lyle, Hoppy, Itsy, Lainey, Robin, Kyle e Jett.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Supporto nativo ai nuovi bundle grafici e font di gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Sincronizzazione automatica della cache `LuaCacheVer.txt` e verifica d'integrità.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Verifica d'installazione reale e controllo integrità al 100% sui file di gioco Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3846247.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 46839687,
+       "downloads": 12,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 46839687,
+      "downloads": 12,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 12
+    },
+    {
+     "tag": "v1.0.3746914.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3746914.0",
+     "date": "2026-10-17T20:03:24Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3746914.0\n\nAggiornamento completo per la nuova patch hotfix del client Steam **1.0.3746914.0** (build 3746914), con compatibilità confermata e testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3746914**:\n  - Piena compatibilità con l'aggiornamento hotfix di Aniimo rilasciato su Steam la sera del 17 ottobre 2026 (aggiornamento runtime e formule di calcolo).\n  - Catalogo confermato a **112.418 chiavi totali** con copertura al **100,00%**.\n  - 0 stringhe mancanti o non tradotte (0 fallback).\n- **Riepilogo contenuti supportati**:\n  - **Pacchetti a scaglioni e doni del negozio**: tradotte tutte le voci di progressione dei pacchetti consecutivi del negozio (*\"A Scaglioni\"*, *\"Grandi Doni a Scaglioni\"*, *\"Dopo aver ottenuto il pacchetto precedente, sblocca il successivo in ordine!\"*, *\"Acquistato\"*, *\"Tempo Rimanente\"*, numerazione sequenziale).\n  - **Nuove espressioni e accessori cosmetici**: tradotti i nuovi accessori per personaggi e Aniimo ed espressioni (*\"Domanda Profonda\"*, *\"Sudore Tattico\"*, *\"Stizzito\"*, con le relative descrizioni contestuali).\n  - **Oggetti Tenuti Leggendari e forzieri**: tradotti i selettori e le descrizioni degli Oggetti Tenuti di qualità Leggendaria (*\"Selezione Oggetto Tenuto Leggendario\"*, *\"Puoi scegliere come ricompensa uno degli Oggetti Tenuti di qualità Leggendaria.\"*, *\"L'elenco degli Oggetti Tenuti Leggendari è il seguente...\"*, *\"Questo Forziere è già stato aperto da qualcun altro.\"*).\n  - **Evento Raduno del Raccolto e bonus ESP**: tradotte le ricompense evento e la lettera di ringraziamento per l'organizzazione del Raduno del Raccolto, oltre alla notifica del bonus ESP raddoppiato sotto il livello 70 (*\"Bonus attivo: la quota di ESP ottenuta al di sotto del livello 70 è raddoppiata.\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3746914.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45279179,
+       "downloads": 111,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45279179,
+      "downloads": 111,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 111
+    },
+    {
+     "tag": "v1.0.3743667.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3743667.0",
+     "date": "2026-10-17T07:27:26Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3743667.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3743667.0** (build 3743667), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3743667**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 17 ottobre 2026.\n  - Catalogo espanso a **112.418 chiavi totali** con copertura al **100,00%** (53 nuove chiavi e 21 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte (0 fallback).\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Pacchetti a scaglioni e doni del negozio**: tradotte tutte le voci di progressione dei pacchetti consecutivi del negozio (*\"A Scaglioni\"*, *\"Grandi Doni a Scaglioni\"*, *\"Dopo aver ottenuto il pacchetto precedente, sblocca il successivo in ordine!\"*, *\"Acquistato\"*, *\"Tempo Rimanente\"*, numerazione sequenziale da 1 a 13).\n  - **Nuove espressioni e accessori cosmetici**: tradotti i nuovi accessori per personaggi e Aniimo ed espressioni (*\"Domanda Profonda\"*, *\"Sudore Tattico\"*, *\"Stizzito\"*, con le relative descrizioni contestuali).\n  - **Oggetti Tenuti Leggendari e forzieri**: tradotti i selettori e le descrizioni degli Oggetti Tenuti di qualità Leggendaria (*\"Selezione Oggetto Tenuto Leggendario\"*, *\"Puoi scegliere come ricompensa uno degli Oggetti Tenuti di qualità Leggendaria.\"*, *\"L'elenco degli Oggetti Tenuti Leggendari è il seguente...\"*, *\"Questo Forziere è già stato aperto da qualcun altro.\"*).\n  - **Evento Raduno del Raccolto e bonus ESP**: tradotte le ricompense evento e la lettera di ringraziamento per l'organizzazione del Raduno del Raccolto, oltre alla notifica del bonus ESP raddoppiato sotto il livello 70 (*\"Bonus attivo: la quota di ESP ottenuta al di sotto del livello 70 è raddoppiata.\"*).\n  - **Rifiniture Glamour Star e terminologia**: aggiornati i testi dell'evento *Glamour Star* (inclusa la valutazione dell'Onda d'Urto), allineati *\"Stadio Lumin\"* e *\"Ambra del Sogno di Farfalla\"*, e rifinite le descrizioni dello strumento per Aniimo.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3743667.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45276215,
+       "downloads": 26,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45276215,
+      "downloads": 26,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 26
+    },
+    {
+     "tag": "v1.0.3732728.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3732728.0",
+     "date": "2026-10-15T16:40:13Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3732728.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3732728.0** (build 3732728), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3732728**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 15 ottobre 2026.\n  - Catalogo espanso a **112.365 chiavi totali** con copertura al **100,00%** (59 nuove chiavi e 211 stringhe modificate, interamente tradotte e revisionate; 2 stringhe obsolete rimosse dagli sviluppatori).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Set e accessori tematici Detective (Batlock Holmes)**: tradotte tutte le nuove voci di personalizzazione, acconciature, accessori, descrizioni e citazioni tematiche investigative (*\"Batlock Holmes\"*, *\"Asso delle Indagini\"*, *\"Deduzione Brillante\"*, *\"Deduzione Elementare\"*, *\"Treccia della Lucidità\"*, *\"Orecchie da Pipistrello Spione\"*).\n  - **Boss Omega**: tradotte e uniformate tutte le varianti boss Omega (*\"Infergon Omega\"*, *\"Tuckin Omega\"*, *\"Sherro Omega\"*, *\"Glynsera Omega\"*, *\"BOSS Infergon\"*).\n  - **Costruzione e combo della Base**: tradotti e corretti i comandi per la gestione e posizionamento arredi (*\"Premi la scheda Combo\"*, *\"Premi un arredo per aprire direttamente il Negozio di Arredamento e acquistarlo\"*, *\"Categoria Combo di Sistema\"*, *\"Raduno della Luna del Raccolto - Insieme\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3732728.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45275512,
+       "downloads": 51,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45275512,
+      "downloads": 51,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 51
+    },
+    {
+     "tag": "v1.0.3668494.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3668494.0",
+     "date": "2026-10-09T18:43:12Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3668494.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3668494.0** (build 3668494), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3668494**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 9 ottobre 2026.\n  - Catalogo espanso a **112.308 chiavi totali** con copertura al **100,00%** (44 nuove chiavi e 99 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Evento Glamour Star (Stella Glamour)**: tradotti tutti i regolamenti delle audizioni del Polaris Institute, le anteprime dei turni preliminari e le descrizioni degli abbinamenti Aniimo/accessori.\n  - **Sistema di invio e diagnostica log**: tradotte le stringhe per l'invio dei log di gioco e i risultati del test di rete (*\"Carica registri\"*, *\"Diagnostica di rete completata\"*, *\"Risultati del test di rete caricati con successo\"*).\n  - **Revisione Oggetti Tenuti e Coltivazione**: rifinite e uniformate le descrizioni di coltivazione della Base (*\"Coltiva\"*, *\"Coltivazione\"*, *\"Coltivazione...\"*), le abilità degli Oggetti Tenuti, *\"Bosco delle Farfalle del Sogno\"* e *\"Erlath Umbrale\"*.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3668494.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45314399,
+       "downloads": 110,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45314399,
+      "downloads": 110,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 110
+    },
+    {
+     "tag": "v1.0.3634150.1",
+     "name": "Aniimo Traduzione Italiana 1.0.3634150.1",
+     "date": "2026-10-04T08:06:37Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3634150.1\n\nRelease correttiva per la build Steam **3634150**, incentrata sulla risoluzione completa di tutte le disallineazioni storiche segnalate nella **Issue #25** (grazie a @Kaen89!).\n\n### Novità e correzioni dell'aggiornamento:\n\n- **Risoluzione disallineamenti storici nel catalogo (Issue #25)**:\n  - Corrette **105 chiavi complessive** che presentavano testi italiani scambiati o associati a chiavi errate (ereditati dalle prime versioni beta del progetto).\n  - Tra queste:\n    - Titolo missione principale `1829593311`: corretto da *\"Ricevere un regalo da un amico conferisce 30 punti Affinità bonus.\"* a **\"Valutazione: Testimone della Luce Stellare\"** (*Assessment: Starlight's Witness*).\n    - Descrizioni dei chip, degli amplificatori d'attacco temporanei e delle unità protettive (*Illusory Attack Amplifier - Might/Tactics*, *Illusory Advanced Capacity Expansion Chip*, ecc.).\n    - Nomi, battute e descrizioni delle decorazioni dei Susuta (*Sunset Susuta*, *Splashy Susuta*, *Spring Stroll Susuta*, ecc.).\n    - Testi di sistema e di avviso manutenzione server, supporto dispositivi e personalizzazione personaggio.\n    - Casi dubbi verificati e corretti: `1173585695` *Home Girl* → **\"Ragazza Casalinga\"**, `1782344601` *Mantis Lady* → **\"Signora Mantide\"**, `1745656882` *Lin Xi's Rest Set* → **\"Set Riposo di Lin Xi\"**.\n    - Ripristinati i segnaposto e titoli invertiti per `{0} {1}` e *The Land Reawakens* (chiavi `1226459316`, `1241323712`, `1991632583`).\n    - Corretto parametro del buff per la Benedizione Spinosa (`1573680957`).\n- **Verifiche di qualità e coerenza terminologica**:\n  - Ogni stringa è stata revisionata confrontandola con i testi originali in inglese e le versioni ufficiali in francese e spagnolo per garantire coerenza contestuale e concordanza grammaticale.\n  - Tutti i tag (`<customRichText(...)>`, `<style=...>`, `<color=...>`) e segnaposto (`{0}`, `{1}`) sono stati convalidati con test di coerenza automatica al 100%.\n- **Suite di test**:\n  - Tutti i **161 test unitari superati con successo**.\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3634150.1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45309973,
+       "downloads": 82,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45309973,
+      "downloads": 82,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 82
+    },
+    {
+     "tag": "v1.0.3634150.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3634150.0",
+     "date": "2026-10-01T15:49:54Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3634150.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3634150.0** (build 3634150), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3634150**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 1° ottobre 2026.\n  - Catalogo espanso a **112.264 chiavi totali** con copertura al **100,00%** (1 nuova chiave e 15 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - Nuova battuta di condivisione estrazioni Tessiluce (*\"Ho fatto centro nel Tessiluce con un'unica estrazione! Condivido la mia fortuna con te!\"*).\n  - Revisione biglietti per Operazione: Furto d'Uova - Modalità Squadra (Caos).\n  - Voce menu radiale (*\"Apri menu radiale\"*), collezioni Tessiluce e avvisi di moderazione riscritti dagli sviluppatori in tono amichevole e collaborativo.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3634150.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45238599,
+       "downloads": 91,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45238599,
+      "downloads": 91,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 91
+    },
+    {
+     "tag": "v1.0.3629693.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3629693.0",
+     "date": "2026-09-30T16:08:29Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3629693.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3629693.0** (build 3629693), con risoluzione del blocco del controllo di download della cache e avviso specifico per le installazioni non-Steam.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3629693**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 30 settembre 2026.\n  - Catalogo espanso a **112.263 chiavi totali** con copertura al **100,00%** (49 nuove chiavi e 182 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Risoluzione del falso positivo di aggiornamento pendente (Issue #23)**:\n  - Corretta la funzione di verifica della cache di gioco (`pending_cvs_download`): in precedenza l'archivio base originale di Steam (`StreamingAssets`) veniva confrontato con la nuova build generando un falso positivo che bloccava l'installazione anche dopo aver avviato il gioco.\n  - L'installer ora verifica primariamente l'archivio attivo aggiornato dal gioco, sbloccando l'installazione per tutti gli utenti.\n  - Aggiunta la possibilità interattiva di forzare l'installazione se desiderato e un consiglio diagnostico per ripulire la cache `Aniimo_Data\\cvs\\res\\lua` qualora i file locali risultassero corrotti o bloccati.\n- **Avviso per versioni non-Steam (Pawprint / standalone)**:\n  - L'installer rileva automaticamente se la cartella selezionata non appartiene a un'installazione ufficiale di Steam e mostra un avviso chiaro ed esplicito per informare l'utente che le versioni non-Steam non sono ufficialmente supportate dalla patch italiana.\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)**:\n  - Confermata e pienamente operativa la scelta della lingua da sostituire (opzione `8` nel menu o parametro `--target`): puoi sostituire una lingua alternativa (come Portoghese, Spagnolo, Francese o Tedesco) per conservare sia l'Inglese che l'Italiano e passare dall'uno all'altro nelle opzioni di Aniimo.\n- **Qualità e test**:\n  - Suite di test estesa a **161 test unitari**, tutti superati con successo (0 errori, 0 fallimenti).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3629693.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45222517,
+       "downloads": 103,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45222517,
+      "downloads": 103,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 103
+    },
+    {
+     "tag": "v1.0.3616231.0",
+     "name": "Aniimo Traduzione Italiana 1.0.3616231.0",
+     "date": "2026-09-28T19:27:29Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3616231.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3616231.0** (build 3616231) con supporto alla selezione della lingua da sostituire.\n\n### Novità dell'aggiornamento:\n\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)** *(grazie a @Kaen89 — PR #22)*:\n  - Ora puoi scegliere quale lingua sostituire con l'Italiano: puoi mantenere l'Inglese intatto e sacrificare un'altra lingua che non utilizzi (ad es. il Portoghese `pt_PT`, lo Spagnolo `es_ES`, il Francese `fr_FR`, il Tedesco `de_DE`, ecc.).\n  - Nelle impostazioni di lingua di Aniimo rimarranno disponibili sia **English** che **Italiano**, permettendoti di passare comodamente dall'uno all'altro in qualunque momento senza disinstallare nulla (ideale per giocare con amici esteri o confrontare termini).\n  - La lingua da sostituire può essere selezionata dall'installer interattivo (opzione `8`) oppure tramite riga di comando (`--target <slot>`).\n  - **100% retrocompatibile**: premendo semplicemente Invio al primo avvio, l'installer continua a sostituire l'inglese di default come sempre.\n- **Supporto ufficiale alla build Steam 3616231**:\n  - Piena compatibilità con l'aggiornamento di Aniimo rilasciato il 28 settembre 2026.\n  - Catalogo aggiornato a **112.214 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n  - Tradotta la nuova funzione di emergenza **Unstuck** (*\"Sbloccati\"*) presente nei menu e nelle impostazioni per liberare il personaggio o l'Aniimo dalla mappa.\n  - Tradotta la nuova notifica per i pigmenti speciali (*\"Questo Aniimo è una variante speciale e non può usare questo Pigmento Scintillante.\"*).\n  - Aggiornate le descrizioni dei trasformatori di Forma Prismana (per Whisperwake Isles e Breezy Plains) per riflettere le nuove regole sulle forme sbloccate e il mantenimento dei Potenziali Acquisiti.\n- **Guardia automatica sul download del patcher di gioco**:\n  - L'installer rileva automaticamente se Steam ha aggiornato l'eseguibile mentre la cartella `cvs` deve ancora essere sincronizzata dal client di gioco, evitando che la traduzione venga inavvertitamente sovrascritta al primo avvio.\n- **Qualità e test**:\n  - Suite di test estesa a **159 test unitari** interamente superati (copertura totale di regressione, integrità dei 13 slot lingua e sicurezza dei backup).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3616231.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 45216651,
+       "downloads": 96,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 45216651,
+      "downloads": 96,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 96
+    },
+    {
+     "tag": "v1.0.3603741.0",
+     "name": "Release 1.0.3603741.0",
+     "date": "2026-09-26T07:48:06Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3603741.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3603741.0** (build 3603741).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3603741**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 26 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità e modifiche**:\n  - Tradotte e integrate tutte le **122 stringhe** modificate della build 3603741.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornate le descrizioni degli oggetti per gli Hatchinator dell'Avamposto e della Base.\n  - Aggiornate le FAQ e le informazioni di supporto per il Club Polaris e il Mini-programma Aniimo Land.\n  - Aggiornati i requisiti delle missioni (Capitolo 7, cattura Aniimo Leggendari, decorazione piattaforme nei Parchi).\n  - Aggiornati i messaggi di raggiungimento quota per i Timbri stagionali (Simulatore Olo-battaglie, Interconnessione, Ordinazioni Base, Tè Sotto le Stelle, Furto d'Uova, Alpha).\n  - Rifinite le interazioni, i quiz e gli obiettivi degli Hummin.\n  - Corretti e aggiornati i testi relativi agli sconti ufficiali sui Cristalli Lumin e alle regole della Trasmogrificazione.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3603741.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 42919319,
+       "downloads": 160,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 42919319,
+      "downloads": 160,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 160
+    },
+    {
+     "tag": "v1.0.3595896.0",
+     "name": "Release 1.0.3595896.0: supporto Steam build 3595896",
+     "date": "2026-09-24T16:53:50Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3595896.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3595896.0** (build 3595896).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3595896**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 24 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **11 stringhe** nuove e modificate della build 3595896.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornati i testi della Trasmogrificazione per l'Ombra Fluttuante Scintillante e l'Ombra di Sogno Radiosa.\n  - Aggiornata la descrizione del Giradischi per la Base e l'Area Residenziale.\n  - Aggiornati i messaggi promozionali per lo sconto del 5% sui Cristalli Lumin tramite Pagamento Ufficiale.\n  - Aggiornata la sezione Riscatto Punti (Prossimamente) e la denominazione dell'Ambra del Sogno di Farfalla.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3595896.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 42918830,
+       "downloads": 93,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 42918830,
+      "downloads": 93,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 93
+    },
+    {
+     "tag": "v1.0.3584014.0",
+     "name": "Release 1.0.3584014.0: supporto Steam build 3584014",
+     "date": "2026-09-23T07:19:50Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3584014.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3584014.0** (build 3584014).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3584014**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 23 settembre 2026.\n  - Catalogo espanso a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o in lingua originale).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **837 stringhe** nuove e modificate della build 3584014.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile), pronomi, nomi dei tratti e terminologia coerente degli equipaggiamenti.\n  - Aggiornate descrizioni degli eventi stagionali, abilità di combattimento, nuovi chip tattici per Santuari Perduti, missioni di Irisalis e nuove notifiche del gioco.\n- **Supporto al nuovo bundle font nativo**:\n  - Registrato e validato il nuovo bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab` introdotto con la build 3584014, garantendo la corretta visualizzazione di tutte le lettere accentate italiane.\n- **Miglioramento dell'installer in modalità fallback**:\n  - Ottimizzata la procedura di fallback automatico per future build di gioco: la generazione della patch e la verifica dell'archivio operano in modo trasparente anche in presenza di nuove versioni non ancora registrate.\n- **Conservazione delle funzionalità e stabilità**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3584014.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 12679104,
+       "downloads": 146,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 12679104,
+      "downloads": 146,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 146
+    }
+   ]
+  },
   {
    "repo": {
     "name": "AION2-Italian-Translation",
@@ -217,297 +508,6 @@
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.0/Installatore_Traduzione_NTE.exe"
      },
      "downloads": 2
-    }
-   ]
-  },
-  {
-   "repo": {
-    "name": "Aniimo-Italian-Translation",
-    "description": "Traduzione italiana Aniimo",
-    "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
-    "stargazers_count": 8,
-    "topics": [],
-    "pushed_at": "2026-10-17T20:01:47Z"
-   },
-   "marker": {
-    "steam_appid": 4126040
-   },
-   "releases": [
-    {
-     "tag": "v1.0.3746914.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3746914.0",
-     "date": "2026-10-17T20:03:24Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3746914.0\n\nAggiornamento completo per la nuova patch hotfix del client Steam **1.0.3746914.0** (build 3746914), con compatibilità confermata e testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3746914**:\n  - Piena compatibilità con l'aggiornamento hotfix di Aniimo rilasciato su Steam la sera del 17 ottobre 2026 (aggiornamento runtime e formule di calcolo).\n  - Catalogo confermato a **112.418 chiavi totali** con copertura al **100,00%**.\n  - 0 stringhe mancanti o non tradotte (0 fallback).\n- **Riepilogo contenuti supportati**:\n  - **Pacchetti a scaglioni e doni del negozio**: tradotte tutte le voci di progressione dei pacchetti consecutivi del negozio (*\"A Scaglioni\"*, *\"Grandi Doni a Scaglioni\"*, *\"Dopo aver ottenuto il pacchetto precedente, sblocca il successivo in ordine!\"*, *\"Acquistato\"*, *\"Tempo Rimanente\"*, numerazione sequenziale).\n  - **Nuove espressioni e accessori cosmetici**: tradotti i nuovi accessori per personaggi e Aniimo ed espressioni (*\"Domanda Profonda\"*, *\"Sudore Tattico\"*, *\"Stizzito\"*, con le relative descrizioni contestuali).\n  - **Oggetti Tenuti Leggendari e forzieri**: tradotti i selettori e le descrizioni degli Oggetti Tenuti di qualità Leggendaria (*\"Selezione Oggetto Tenuto Leggendario\"*, *\"Puoi scegliere come ricompensa uno degli Oggetti Tenuti di qualità Leggendaria.\"*, *\"L'elenco degli Oggetti Tenuti Leggendari è il seguente...\"*, *\"Questo Forziere è già stato aperto da qualcun altro.\"*).\n  - **Evento Raduno del Raccolto e bonus ESP**: tradotte le ricompense evento e la lettera di ringraziamento per l'organizzazione del Raduno del Raccolto, oltre alla notifica del bonus ESP raddoppiato sotto il livello 70 (*\"Bonus attivo: la quota di ESP ottenuta al di sotto del livello 70 è raddoppiata.\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3746914.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45279179,
-       "downloads": 95,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45279179,
-      "downloads": 95,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 95
-    },
-    {
-     "tag": "v1.0.3743667.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3743667.0",
-     "date": "2026-10-17T07:27:26Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3743667.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3743667.0** (build 3743667), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3743667**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 17 ottobre 2026.\n  - Catalogo espanso a **112.418 chiavi totali** con copertura al **100,00%** (53 nuove chiavi e 21 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte (0 fallback).\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Pacchetti a scaglioni e doni del negozio**: tradotte tutte le voci di progressione dei pacchetti consecutivi del negozio (*\"A Scaglioni\"*, *\"Grandi Doni a Scaglioni\"*, *\"Dopo aver ottenuto il pacchetto precedente, sblocca il successivo in ordine!\"*, *\"Acquistato\"*, *\"Tempo Rimanente\"*, numerazione sequenziale da 1 a 13).\n  - **Nuove espressioni e accessori cosmetici**: tradotti i nuovi accessori per personaggi e Aniimo ed espressioni (*\"Domanda Profonda\"*, *\"Sudore Tattico\"*, *\"Stizzito\"*, con le relative descrizioni contestuali).\n  - **Oggetti Tenuti Leggendari e forzieri**: tradotti i selettori e le descrizioni degli Oggetti Tenuti di qualità Leggendaria (*\"Selezione Oggetto Tenuto Leggendario\"*, *\"Puoi scegliere come ricompensa uno degli Oggetti Tenuti di qualità Leggendaria.\"*, *\"L'elenco degli Oggetti Tenuti Leggendari è il seguente...\"*, *\"Questo Forziere è già stato aperto da qualcun altro.\"*).\n  - **Evento Raduno del Raccolto e bonus ESP**: tradotte le ricompense evento e la lettera di ringraziamento per l'organizzazione del Raduno del Raccolto, oltre alla notifica del bonus ESP raddoppiato sotto il livello 70 (*\"Bonus attivo: la quota di ESP ottenuta al di sotto del livello 70 è raddoppiata.\"*).\n  - **Rifiniture Glamour Star e terminologia**: aggiornati i testi dell'evento *Glamour Star* (inclusa la valutazione dell'Onda d'Urto), allineati *\"Stadio Lumin\"* e *\"Ambra del Sogno di Farfalla\"*, e rifinite le descrizioni dello strumento per Aniimo.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3743667.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45276215,
-       "downloads": 25,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45276215,
-      "downloads": 25,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 25
-    },
-    {
-     "tag": "v1.0.3732728.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3732728.0",
-     "date": "2026-10-15T16:40:13Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3732728.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3732728.0** (build 3732728), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3732728**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 15 ottobre 2026.\n  - Catalogo espanso a **112.365 chiavi totali** con copertura al **100,00%** (59 nuove chiavi e 211 stringhe modificate, interamente tradotte e revisionate; 2 stringhe obsolete rimosse dagli sviluppatori).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Set e accessori tematici Detective (Batlock Holmes)**: tradotte tutte le nuove voci di personalizzazione, acconciature, accessori, descrizioni e citazioni tematiche investigative (*\"Batlock Holmes\"*, *\"Asso delle Indagini\"*, *\"Deduzione Brillante\"*, *\"Deduzione Elementare\"*, *\"Treccia della Lucidità\"*, *\"Orecchie da Pipistrello Spione\"*).\n  - **Boss Omega**: tradotte e uniformate tutte le varianti boss Omega (*\"Infergon Omega\"*, *\"Tuckin Omega\"*, *\"Sherro Omega\"*, *\"Glynsera Omega\"*, *\"BOSS Infergon\"*).\n  - **Costruzione e combo della Base**: tradotti e corretti i comandi per la gestione e posizionamento arredi (*\"Premi la scheda Combo\"*, *\"Premi un arredo per aprire direttamente il Negozio di Arredamento e acquistarlo\"*, *\"Categoria Combo di Sistema\"*, *\"Raduno della Luna del Raccolto - Insieme\"*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3732728.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45275512,
-       "downloads": 50,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45275512,
-      "downloads": 50,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3732728.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 50
-    },
-    {
-     "tag": "v1.0.3668494.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3668494.0",
-     "date": "2026-10-09T18:43:12Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3668494.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3668494.0** (build 3668494), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3668494**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 9 ottobre 2026.\n  - Catalogo espanso a **112.308 chiavi totali** con copertura al **100,00%** (44 nuove chiavi e 99 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - **Evento Glamour Star (Stella Glamour)**: tradotti tutti i regolamenti delle audizioni del Polaris Institute, le anteprime dei turni preliminari e le descrizioni degli abbinamenti Aniimo/accessori.\n  - **Sistema di invio e diagnostica log**: tradotte le stringhe per l'invio dei log di gioco e i risultati del test di rete (*\"Carica registri\"*, *\"Diagnostica di rete completata\"*, *\"Risultati del test di rete caricati con successo\"*).\n  - **Revisione Oggetti Tenuti e Coltivazione**: rifinite e uniformate le descrizioni di coltivazione della Base (*\"Coltiva\"*, *\"Coltivazione\"*, *\"Coltivazione...\"*), le abilità degli Oggetti Tenuti, *\"Bosco delle Farfalle del Sogno\"* e *\"Erlath Umbrale\"*.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3668494.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45314399,
-       "downloads": 109,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45314399,
-      "downloads": 109,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3668494.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 109
-    },
-    {
-     "tag": "v1.0.3634150.1",
-     "name": "Aniimo Traduzione Italiana 1.0.3634150.1",
-     "date": "2026-10-04T08:06:37Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3634150.1\n\nRelease correttiva per la build Steam **3634150**, incentrata sulla risoluzione completa di tutte le disallineazioni storiche segnalate nella **Issue #25** (grazie a @Kaen89!).\n\n### Novità e correzioni dell'aggiornamento:\n\n- **Risoluzione disallineamenti storici nel catalogo (Issue #25)**:\n  - Corrette **105 chiavi complessive** che presentavano testi italiani scambiati o associati a chiavi errate (ereditati dalle prime versioni beta del progetto).\n  - Tra queste:\n    - Titolo missione principale `1829593311`: corretto da *\"Ricevere un regalo da un amico conferisce 30 punti Affinità bonus.\"* a **\"Valutazione: Testimone della Luce Stellare\"** (*Assessment: Starlight's Witness*).\n    - Descrizioni dei chip, degli amplificatori d'attacco temporanei e delle unità protettive (*Illusory Attack Amplifier - Might/Tactics*, *Illusory Advanced Capacity Expansion Chip*, ecc.).\n    - Nomi, battute e descrizioni delle decorazioni dei Susuta (*Sunset Susuta*, *Splashy Susuta*, *Spring Stroll Susuta*, ecc.).\n    - Testi di sistema e di avviso manutenzione server, supporto dispositivi e personalizzazione personaggio.\n    - Casi dubbi verificati e corretti: `1173585695` *Home Girl* → **\"Ragazza Casalinga\"**, `1782344601` *Mantis Lady* → **\"Signora Mantide\"**, `1745656882` *Lin Xi's Rest Set* → **\"Set Riposo di Lin Xi\"**.\n    - Ripristinati i segnaposto e titoli invertiti per `{0} {1}` e *The Land Reawakens* (chiavi `1226459316`, `1241323712`, `1991632583`).\n    - Corretto parametro del buff per la Benedizione Spinosa (`1573680957`).\n- **Verifiche di qualità e coerenza terminologica**:\n  - Ogni stringa è stata revisionata confrontandola con i testi originali in inglese e le versioni ufficiali in francese e spagnolo per garantire coerenza contestuale e concordanza grammaticale.\n  - Tutti i tag (`<customRichText(...)>`, `<style=...>`, `<color=...>`) e segnaposto (`{0}`, `{1}`) sono stati convalidati con test di coerenza automatica al 100%.\n- **Suite di test**:\n  - Tutti i **161 test unitari superati con successo**.\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3634150.1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45309973,
-       "downloads": 81,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45309973,
-      "downloads": 81,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.1/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 81
-    },
-    {
-     "tag": "v1.0.3634150.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3634150.0",
-     "date": "2026-10-01T15:49:54Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3634150.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3634150.0** (build 3634150), con traduzione di tutte le nuove stringhe e testi aggiornati al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3634150**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 1° ottobre 2026.\n  - Catalogo espanso a **112.264 chiavi totali** con copertura al **100,00%** (1 nuova chiave e 15 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Dettaglio testi aggiornati e tradotti**:\n  - Nuova battuta di condivisione estrazioni Tessiluce (*\"Ho fatto centro nel Tessiluce con un'unica estrazione! Condivido la mia fortuna con te!\"*).\n  - Revisione biglietti per Operazione: Furto d'Uova - Modalità Squadra (Caos).\n  - Voce menu radiale (*\"Apri menu radiale\"*), collezioni Tessiluce e avvisi di moderazione riscritti dagli sviluppatori in tono amichevole e collaborativo.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Risoluzione del controllo di download della cache con sincronizzazione affidabile.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Installazione e verifica live con esito 100% compatibile sui file reali di Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3634150.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45238599,
-       "downloads": 90,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45238599,
-      "downloads": 90,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 90
-    },
-    {
-     "tag": "v1.0.3629693.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3629693.0",
-     "date": "2026-09-30T16:08:29Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3629693.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3629693.0** (build 3629693), con risoluzione del blocco del controllo di download della cache e avviso specifico per le installazioni non-Steam.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3629693**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 30 settembre 2026.\n  - Catalogo espanso a **112.263 chiavi totali** con copertura al **100,00%** (49 nuove chiavi e 182 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Risoluzione del falso positivo di aggiornamento pendente (Issue #23)**:\n  - Corretta la funzione di verifica della cache di gioco (`pending_cvs_download`): in precedenza l'archivio base originale di Steam (`StreamingAssets`) veniva confrontato con la nuova build generando un falso positivo che bloccava l'installazione anche dopo aver avviato il gioco.\n  - L'installer ora verifica primariamente l'archivio attivo aggiornato dal gioco, sbloccando l'installazione per tutti gli utenti.\n  - Aggiunta la possibilità interattiva di forzare l'installazione se desiderato e un consiglio diagnostico per ripulire la cache `Aniimo_Data\\cvs\\res\\lua` qualora i file locali risultassero corrotti o bloccati.\n- **Avviso per versioni non-Steam (Pawprint / standalone)**:\n  - L'installer rileva automaticamente se la cartella selezionata non appartiene a un'installazione ufficiale di Steam e mostra un avviso chiaro ed esplicito per informare l'utente che le versioni non-Steam non sono ufficialmente supportate dalla patch italiana.\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)**:\n  - Confermata e pienamente operativa la scelta della lingua da sostituire (opzione `8` nel menu o parametro `--target`): puoi sostituire una lingua alternativa (come Portoghese, Spagnolo, Francese o Tedesco) per conservare sia l'Inglese che l'Italiano e passare dall'uno all'altro nelle opzioni di Aniimo.\n- **Qualità e test**:\n  - Suite di test estesa a **161 test unitari**, tutti superati con successo (0 errori, 0 fallimenti).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3629693.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45222517,
-       "downloads": 102,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45222517,
-      "downloads": 102,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 102
-    },
-    {
-     "tag": "v1.0.3616231.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3616231.0",
-     "date": "2026-09-28T19:27:29Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3616231.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3616231.0** (build 3616231) con supporto alla selezione della lingua da sostituire.\n\n### Novità dell'aggiornamento:\n\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)** *(grazie a @Kaen89 — PR #22)*:\n  - Ora puoi scegliere quale lingua sostituire con l'Italiano: puoi mantenere l'Inglese intatto e sacrificare un'altra lingua che non utilizzi (ad es. il Portoghese `pt_PT`, lo Spagnolo `es_ES`, il Francese `fr_FR`, il Tedesco `de_DE`, ecc.).\n  - Nelle impostazioni di lingua di Aniimo rimarranno disponibili sia **English** che **Italiano**, permettendoti di passare comodamente dall'uno all'altro in qualunque momento senza disinstallare nulla (ideale per giocare con amici esteri o confrontare termini).\n  - La lingua da sostituire può essere selezionata dall'installer interattivo (opzione `8`) oppure tramite riga di comando (`--target <slot>`).\n  - **100% retrocompatibile**: premendo semplicemente Invio al primo avvio, l'installer continua a sostituire l'inglese di default come sempre.\n- **Supporto ufficiale alla build Steam 3616231**:\n  - Piena compatibilità con l'aggiornamento di Aniimo rilasciato il 28 settembre 2026.\n  - Catalogo aggiornato a **112.214 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n  - Tradotta la nuova funzione di emergenza **Unstuck** (*\"Sbloccati\"*) presente nei menu e nelle impostazioni per liberare il personaggio o l'Aniimo dalla mappa.\n  - Tradotta la nuova notifica per i pigmenti speciali (*\"Questo Aniimo è una variante speciale e non può usare questo Pigmento Scintillante.\"*).\n  - Aggiornate le descrizioni dei trasformatori di Forma Prismana (per Whisperwake Isles e Breezy Plains) per riflettere le nuove regole sulle forme sbloccate e il mantenimento dei Potenziali Acquisiti.\n- **Guardia automatica sul download del patcher di gioco**:\n  - L'installer rileva automaticamente se Steam ha aggiornato l'eseguibile mentre la cartella `cvs` deve ancora essere sincronizzata dal client di gioco, evitando che la traduzione venga inavvertitamente sovrascritta al primo avvio.\n- **Qualità e test**:\n  - Suite di test estesa a **159 test unitari** interamente superati (copertura totale di regressione, integrità dei 13 slot lingua e sicurezza dei backup).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3616231.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45216651,
-       "downloads": 94,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45216651,
-      "downloads": 94,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 94
-    },
-    {
-     "tag": "v1.0.3603741.0",
-     "name": "Release 1.0.3603741.0",
-     "date": "2026-09-26T07:48:06Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3603741.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3603741.0** (build 3603741).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3603741**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 26 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità e modifiche**:\n  - Tradotte e integrate tutte le **122 stringhe** modificate della build 3603741.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornate le descrizioni degli oggetti per gli Hatchinator dell'Avamposto e della Base.\n  - Aggiornate le FAQ e le informazioni di supporto per il Club Polaris e il Mini-programma Aniimo Land.\n  - Aggiornati i requisiti delle missioni (Capitolo 7, cattura Aniimo Leggendari, decorazione piattaforme nei Parchi).\n  - Aggiornati i messaggi di raggiungimento quota per i Timbri stagionali (Simulatore Olo-battaglie, Interconnessione, Ordinazioni Base, Tè Sotto le Stelle, Furto d'Uova, Alpha).\n  - Rifinite le interazioni, i quiz e gli obiettivi degli Hummin.\n  - Corretti e aggiornati i testi relativi agli sconti ufficiali sui Cristalli Lumin e alle regole della Trasmogrificazione.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3603741.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 42919319,
-       "downloads": 159,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 42919319,
-      "downloads": 159,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 159
-    },
-    {
-     "tag": "v1.0.3595896.0",
-     "name": "Release 1.0.3595896.0: supporto Steam build 3595896",
-     "date": "2026-09-24T16:53:50Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3595896.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3595896.0** (build 3595896).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3595896**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 24 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **11 stringhe** nuove e modificate della build 3595896.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornati i testi della Trasmogrificazione per l'Ombra Fluttuante Scintillante e l'Ombra di Sogno Radiosa.\n  - Aggiornata la descrizione del Giradischi per la Base e l'Area Residenziale.\n  - Aggiornati i messaggi promozionali per lo sconto del 5% sui Cristalli Lumin tramite Pagamento Ufficiale.\n  - Aggiornata la sezione Riscatto Punti (Prossimamente) e la denominazione dell'Ambra del Sogno di Farfalla.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3595896.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 42918830,
-       "downloads": 92,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 42918830,
-      "downloads": 92,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3595896.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 92
-    },
-    {
-     "tag": "v1.0.3584014.0",
-     "name": "Release 1.0.3584014.0: supporto Steam build 3584014",
-     "date": "2026-09-23T07:19:50Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3584014.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3584014.0** (build 3584014).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3584014**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 23 settembre 2026.\n  - Catalogo espanso a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o in lingua originale).\n- **Traduzione integrale di tutte le novità**:\n  - Tradotte e integrate tutte le **837 stringhe** nuove e modificate della build 3584014.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile), pronomi, nomi dei tratti e terminologia coerente degli equipaggiamenti.\n  - Aggiornate descrizioni degli eventi stagionali, abilità di combattimento, nuovi chip tattici per Santuari Perduti, missioni di Irisalis e nuove notifiche del gioco.\n- **Supporto al nuovo bundle font nativo**:\n  - Registrato e validato il nuovo bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab` introdotto con la build 3584014, garantendo la corretta visualizzazione di tutte le lettere accentate italiane.\n- **Miglioramento dell'installer in modalità fallback**:\n  - Ottimizzata la procedura di fallback automatico per future build di gioco: la generazione della patch e la verifica dell'archivio operano in modo trasparente anche in presenza di nuove versioni non ancora registrate.\n- **Conservazione delle funzionalità e stabilità**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3584014.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 12679104,
-       "downloads": 145,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 12679104,
-      "downloads": 145,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3584014.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 145
-    },
-    {
-     "tag": "1.0.3551601.0-R2",
-     "name": "Aniimo - Traduzione Italiana 1.0.3551601.0-R2 (Build Steam 3551601)",
-     "date": "2026-09-19T11:38:54Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3551601.0-R2\n\nRevisione R2 per la patch del client Steam **1.0.3551601.0** (build 3551601).\n\nQuesta revisione risolve un problema critico di visualizzazione dei testi emerso su installazioni con cache preesistente o file sciolti (*loose files*):\n\n- **Risolto problema dei testi troncati / sfasati in gioco**:\n  - In precedenza, in presenza di un vecchio file `Compress_en.bin` nella cartella prioritaria di runtime (`Aniimo_Data\\cvs\\res\\lua\\LuaScripts\\Data\\I18N`), il motore del gioco combinava la nuova mappa dei testi con il vecchio buffer binario non sincronizzato, provocando lo slittamento dei byte e stringhe tagliate o incomplete (es. nei menu, scritte dei comandi e descrizioni di oggetti).\n  - L'installer ora rileva la presenza di file di localizzazione sciolti non allineati (`check_loose_i18n_sync`), li segnala nell'interfaccia (`↑ FILE LINGUA DISALLINEATI`) e garantisce la sincronizzazione completa e bidirezionale in **tutti** gli archivi e percorsi di runtime del gioco (`StreamingAssets` e cartelle `cvs`).\n- **Backup e ripristino multi-archivio per file sciolti**:\n  - I file sciolti di localizzazione presenti in qualsiasi archivio attivo vengono ora tracciati singolarmente nel manifest di backup e rimossi/ripristinati in modo pulito al momento del ripristino (opzione 2).\n- **Mantenute tutte le funzionalità introdotte con R1**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender (cartella di lavoro in `%LOCALAPPDATA%\\AniimoItalianTranslation`).\n  - Supporto al parametro `--work-dir` e alla variabile d'ambiente `ANIIMO_WORK_DIR`.\n  - Risincronizzazione e tracciamento rigoroso di `LuaCacheVer.txt`.\n  - Apertura immediata della cartella dei backup (opzione 5 / `backup-dir`).\n- **Traduzione invariata al 100,00%**: 112.187 chiavi su 112.187 tradotte con zero fallback e piena compatibilità terminologica.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. In gioco seleziona **Inglese**.\n\nSe il percorso non viene trovato automaticamente, sposta l'installer accanto ad Aniimo.exe e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/1.0.3551601.0-R2",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 24340820,
-       "downloads": 183,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R2/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 24340820,
-      "downloads": 183,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/1.0.3551601.0-R2/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 183
     }
    ]
   },
