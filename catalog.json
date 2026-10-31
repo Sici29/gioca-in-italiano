@@ -1,8 +1,72 @@
 {
  "version": 1,
- "generated_at": "2026-10-31T07:28:24+00:00",
+ "generated_at": "2026-10-31T13:51:05+00:00",
  "user": "Sici29",
  "entries": [
+  {
+   "repo": {
+    "name": "Fatekeeper-Italian-Translation",
+    "description": "Traduzione italiana completa per Fatekeeper con installer automatico",
+    "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
+    "stargazers_count": 0,
+    "topics": [],
+    "pushed_at": "2026-10-31T10:16:53Z"
+   },
+   "marker": {
+    "nome_gioco": "Fatekeeper",
+    "cover_url": null,
+    "motore_installazione": "unreal_pak",
+    "steam_appid": 2186990
+   },
+   "releases": [
+    {
+     "tag": "0.1.4-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.4-R1 (Build Steam 0.1.4)",
+     "date": "2026-10-31T10:16:53Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.4-R1 (Data: 31/10/2026)\n\nAggiornamento della localizzazione italiana integrale per la nuova versione di **Fatekeeper** (Steam Build **0.1.4** / BuildID `26328649`).\n\n#### Novità & Caratteristiche Principali:\n- **Espansione Database: 1.795 stringhe (+284 voci nette, 100% dell'intero gioco)**:\n  - **Scheda Attributi Dettagliata (`ST_AttributeUI`, 184 voci)**: parametri avanzati di penetrazione e resistenza (fisica ed elementale: contundente, perforazione, taglio, fuoco, gelo, fulmine, vento, veleno, vuoto, sangue, arcano), finestre e ritardi di parata/deviazione, tempi di recupero e regressione alterazioni di stato (*Sanguinamento*, *Bruciatura*, *Corrosione*, *Stordimento*, *Congelamento*, *Folgorazione*), parametri telecinesi ed efficienza alchemica.\n  - **Nuovi Oggetti ed Equipaggiamento (`Item`)**: Runa dell'abisso, Quercia antica, Bastone dell'arcanista, Chiave del cortile, Chiave di rame decorata, Leviatano, Amuleto poliedrico, Pietra della maratona, Medaglia del vigore, Giorno e notte, Sentiero dello spettro dei ghiacci, Talismano del guerriero, Furia degli Antichi.\n  - **Modificatori Procedurali (`ST_GeneratedModifiers`)**: formule dinamiche tradotte preservando al 100% i token di calcolo per armi, magie e attacchi disarmati.\n  - **Supporto Controller Esteso & HDR**: layout per gamepad PlayStation, Xbox, Steam e calibrazione luminosità HDR.\n  - **Schermate di Caricamento & Lore (`ST_LoadingScreen`)**: approfondimenti su Mar Guran, il Portale Lunare, le Gallerie di Trasporto e i Custodi di Solace.\n  - **Riallineamento Hash CityHash64**: 124 voci modificate o ampliate dagli sviluppatori riallineate al 100% con gli asset di gioco della build 0.1.4.\n\n#### Architettura Tecnica UE5:\n- File base originale Steam `pakchunk0-Windows.pak` (90.088.270 byte) preservato integro con backup automatico.\n- Nuovo seed di hash dei percorsi `0xC623D5C0` (3324237248) e indici cifrati in AES-256-ECB V11.\n- Registrazione ufficiale della cultura italiana `it` in `Game.locmeta` (v2).\n\n#### Installazione Rapida:\n1. Scarica **`Fatekeeper-Italian-Translation.exe`**.\n2. Chiudi il gioco se aperto ed avvia l'eseguibile.\n3. Seleziona **`[1] Installa Traduzione Italiana`**.\n4. Avvia **Fatekeeper** da Steam: tutti i testi appariranno immediatamente in italiano!\n",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.4-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7357873,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7357873,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
+     },
+     "downloads": 1
+    },
+    {
+     "tag": "0.1.3-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
+     "date": "2026-09-20T09:24:05Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam\r\n4. Imposta IT nelle impostazioni e gioca subito in italiano!",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7752041,
+       "downloads": 4,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7752041,
+      "downloads": 4,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+     },
+     "downloads": 4
+    }
+   ]
+  },
   {
    "repo": {
     "name": "Aniimo-Italian-Translation",
@@ -27,17 +91,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46840070,
-       "downloads": 2,
+       "downloads": 20,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3857679.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46840070,
-      "downloads": 2,
+      "downloads": 20,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3857679.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 2
+     "downloads": 20
     },
     {
      "tag": "v1.0.3846247.0",
@@ -375,23 +439,23 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17542536,
-       "downloads": 1,
+       "downloads": 3,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
       },
       {
        "name": "pakchunk999-Windows_999_P.pak",
        "size": 18260816,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/pakchunk999-Windows_999_P.pak"
       }
      ],
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17542536,
-      "downloads": 1,
+      "downloads": 3,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 1
+     "downloads": 4
     },
     {
      "tag": "v1.3",
@@ -734,47 +798,6 @@
       "url": "https://github.com/Sici29/Lost-Light-Italian-Translation/releases/download/1.0.0/Lost-Light-Italian-Setup-1.0.0.exe"
      },
      "downloads": 1
-    }
-   ]
-  },
-  {
-   "repo": {
-    "name": "Fatekeeper-Italian-Translation",
-    "description": "Traduzione italiana completa per Fatekeeper con installer automatico",
-    "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
-    "stargazers_count": 0,
-    "topics": [],
-    "pushed_at": "2026-09-28T15:42:11Z"
-   },
-   "marker": {
-    "nome_gioco": "Fatekeeper",
-    "cover_url": null,
-    "motore_installazione": "unreal_pak",
-    "steam_appid": 2186990
-   },
-   "releases": [
-    {
-     "tag": "0.1.3-R1",
-     "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
-     "date": "2026-09-20T09:24:05Z",
-     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam\r\n4. Imposta IT nelle impostazioni e gioca subito in italiano!",
-     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Fatekeeper-Italian-Translation.exe",
-       "size": 7752041,
-       "downloads": 2,
-       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Fatekeeper-Italian-Translation.exe",
-      "size": 7752041,
-      "downloads": 2,
-      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
-     },
-     "downloads": 2
     }
    ]
   },
