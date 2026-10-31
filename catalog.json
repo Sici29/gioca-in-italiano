@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-29T23:33:31+00:00",
+ "generated_at": "2026-10-31T01:02:59+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46839687,
-       "downloads": 12,
+       "downloads": 45,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46839687,
-      "downloads": 12,
+      "downloads": 45,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 12
+     "downloads": 45
     },
     {
      "tag": "v1.0.3746914.0",
@@ -50,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45279179,
-       "downloads": 111,
+       "downloads": 112,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45279179,
-      "downloads": 111,
+      "downloads": 112,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3746914.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 111
+     "downloads": 112
     },
     {
      "tag": "v1.0.3743667.0",
@@ -165,17 +165,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45238599,
-       "downloads": 91,
+       "downloads": 92,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45238599,
-      "downloads": 91,
+      "downloads": 92,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 91
+     "downloads": 92
     },
     {
      "tag": "v1.0.3629693.0",
@@ -188,17 +188,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45222517,
-       "downloads": 103,
+       "downloads": 105,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45222517,
-      "downloads": 103,
+      "downloads": 105,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 103
+     "downloads": 105
     },
     {
      "tag": "v1.0.3616231.0",
@@ -322,7 +322,7 @@
       {
        "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
        "size": 27246276,
-       "downloads": 1,
+       "downloads": 3,
        "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
       },
       {
@@ -341,10 +341,10 @@
      "download": {
       "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
       "size": 27246276,
-      "downloads": 1,
+      "downloads": 3,
       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
      },
-     "downloads": 5
+     "downloads": 7
     }
    ]
   },
@@ -375,7 +375,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17542536,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -388,10 +388,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17542536,
-      "downloads": 0,
+      "downloads": 1,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 0
+     "downloads": 1
     },
     {
      "tag": "v1.3",
@@ -764,17 +764,17 @@
       {
        "name": "Fatekeeper-Italian-Translation.exe",
        "size": 7752041,
-       "downloads": 1,
+       "downloads": 2,
        "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Fatekeeper-Italian-Translation.exe",
       "size": 7752041,
-      "downloads": 1,
+      "downloads": 2,
       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
      },
-     "downloads": 1
+     "downloads": 2
     }
    ]
   },
