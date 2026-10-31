@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-10-31T13:51:05+00:00",
+ "generated_at": "2026-10-31T18:43:57+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -91,17 +91,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46840070,
-       "downloads": 20,
+       "downloads": 31,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3857679.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46840070,
-      "downloads": 20,
+      "downloads": 31,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3857679.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 20
+     "downloads": 31
     },
     {
      "tag": "v1.0.3846247.0",
@@ -386,7 +386,7 @@
       {
        "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
        "size": 27246276,
-       "downloads": 3,
+       "downloads": 4,
        "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
       },
       {
@@ -405,10 +405,10 @@
      "download": {
       "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
       "size": 27246276,
-      "downloads": 3,
+      "downloads": 4,
       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
      },
-     "downloads": 7
+     "downloads": 8
     }
    ]
   },
@@ -1027,7 +1027,19 @@
    ]
   }
  ],
- "proposals": [],
+ "proposals": [
+  {
+   "number": 1,
+   "title": "[Proposta]",
+   "url": "https://github.com/Sici29/Sici29/issues/1",
+   "votes": 0,
+   "up": 0,
+   "comments": 0,
+   "created": "2026-10-31T14:14:52Z",
+   "labels": [],
+   "in_lavorazione": false
+  }
+ ],
  "hub_release": {
   "tag_name": "v1.0.1",
   "name": "Gioca in Italiano 1.0.1",
