@@ -1,92 +1,100 @@
 {
  "version": 1,
- "generated_at": "2026-11-05T22:15:14+00:00",
+ "generated_at": "2026-11-06T18:23:44+00:00",
  "user": "Sici29",
  "entries": [
   {
    "repo": {
-    "name": "Fatekeeper-Italian-Translation",
-    "description": "Traduzione italiana completa per Fatekeeper con installer automatico",
-    "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
+    "name": "AION2-Italian-Translation",
+    "description": "Traduzione italiana gratuita di AION 2 Steam, installer reversibile e strumenti offline per i revisori. Con il contributo di LPI.",
+    "html_url": "https://github.com/Sici29/AION2-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-11-05T18:43:50Z"
+    "pushed_at": "2026-11-06T17:30:50Z"
    },
-   "marker": {
-    "nome_gioco": "Fatekeeper",
-    "cover_url": null,
-    "motore_installazione": "unreal_pak",
-    "steam_appid": 2186990
-   },
+   "marker": {},
    "releases": [
     {
-     "tag": "0.1.4.1-R1",
-     "name": "Fatekeeper - Traduzione Italiana 0.1.4.1-R1 (Hotfix Steam 0.1.4.1)",
-     "date": "2026-11-05T18:43:50Z",
-     "body": "### Fatekeeper - Traduzione Italiana 0.1.4.1-R1 (Data: 05/11/2026)\n\nAggiornamento della localizzazione italiana per il nuovo **Hotfix 0.1.4.1** di **Fatekeeper** (Steam Build `0.1.4.1` / BuildID `26436096`).\n\n#### Novità & Note di Aggiornamento:\n- **Piena compatibilità con l'Hotfix Steam 0.1.4.1**:\n  - Supporto ai fix ufficiali per controller e mouse (risoluzione problemi di rimappatura comandi, navigazione fluida nel menu radiale su monitor secondari, nuove impostazioni di sensibilità levette e inversione asse di visuale).\n  - Correzione dei placeholder di input nell'interfaccia di gioco e risoluzione dei problemi di desincronizzazione delle finisher move (`SlomoSource.Finisher.02`).\n  - Copertura integrale al 100% (1.795 voci localizzate).\n- **Riallineamento Tecnico Unreal Engine 5**:\n  - `DefaultGame.ini` di staging aggiornato a `ProjectVersion=0.1.4.1`.\n  - Nuova patch cifrata AES-256-ECB V11 `pakchunk0-Windows_P.pak` (73.483 byte, SHA-256 `F8A6882638826DE0F7250B0C8427B180D31BC2BCFCD2A2AE6A4E96A9BEAC4D71`).\n  - Nuovo archivio base di riferimento Steam `pakchunk0-Windows.pak` (90.088.270 byte, SHA-256 `FD6220D50F44C69875C70DF0D7C207AC774FA8B80966BF7365E4F598E7D53BA9`).\n- **Installer Autonomo One-File Standalone**:\n  - Eseguibile `Fatekeeper-Italian-Translation.exe` ricompilato e testato: installazione rapida con un clic e verifica di integrità a 4 vie `[OK]`.\n\n#### Installazione Rapida:\n1. Scarica **`Fatekeeper-Italian-Translation.exe`**.\n2. Chiudi il gioco se aperto ed avvia l'eseguibile.\n3. Seleziona **`[1] Installa Traduzione Italiana`**.\n4. Avvia **Fatekeeper** da Steam: tutti i testi appariranno immediatamente in lingua italiana!\n",
-     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.4.1-R1",
+     "tag": "1.0.1",
+     "name": "Release 1.0.1 — Traduzione italiana · build 26429009",
+     "date": "2026-11-06T17:30:51Z",
+     "body": "Traduzione italiana aggiornata per **AION 2 Steam, build 26429009**.\n\n- 153.419 testi italiani: tradotti 125 testi nuovi e raccordate 4.134 variazioni delle fonti; conservate le correzioni dei revisori.\n- Aggiornati le descrizioni delle ricompense, i titoli e le difficoltà di Ludra, Outer Abyss e il limite settimanale di 3 ore. Corrette varie maiuscole e descrizioni di statistiche.\n- Installer con ricerca della cartella Steam, aggiornamento e ripristino. Seleziona **Español** nel gioco.\n- Kit revisori con laboratorio offline, italiano modificabile, glossario, sorgenti e generatore autonomo di installer: nessun account o caricamento online richiesto.\n\nPer giocare scarica soltanto **AION2_Italiano_Setup_1.0.1_build26429009.exe**. Chiudi il gioco prima di installare. Il kit revisori è facoltativo.\n\nVerificati tecnicamente codifica e rilettura di tutti i testi, installazione e ripristino dell’eseguibile compilato in una cartella di prova. Il controllo di questo aggiornamento distingue lettura completa, confronto dei soli passaggi modificati e modifiche formali delle fonti; non dichiara una nuova lettura integrale di tutti i 153.419 testi. Restano 1.823 testi con domande di contesto aperte. La verifica umana e quella in gioco non sono dichiarate complete.\n\n**Un ringraziamento speciale ai ragazzi di LPI per il loro prezioso aiuto nella revisione della traduzione.**\n\nIl laboratorio privato online resta sospeso; questa release funziona in locale. Nessun catalogo originale del gioco, account o cronologia privata dei revisori è incluso.\n",
+     "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/tag/1.0.1",
      "prerelease": false,
      "assets": [
       {
-       "name": "Fatekeeper-Italian-Translation.exe",
-       "size": 7357852,
-       "downloads": 0,
-       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Fatekeeper-Italian-Translation.exe",
-      "size": 7357852,
-      "downloads": 0,
-      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
-     },
-     "downloads": 0
-    },
-    {
-     "tag": "0.1.4-R1",
-     "name": "Fatekeeper - Traduzione Italiana 0.1.4-R1 (Build Steam 0.1.4)",
-     "date": "2026-10-31T10:16:53Z",
-     "body": "### Fatekeeper - Traduzione Italiana 0.1.4-R1 (Data: 31/10/2026)\n\nAggiornamento della localizzazione italiana integrale per la nuova versione di **Fatekeeper** (Steam Build **0.1.4** / BuildID `26328649`).\n\n#### Novità & Caratteristiche Principali:\n- **Espansione Database: 1.795 stringhe (+284 voci nette, 100% dell'intero gioco)**:\n  - **Scheda Attributi Dettagliata (`ST_AttributeUI`, 184 voci)**: parametri avanzati di penetrazione e resistenza (fisica ed elementale: contundente, perforazione, taglio, fuoco, gelo, fulmine, vento, veleno, vuoto, sangue, arcano), finestre e ritardi di parata/deviazione, tempi di recupero e regressione alterazioni di stato (*Sanguinamento*, *Bruciatura*, *Corrosione*, *Stordimento*, *Congelamento*, *Folgorazione*), parametri telecinesi ed efficienza alchemica.\n  - **Nuovi Oggetti ed Equipaggiamento (`Item`)**: Runa dell'abisso, Quercia antica, Bastone dell'arcanista, Chiave del cortile, Chiave di rame decorata, Leviatano, Amuleto poliedrico, Pietra della maratona, Medaglia del vigore, Giorno e notte, Sentiero dello spettro dei ghiacci, Talismano del guerriero, Furia degli Antichi.\n  - **Modificatori Procedurali (`ST_GeneratedModifiers`)**: formule dinamiche tradotte preservando al 100% i token di calcolo per armi, magie e attacchi disarmati.\n  - **Supporto Controller Esteso & HDR**: layout per gamepad PlayStation, Xbox, Steam e calibrazione luminosità HDR.\n  - **Schermate di Caricamento & Lore (`ST_LoadingScreen`)**: approfondimenti su Mar Guran, il Portale Lunare, le Gallerie di Trasporto e i Custodi di Solace.\n  - **Riallineamento Hash CityHash64**: 124 voci modificate o ampliate dagli sviluppatori riallineate al 100% con gli asset di gioco della build 0.1.4.\n\n#### Architettura Tecnica UE5:\n- File base originale Steam `pakchunk0-Windows.pak` (90.088.270 byte) preservato integro con backup automatico.\n- Nuovo seed di hash dei percorsi `0xC623D5C0` (3324237248) e indici cifrati in AES-256-ECB V11.\n- Registrazione ufficiale della cultura italiana `it` in `Game.locmeta` (v2).\n\n#### Installazione Rapida:\n1. Scarica **`Fatekeeper-Italian-Translation.exe`**.\n2. Chiudi il gioco se aperto ed avvia l'eseguibile.\n3. Seleziona **`[1] Installa Traduzione Italiana`**.\n4. Avvia **Fatekeeper** da Steam: tutti i testi appariranno immediatamente in italiano!\n",
-     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.4-R1",
-     "prerelease": false,
-     "assets": [
+       "name": "AION2_Genera_Patch_1.0.1.exe",
+       "size": 42229963,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Genera_Patch_1.0.1.exe"
+      },
       {
-       "name": "Fatekeeper-Italian-Translation.exe",
-       "size": 7357873,
-       "downloads": 2,
-       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Fatekeeper-Italian-Translation.exe",
-      "size": 7357873,
-      "downloads": 2,
-      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
-     },
-     "downloads": 2
-    },
-    {
-     "tag": "0.1.3-R1",
-     "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
-     "date": "2026-09-20T09:24:05Z",
-     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam\r\n4. Imposta IT nelle impostazioni e gioca subito in italiano!",
-     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
-     "prerelease": false,
-     "assets": [
+       "name": "AION2_Italiano_Setup_1.0.1_build26429009.exe",
+       "size": 27257011,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Italiano_Setup_1.0.1_build26429009.exe"
+      },
       {
-       "name": "Fatekeeper-Italian-Translation.exe",
-       "size": 7752041,
-       "downloads": 4,
-       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+       "name": "AION2_Kit_Revisori_1.0.1_build26429009.zip",
+       "size": 101517317,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Kit_Revisori_1.0.1_build26429009.zip"
+      },
+      {
+       "name": "SHA256SUMS.txt",
+       "size": 318,
+       "downloads": 1,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/SHA256SUMS.txt"
       }
      ],
      "download": {
-      "name": "Fatekeeper-Italian-Translation.exe",
-      "size": 7752041,
-      "downloads": 4,
-      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+      "name": "AION2_Italiano_Setup_1.0.1_build26429009.exe",
+      "size": 27257011,
+      "downloads": 1,
+      "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Italiano_Setup_1.0.1_build26429009.exe"
      },
      "downloads": 4
+    },
+    {
+     "tag": "1.0.0",
+     "name": "Release 1 — Traduzione italiana AION 2",
+     "date": "2026-10-28T17:25:54Z",
+     "body": "Prima release pubblica della traduzione italiana di **AION 2 su Steam**, compatibile con la **build 26262663**.\n\n**Un ringraziamento speciale ai ragazzi di LPI per il loro prezioso aiuto nella revisione della traduzione.**\n\n### Per giocare\n\nScarica **AION2_Italiano_Setup_1.0.0_build26262663.exe**, chiudi il gioco e apri l’installer. La cartella Steam viene cercata automaticamente; installazione, controllo e ripristino sono nello stesso programma. Dopo l’installazione seleziona **Español** nel gioco: i testi saranno in italiano.\n\n### Contenuto della release\n\n- **Installer** della traduzione: 153.297 testi italiani, icona e immagini a tema, bandiera italiana e backup automatico.\n- **Kit revisori ZIP**: italiano modificabile, glossario, laboratorio offline, installer, generatore di nuove patch e sorgenti degli strumenti. Estrarre tutto prima di usarlo.\n- **AION2_Genera_Patch_1.0.0.exe**: genera un nuovo installer dal JSON salvato nel laboratorio offline, senza account, Python o server. È già incluso nel kit.\n- **SHA256SUMS.txt**: impronte per controllare i download.\n- **Source code**: sorgenti e testo italiano, disponibili anche nel repository.\n\nIl nuovo aggiornamento comprende 116 stringhe aggiunte, il ricontrollo di 1.060 stringhe con fonti modificate e l’archiviazione di 4 chiavi rimosse. Tag, segnaposto, numeri e a capo sono controllati; non ci sono ripiegamenti sulle lingue originali nella patch.\n\nLa patch è stata installata e riletta: tutti i 153.297 testi coincidono con la copia locale aggiornata. Sono stati verificati anche aggiornamento, ripristino, recupero da un’interruzione e generazione dell’installer dal kit.\n\nLa revisione umana continua e 1.815 questioni di contesto restano aperte: non sono state chiuse senza prove. Non dichiariamo una verifica completa in gioco di questa build. La patch rifiuta build diverse, quindi dopo un nuovo aggiornamento Steam occorre una release compatibile.\n\nIl laboratorio privato online resta sospeso; questa distribuzione è autonoma e locale. Nessuna credenziale, cronologia privata dei revisori o catalogo originale del gioco è incluso. I sorgenti dell’estrattore sono disponibili per i manutentori; le fonti di confronto vanno estratte dalla propria copia del gioco.\n\nTraduzione amatoriale gratuita e non ufficiale. AION 2, marchi e immagini appartengono ai rispettivi titolari.\n",
+     "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/tag/1.0.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "AION2_Genera_Patch_1.0.0.exe",
+       "size": 42221188,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Genera_Patch_1.0.0.exe"
+      },
+      {
+       "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
+       "size": 27246276,
+       "downloads": 7,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
+      },
+      {
+       "name": "AION2_Kit_Revisori_1.0.0_build26262663.zip",
+       "size": 101375388,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Kit_Revisori_1.0.0_build26262663.zip"
+      },
+      {
+       "name": "SHA256SUMS.txt",
+       "size": 318,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/SHA256SUMS.txt"
+      }
+     ],
+     "download": {
+      "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
+      "size": 27246276,
+      "downloads": 7,
+      "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
+     },
+     "downloads": 14
     }
    ]
   },
@@ -97,12 +105,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 8,
     "topics": [],
-    "pushed_at": "2026-11-05T18:40:28Z"
+    "pushed_at": "2026-11-06T17:02:41Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3887621.0",
+     "name": "v1.0.3887621.0 - Aggiornamento Steam Build 3887621",
+     "date": "2026-11-06T17:03:13Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3887621.0\n\nAggiornamento completo per la nuova patch client Steam **1.0.3887621.0** (build 3887621), con compatibilità confermata e testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3887621**:\n  - Catalogo allineato a **134.298 chiavi totali** con copertura confermata al **100,00%** e **0 fallback**.\n  - Piena compatibilità con l'aggiornamento hotfix di Aniimo rilasciato su Steam il 6 novembre 2026.\n  - Aggiunta della nuova chiave di formattazione `{0} ({1})` e aggiornamento delle 607 chiavi sincronizzate con i file ufficiali di gioco.\n- **Riepilogo contenuti e testi aggiornati**:\n  - **Normalizzazione tipografica completa**: recepito il cambio globale adottato dagli sviluppatori che sostituisce i punti mediani `·` con il trattino standard ` - ` nei titoli di arredi, sfide, capitoli di storia e registri.\n  - **Allineamento PNG Lilipole 'Itsy'**: uniformato ufficialmente il nome della piccola Lilipole in **Itsy** (precedentemente riportata come Tiny o Mimi in alcune stringhe) in tutti i dialoghi, archivi del Festival degli Schizzi d'Acqua e finali narrativi.\n  - **Rinominazione Club Polaris**: aggiornati i riferimenti istituzionali in **Club Polaris** per lettere e menu di riscatto ricompense.\n  - **Correzioni descrizioni e oggetti cosmetici**: aggiornato il set *Elegia del Crepuscolo* maschile con l'indicazione corretta delle *Scarpe Notturno Scarlatto* al posto dei pantaloni, rifinite le descrizioni di *Fruttobimbo* (*Verde e Aspro*), delle note di formula *Fruttolanterna del Ricordo* e dei suoni di gelatina (*Gel!*).\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Sincronizzazione automatica della cache `LuaCacheVer.txt` e verifica d'integrità.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Verifica d'installazione reale al 100% sui file di gioco Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3887621.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 46839717,
+       "downloads": 3,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3887621.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 46839717,
+      "downloads": 3,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3887621.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 3
+    },
     {
      "tag": "v1.0.3880756.0",
      "name": "v1.0.3880756.0 - Aggiornamento Steam Build 3880756",
@@ -114,17 +145,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46840484,
-       "downloads": 2,
+       "downloads": 18,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3880756.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46840484,
-      "downloads": 2,
+      "downloads": 18,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3880756.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 2
+     "downloads": 18
     },
     {
      "tag": "v1.0.3857679.0",
@@ -355,83 +386,93 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3616231.0/Aniimo-Italian-Translation.exe"
      },
      "downloads": 96
-    },
-    {
-     "tag": "v1.0.3603741.0",
-     "name": "Release 1.0.3603741.0",
-     "date": "2026-09-26T07:48:06Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3603741.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3603741.0** (build 3603741).\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3603741**:\n  - Piena compatibilità con il nuovo aggiornamento di Aniimo rilasciato il 26 settembre 2026.\n  - Catalogo confermato a **112.207 chiavi totali** con copertura professionale al **100,00%** (zero stringhe mancanti o non tradotte).\n- **Traduzione integrale di tutte le novità e modifiche**:\n  - Tradotte e integrate tutte le **122 stringhe** modificate della build 3603741.\n  - Revisione incrociata approfondita rispetto ai testi ufficiali francesi (`fr_FR`) e spagnoli (`es_ES`) per garantire la corretta concordanza di genere (maschile/femminile) e terminologia coerente con il glossario di gioco.\n  - Aggiornate le descrizioni degli oggetti per gli Hatchinator dell'Avamposto e della Base.\n  - Aggiornate le FAQ e le informazioni di supporto per il Club Polaris e il Mini-programma Aniimo Land.\n  - Aggiornati i requisiti delle missioni (Capitolo 7, cattura Aniimo Leggendari, decorazione piattaforme nei Parchi).\n  - Aggiornati i messaggi di raggiungimento quota per i Timbri stagionali (Simulatore Olo-battaglie, Interconnessione, Ordinazioni Base, Tè Sotto le Stelle, Furto d'Uova, Alpha).\n  - Rifinite le interazioni, i quiz e gli obiettivi degli Hummin.\n  - Corretti e aggiornati i testi relativi agli sconti ufficiali sui Cristalli Lumin e alle regole della Trasmogrificazione.\n- **Risorse font native confermate**:\n  - Piena compatibilità con il bundle font `xgui_font_94caf04d33b30d3bf95fff3d59018c81.uab`, garantendo la corretta visualizzazione di tutti i caratteri accentati italiani.\n- **Stabilità e sicurezza**:\n  - Piena compatibilità con l'Accesso alle cartelle controllato di Windows Defender.\n  - Backup automatico ad ogni installazione e ripristino istantaneo garantito.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio.\n3. Nel gioco seleziona la lingua **Inglese**.\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3603741.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 42919319,
-       "downloads": 160,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 42919319,
-      "downloads": 160,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3603741.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 160
     }
    ]
   },
   {
    "repo": {
-    "name": "AION2-Italian-Translation",
-    "description": "Traduzione italiana gratuita di AION 2 Steam, installer reversibile e strumenti offline per i revisori. Con il contributo di LPI.",
-    "html_url": "https://github.com/Sici29/AION2-Italian-Translation",
+    "name": "Fatekeeper-Italian-Translation",
+    "description": "Traduzione italiana completa per Fatekeeper con installer automatico",
+    "html_url": "https://github.com/Sici29/Fatekeeper-Italian-Translation",
     "stargazers_count": 0,
     "topics": [],
-    "pushed_at": "2026-10-28T17:25:54Z"
+    "pushed_at": "2026-11-05T18:43:50Z"
    },
-   "marker": {},
+   "marker": {
+    "nome_gioco": "Fatekeeper",
+    "cover_url": null,
+    "motore_installazione": "unreal_pak",
+    "steam_appid": 2186990
+   },
    "releases": [
     {
-     "tag": "1.0.0",
-     "name": "Release 1 — Traduzione italiana AION 2",
-     "date": "2026-10-28T17:25:54Z",
-     "body": "Prima release pubblica della traduzione italiana di **AION 2 su Steam**, compatibile con la **build 26262663**.\n\n**Un ringraziamento speciale ai ragazzi di LPI per il loro prezioso aiuto nella revisione della traduzione.**\n\n### Per giocare\n\nScarica **AION2_Italiano_Setup_1.0.0_build26262663.exe**, chiudi il gioco e apri l’installer. La cartella Steam viene cercata automaticamente; installazione, controllo e ripristino sono nello stesso programma. Dopo l’installazione seleziona **Español** nel gioco: i testi saranno in italiano.\n\n### Contenuto della release\n\n- **Installer** della traduzione: 153.297 testi italiani, icona e immagini a tema, bandiera italiana e backup automatico.\n- **Kit revisori ZIP**: italiano modificabile, glossario, laboratorio offline, installer, generatore di nuove patch e sorgenti degli strumenti. Estrarre tutto prima di usarlo.\n- **AION2_Genera_Patch_1.0.0.exe**: genera un nuovo installer dal JSON salvato nel laboratorio offline, senza account, Python o server. È già incluso nel kit.\n- **SHA256SUMS.txt**: impronte per controllare i download.\n- **Source code**: sorgenti e testo italiano, disponibili anche nel repository.\n\nIl nuovo aggiornamento comprende 116 stringhe aggiunte, il ricontrollo di 1.060 stringhe con fonti modificate e l’archiviazione di 4 chiavi rimosse. Tag, segnaposto, numeri e a capo sono controllati; non ci sono ripiegamenti sulle lingue originali nella patch.\n\nLa patch è stata installata e riletta: tutti i 153.297 testi coincidono con la copia locale aggiornata. Sono stati verificati anche aggiornamento, ripristino, recupero da un’interruzione e generazione dell’installer dal kit.\n\nLa revisione umana continua e 1.815 questioni di contesto restano aperte: non sono state chiuse senza prove. Non dichiariamo una verifica completa in gioco di questa build. La patch rifiuta build diverse, quindi dopo un nuovo aggiornamento Steam occorre una release compatibile.\n\nIl laboratorio privato online resta sospeso; questa distribuzione è autonoma e locale. Nessuna credenziale, cronologia privata dei revisori o catalogo originale del gioco è incluso. I sorgenti dell’estrattore sono disponibili per i manutentori; le fonti di confronto vanno estratte dalla propria copia del gioco.\n\nTraduzione amatoriale gratuita e non ufficiale. AION 2, marchi e immagini appartengono ai rispettivi titolari.\n",
-     "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/tag/1.0.0",
+     "tag": "0.1.4.1-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.4.1-R1 (Hotfix Steam 0.1.4.1)",
+     "date": "2026-11-05T18:43:50Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.4.1-R1 (Data: 05/11/2026)\n\nAggiornamento della localizzazione italiana per il nuovo **Hotfix 0.1.4.1** di **Fatekeeper** (Steam Build `0.1.4.1` / BuildID `26436096`).\n\n#### Novità & Note di Aggiornamento:\n- **Piena compatibilità con l'Hotfix Steam 0.1.4.1**:\n  - Supporto ai fix ufficiali per controller e mouse (risoluzione problemi di rimappatura comandi, navigazione fluida nel menu radiale su monitor secondari, nuove impostazioni di sensibilità levette e inversione asse di visuale).\n  - Correzione dei placeholder di input nell'interfaccia di gioco e risoluzione dei problemi di desincronizzazione delle finisher move (`SlomoSource.Finisher.02`).\n  - Copertura integrale al 100% (1.795 voci localizzate).\n- **Riallineamento Tecnico Unreal Engine 5**:\n  - `DefaultGame.ini` di staging aggiornato a `ProjectVersion=0.1.4.1`.\n  - Nuova patch cifrata AES-256-ECB V11 `pakchunk0-Windows_P.pak` (73.483 byte, SHA-256 `F8A6882638826DE0F7250B0C8427B180D31BC2BCFCD2A2AE6A4E96A9BEAC4D71`).\n  - Nuovo archivio base di riferimento Steam `pakchunk0-Windows.pak` (90.088.270 byte, SHA-256 `FD6220D50F44C69875C70DF0D7C207AC774FA8B80966BF7365E4F598E7D53BA9`).\n- **Installer Autonomo One-File Standalone**:\n  - Eseguibile `Fatekeeper-Italian-Translation.exe` ricompilato e testato: installazione rapida con un clic e verifica di integrità a 4 vie `[OK]`.\n\n#### Installazione Rapida:\n1. Scarica **`Fatekeeper-Italian-Translation.exe`**.\n2. Chiudi il gioco se aperto ed avvia l'eseguibile.\n3. Seleziona **`[1] Installa Traduzione Italiana`**.\n4. Avvia **Fatekeeper** da Steam: tutti i testi appariranno immediatamente in lingua italiana!\n",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.4.1-R1",
      "prerelease": false,
      "assets": [
       {
-       "name": "AION2_Genera_Patch_1.0.0.exe",
-       "size": 42221188,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Genera_Patch_1.0.0.exe"
-      },
-      {
-       "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
-       "size": 27246276,
-       "downloads": 6,
-       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
-      },
-      {
-       "name": "AION2_Kit_Revisori_1.0.0_build26262663.zip",
-       "size": 101375388,
-       "downloads": 1,
-       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Kit_Revisori_1.0.0_build26262663.zip"
-      },
-      {
-       "name": "SHA256SUMS.txt",
-       "size": 318,
-       "downloads": 2,
-       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/SHA256SUMS.txt"
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7357852,
+       "downloads": 0,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
       }
      ],
      "download": {
-      "name": "AION2_Italiano_Setup_1.0.0_build26262663.exe",
-      "size": 27246276,
-      "downloads": 6,
-      "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.0/AION2_Italiano_Setup_1.0.0_build26262663.exe"
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7357852,
+      "downloads": 0,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
      },
-     "downloads": 10
+     "downloads": 0
+    },
+    {
+     "tag": "0.1.4-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.4-R1 (Build Steam 0.1.4)",
+     "date": "2026-10-31T10:16:53Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.4-R1 (Data: 31/10/2026)\n\nAggiornamento della localizzazione italiana integrale per la nuova versione di **Fatekeeper** (Steam Build **0.1.4** / BuildID `26328649`).\n\n#### Novità & Caratteristiche Principali:\n- **Espansione Database: 1.795 stringhe (+284 voci nette, 100% dell'intero gioco)**:\n  - **Scheda Attributi Dettagliata (`ST_AttributeUI`, 184 voci)**: parametri avanzati di penetrazione e resistenza (fisica ed elementale: contundente, perforazione, taglio, fuoco, gelo, fulmine, vento, veleno, vuoto, sangue, arcano), finestre e ritardi di parata/deviazione, tempi di recupero e regressione alterazioni di stato (*Sanguinamento*, *Bruciatura*, *Corrosione*, *Stordimento*, *Congelamento*, *Folgorazione*), parametri telecinesi ed efficienza alchemica.\n  - **Nuovi Oggetti ed Equipaggiamento (`Item`)**: Runa dell'abisso, Quercia antica, Bastone dell'arcanista, Chiave del cortile, Chiave di rame decorata, Leviatano, Amuleto poliedrico, Pietra della maratona, Medaglia del vigore, Giorno e notte, Sentiero dello spettro dei ghiacci, Talismano del guerriero, Furia degli Antichi.\n  - **Modificatori Procedurali (`ST_GeneratedModifiers`)**: formule dinamiche tradotte preservando al 100% i token di calcolo per armi, magie e attacchi disarmati.\n  - **Supporto Controller Esteso & HDR**: layout per gamepad PlayStation, Xbox, Steam e calibrazione luminosità HDR.\n  - **Schermate di Caricamento & Lore (`ST_LoadingScreen`)**: approfondimenti su Mar Guran, il Portale Lunare, le Gallerie di Trasporto e i Custodi di Solace.\n  - **Riallineamento Hash CityHash64**: 124 voci modificate o ampliate dagli sviluppatori riallineate al 100% con gli asset di gioco della build 0.1.4.\n\n#### Architettura Tecnica UE5:\n- File base originale Steam `pakchunk0-Windows.pak` (90.088.270 byte) preservato integro con backup automatico.\n- Nuovo seed di hash dei percorsi `0xC623D5C0` (3324237248) e indici cifrati in AES-256-ECB V11.\n- Registrazione ufficiale della cultura italiana `it` in `Game.locmeta` (v2).\n\n#### Installazione Rapida:\n1. Scarica **`Fatekeeper-Italian-Translation.exe`**.\n2. Chiudi il gioco se aperto ed avvia l'eseguibile.\n3. Seleziona **`[1] Installa Traduzione Italiana`**.\n4. Avvia **Fatekeeper** da Steam: tutti i testi appariranno immediatamente in italiano!\n",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.4-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7357873,
+       "downloads": 2,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7357873,
+      "downloads": 2,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4-R1/Fatekeeper-Italian-Translation.exe"
+     },
+     "downloads": 2
+    },
+    {
+     "tag": "0.1.3-R1",
+     "name": "Fatekeeper - Traduzione Italiana 0.1.3-R1 (Build Steam 0.1.3)",
+     "date": "2026-09-20T09:24:05Z",
+     "body": "### Fatekeeper - Traduzione Italiana 0.1.3-R1 (Data: 20/09/2026)\r\n\r\nPrima release ufficiale della localizzazione italiana integrale per **Fatekeeper** (build Steam **0.1.3**).\r\n\r\n#### Caratteristiche Principali:\r\n- **Localizzazione 100% dell'intero gioco (1.514 voci)**:\r\n  - Menu principale, interfaccia, schermate di caricamento e impostazioni complete audio/video/comandi.\r\n  - Albero completo dei talenti e abilità, calderone alchemico, lore, oggetti, armature, armi e sottotitoli di tutti i dialoghi narrativi.\r\n  - Allineamento al 100% di tutti gli hash binari (CityHash64 / SourceStringHash) con gli asset .uasset del gioco.\r\n  - File originale Steam \\pakchunk0-Windows.pak\\ (29.9 MB) preservato integro al 100%.\r\n  - Patch pacchettizzata in formato UE V11 (\\pakchunk0-Windows_P.pak\\) con cifratura nativa AES-256-ECB.\r\n\r\n#### Installazione Rapida:\r\n1. Scarica \\Fatekeeper-Italian-Translation.exe\\.\r\n2. Avvialo e seleziona \\[1] Installa Traduzione Italiana\\.\r\n3. Avvia **Fatekeeper** da Steam\r\n4. Imposta IT nelle impostazioni e gioca subito in italiano!",
+     "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/tag/0.1.3-R1",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Fatekeeper-Italian-Translation.exe",
+       "size": 7752041,
+       "downloads": 4,
+       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Fatekeeper-Italian-Translation.exe",
+      "size": 7752041,
+      "downloads": 4,
+      "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.3-R1/Fatekeeper-Italian-Translation.exe"
+     },
+     "downloads": 4
     }
    ]
   },
