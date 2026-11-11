@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-10T04:19:30+00:00",
+ "generated_at": "2026-11-11T08:20:43+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -31,7 +31,7 @@
       {
        "name": "AION2_Italiano_Setup_1.0.1_build26429009.exe",
        "size": 27257011,
-       "downloads": 1,
+       "downloads": 2,
        "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Italiano_Setup_1.0.1_build26429009.exe"
       },
       {
@@ -50,10 +50,10 @@
      "download": {
       "name": "AION2_Italiano_Setup_1.0.1_build26429009.exe",
       "size": 27257011,
-      "downloads": 1,
+      "downloads": 2,
       "url": "https://github.com/Sici29/AION2-Italian-Translation/releases/download/1.0.1/AION2_Italiano_Setup_1.0.1_build26429009.exe"
      },
-     "downloads": 4
+     "downloads": 5
     },
     {
      "tag": "1.0.0",
@@ -122,17 +122,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46839717,
-       "downloads": 41,
+       "downloads": 47,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3887621.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46839717,
-      "downloads": 41,
+      "downloads": 47,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3887621.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 41
+     "downloads": 47
     },
     {
      "tag": "v1.0.3880756.0",
@@ -191,17 +191,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46839687,
-       "downloads": 47,
+       "downloads": 48,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46839687,
-      "downloads": 47,
+      "downloads": 48,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3846247.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 47
+     "downloads": 48
     },
     {
      "tag": "v1.0.3746914.0",
@@ -237,17 +237,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 45276215,
-       "downloads": 26,
+       "downloads": 27,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 45276215,
-      "downloads": 26,
+      "downloads": 27,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3743667.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 26
+     "downloads": 27
     },
     {
      "tag": "v1.0.3732728.0",
