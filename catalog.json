@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-15T03:01:53+00:00",
+ "generated_at": "2026-11-16T03:03:12+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46973807,
-       "downloads": 37,
+       "downloads": 44,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46973807,
-      "downloads": 37,
+      "downloads": 44,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 37
+     "downloads": 44
     },
     {
      "tag": "v1.0.3887621.0",
@@ -350,7 +350,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 17542536,
-       "downloads": 15,
+       "downloads": 16,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -363,10 +363,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 17542536,
-      "downloads": 15,
+      "downloads": 16,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.4/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 17
+     "downloads": 18
     },
     {
      "tag": "v1.3",
