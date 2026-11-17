@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-17T04:45:11+00:00",
+ "generated_at": "2026-11-17T23:07:57+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -12,9 +12,7 @@
     "topics": [],
     "pushed_at": "2026-11-12T17:16:13Z"
    },
-   "marker": {
-    "steam_appid": 4126040
-   },
+   "marker": {},
    "releases": [
     {
      "tag": "v1.0.3934365.0",
@@ -27,17 +25,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46973807,
-       "downloads": 45,
+       "downloads": 48,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46973807,
-      "downloads": 45,
+      "downloads": 48,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 45
+     "downloads": 48
     },
     {
      "tag": "v1.0.3887621.0",
@@ -305,7 +303,7 @@
    },
    "marker": {
     "nome_gioco": "Neverness to Everness",
-    "steam_appid": 4508340,
+    "steam_appid": null,
     "cover_url": "https://media.rawg.io/media/games/60f/60fdfa338290f6c2eeb62817d23d8c1c.jpg",
     "motore_installazione": "unreal_pak"
    },
@@ -321,7 +319,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 18290194,
-       "downloads": 19,
+       "downloads": 24,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.5/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -334,10 +332,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 18290194,
-      "downloads": 19,
+      "downloads": 24,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.5/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 23
+     "downloads": 28
     },
     {
      "tag": "v1.4",
@@ -593,8 +591,7 @@
    "marker": {
     "nome_gioco": "Fatekeeper",
     "cover_url": null,
-    "motore_installazione": "unreal_pak",
-    "steam_appid": 2186990
+    "motore_installazione": "unreal_pak"
    },
    "releases": [
     {
@@ -608,17 +605,17 @@
       {
        "name": "Fatekeeper-Italian-Translation.exe",
        "size": 7357852,
-       "downloads": 0,
+       "downloads": 1,
        "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Fatekeeper-Italian-Translation.exe",
       "size": 7357852,
-      "downloads": 0,
+      "downloads": 1,
       "url": "https://github.com/Sici29/Fatekeeper-Italian-Translation/releases/download/0.1.4.1-R1/Fatekeeper-Italian-Translation.exe"
      },
-     "downloads": 0
+     "downloads": 1
     },
     {
      "tag": "0.1.4-R1",
