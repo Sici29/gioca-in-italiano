@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-18T04:41:31+00:00",
+ "generated_at": "2026-11-18T22:18:12+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -10,12 +10,35 @@
     "html_url": "https://github.com/Sici29/Aniimo-Italian-Translation",
     "stargazers_count": 9,
     "topics": [],
-    "pushed_at": "2026-11-12T17:16:13Z"
+    "pushed_at": "2026-11-18T17:45:17Z"
    },
    "marker": {
     "steam_appid": 4126040
    },
    "releases": [
+    {
+     "tag": "v1.0.3973445.0",
+     "name": "v1.0.3973445.0 - Aggiornamento Steam Build 3973445",
+     "date": "2026-11-18T17:47:12Z",
+     "body": "# Aniimo — Traduzione italiana 1.0.3973445.0\n\nAggiornamento completo per la nuova patch client Steam **1.0.3973445.0** (build 3973445), con compatibilità confermata e copertura testi al 100,00%.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3973445**:\n  - Catalogo allineato a **136.024 chiavi totali** (+3 nuove chiavi, 19 aggiornate, 16 obsolete rimosse) con copertura confermata al **100,00%** e **0 fallback**.\n  - Piena compatibilità con l'aggiornamento di Aniimo rilasciato su Steam il 18 novembre 2026.\n- **Riepilogo contenuti e testi aggiornati**:\n  - **Nuove chiavi**: aggiunte le voci *Chompy*, *Dora* e l'avviso sul limite massimo di accettazione ordini.\n  - **Coppa di Breezy Plains**: aggiornate le regole della modalità corsa con i nuovi termini (*Aniimo da Corsa*) e i tag orari dinamici `<timeAutoChangeServer>`.\n  - **Evento fotografico Prismana Scintillanti**: aggiornati testi, fasi e obiettivi fotografici (*Fotografa 5 tipi diversi di Scintillante normale*, *Scintillante Abbagliante o Scintillante d'Ombra*).\n  - **Oggetti, trucchi e potenziamenti**: allineate le descrizioni di trucchi (*Conferisce il trucco indicato*), *Polvere di Gemma Premium*, formula per *Banco da Lavoro*, tortine di incremento velocità e descrizione del negozio a tempo limitato.\n- **Tutte le funzionalità confermate e operative**:\n  - Selezione della lingua da sostituire (opzione `8` nel menu o parametro `--target`): mantieni sia l'Inglese che l'Italiano attivi e selezionabili nelle impostazioni del gioco.\n  - Avviso dedicato per versioni non-Steam (Pawprint o standalone).\n  - Sincronizzazione automatica della cache `LuaCacheVer.txt` e verifica d'integrità.\n  - Backup e ripristino automatici con un clic (opzione `2`).\n- **Qualità e test**:\n  - Suite completa di **161 test unitari superati con successo** (0 errori, 0 fallimenti).\n  - Verifica d'installazione reale al 100% sui file di gioco Steam.\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
+     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3973445.0",
+     "prerelease": false,
+     "assets": [
+      {
+       "name": "Aniimo-Italian-Translation.exe",
+       "size": 46972646,
+       "downloads": 6,
+       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3973445.0/Aniimo-Italian-Translation.exe"
+      }
+     ],
+     "download": {
+      "name": "Aniimo-Italian-Translation.exe",
+      "size": 46972646,
+      "downloads": 6,
+      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3973445.0/Aniimo-Italian-Translation.exe"
+     },
+     "downloads": 6
+    },
     {
      "tag": "v1.0.3934365.0",
      "name": "v1.0.3934365.0 - Aggiornamento Steam Build 3934365",
@@ -27,17 +50,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 46973807,
-       "downloads": 49,
+       "downloads": 62,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 46973807,
-      "downloads": 49,
+      "downloads": 62,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3934365.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 49
+     "downloads": 62
     },
     {
      "tag": "v1.0.3887621.0",
@@ -268,29 +291,6 @@
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3634150.0/Aniimo-Italian-Translation.exe"
      },
      "downloads": 92
-    },
-    {
-     "tag": "v1.0.3629693.0",
-     "name": "Aniimo Traduzione Italiana 1.0.3629693.0",
-     "date": "2026-09-30T16:08:29Z",
-     "body": "# Aniimo — Traduzione italiana 1.0.3629693.0\n\nAggiornamento completo per la nuova patch del client Steam **1.0.3629693.0** (build 3629693), con risoluzione del blocco del controllo di download della cache e avviso specifico per le installazioni non-Steam.\n\n### Novità dell'aggiornamento:\n\n- **Supporto ufficiale alla build Steam 3629693**:\n  - Piena compatibilità con l'aggiornamento ufficiale di Aniimo rilasciato su Steam il 30 settembre 2026.\n  - Catalogo espanso a **112.263 chiavi totali** con copertura al **100,00%** (49 nuove chiavi e 182 stringhe modificate, interamente tradotte e revisionate).\n  - 0 stringhe mancanti o non tradotte.\n- **Risoluzione del falso positivo di aggiornamento pendente (Issue #23)**:\n  - Corretta la funzione di verifica della cache di gioco (`pending_cvs_download`): in precedenza l'archivio base originale di Steam (`StreamingAssets`) veniva confrontato con la nuova build generando un falso positivo che bloccava l'installazione anche dopo aver avviato il gioco.\n  - L'installer ora verifica primariamente l'archivio attivo aggiornato dal gioco, sbloccando l'installazione per tutti gli utenti.\n  - Aggiunta la possibilità interattiva di forzare l'installazione se desiderato e un consiglio diagnostico per ripulire la cache `Aniimo_Data\\cvs\\res\\lua` qualora i file locali risultassero corrotti o bloccati.\n- **Avviso per versioni non-Steam (Pawprint / standalone)**:\n  - L'installer rileva automaticamente se la cartella selezionata non appartiene a un'installazione ufficiale di Steam e mostra un avviso chiaro ed esplicito per informare l'utente che le versioni non-Steam non sono ufficialmente supportate dalla patch italiana.\n- **Selezione della lingua da sostituire (Inglese e Italiano insieme!)**:\n  - Confermata e pienamente operativa la scelta della lingua da sostituire (opzione `8` nel menu o parametro `--target`): puoi sostituire una lingua alternativa (come Portoghese, Spagnolo, Francese o Tedesco) per conservare sia l'Inglese che l'Italiano e passare dall'uno all'altro nelle opzioni di Aniimo.\n- **Qualità e test**:\n  - Suite di test estesa a **161 test unitari**, tutti superati con successo (0 errori, 0 fallimenti).\n\n### Installazione\n\n1. Chiudi Aniimo e il launcher.\n2. Apri **Aniimo-Italian-Translation.exe** e premi Invio (oppure opzione 8 per cambiare la lingua da sostituire).\n3. Nel gioco seleziona la lingua sostituita (Inglese per impostazione predefinita, oppure la lingua scelta).\n\nSe il gioco non viene trovato automaticamente, sposta l'installer accanto ad `Aniimo.exe` e riaprilo, oppure seleziona la cartella con l'opzione 4.\n",
-     "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/tag/v1.0.3629693.0",
-     "prerelease": false,
-     "assets": [
-      {
-       "name": "Aniimo-Italian-Translation.exe",
-       "size": 45222517,
-       "downloads": 105,
-       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
-      }
-     ],
-     "download": {
-      "name": "Aniimo-Italian-Translation.exe",
-      "size": 45222517,
-      "downloads": 105,
-      "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.3629693.0/Aniimo-Italian-Translation.exe"
-     },
-     "downloads": 105
     }
    ]
   },
@@ -321,7 +321,7 @@
       {
        "name": "Installatore_Traduzione_NTE.exe",
        "size": 18290194,
-       "downloads": 24,
+       "downloads": 25,
        "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.5/Installatore_Traduzione_NTE.exe"
       },
       {
@@ -334,10 +334,10 @@
      "download": {
       "name": "Installatore_Traduzione_NTE.exe",
       "size": 18290194,
-      "downloads": 24,
+      "downloads": 25,
       "url": "https://github.com/Sici29/NTE-Italian-Translation/releases/download/v1.5/Installatore_Traduzione_NTE.exe"
      },
-     "downloads": 28
+     "downloads": 29
     },
     {
      "tag": "v1.4",
