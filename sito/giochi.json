@@ -16,7 +16,7 @@
   },
 
   "Aniimo-Italian-Translation": {
-    "cosa": "Traduzione italiana di interfaccia, dialoghi, missioni, oggetti e tutorial. La revisione continua: alcuni testi rimangono in inglese. Consulta le note della versione per lo stato aggiornato e la build supportata.",
+    "cosa": "Traduzione italiana di interfaccia, dialoghi, missioni, oggetti e tutorial. La revisione continua. Consulta le note della versione per la copertura dei testi, lo stato delle verifiche e la build supportata.",
     "lingua": "Inglese",
     "nota_lingua": "La traduzione è sviluppata e verificata per la versione Steam di Aniimo. Le versioni Pawprint e standalone non sono state verificate. Per impostazione predefinita la traduzione sostituisce l'inglese. Con l'opzione 8 dell'installer puoi scegliere un'altra lingua da sostituire e mantenere l'inglese disponibile: la voce della lingua sostituita diventa Italiano. In questo caso seleziona Italiano nel gioco. Se la traduzione è già installata, ripristina i file originali prima di cambiare la lingua da sostituire.",
     "chiudi": "Aniimo e il suo launcher",
