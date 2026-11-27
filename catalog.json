@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated_at": "2026-11-26T15:43:23+00:00",
+ "generated_at": "2026-11-27T17:06:27+00:00",
  "user": "Sici29",
  "entries": [
   {
@@ -27,17 +27,17 @@
       {
        "name": "Aniimo-Italian-Translation.exe",
        "size": 29548874,
-       "downloads": 5,
+       "downloads": 22,
        "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.4047363.0/Aniimo-Italian-Translation.exe"
       }
      ],
      "download": {
       "name": "Aniimo-Italian-Translation.exe",
       "size": 29548874,
-      "downloads": 5,
+      "downloads": 22,
       "url": "https://github.com/Sici29/Aniimo-Italian-Translation/releases/download/v1.0.4047363.0/Aniimo-Italian-Translation.exe"
      },
-     "downloads": 5
+     "downloads": 22
     },
     {
      "tag": "v1.0.3989635.0",
@@ -701,17 +701,17 @@
       {
        "name": "StarCitizen_Traduzione_Italiana_4.10_R4.exe",
        "size": 18298025,
-       "downloads": 5,
+       "downloads": 6,
        "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r4/StarCitizen_Traduzione_Italiana_4.10_R4.exe"
       }
      ],
      "download": {
       "name": "StarCitizen_Traduzione_Italiana_4.10_R4.exe",
       "size": 18298025,
-      "downloads": 5,
+      "downloads": 6,
       "url": "https://github.com/Sici29/SC-Italian-Translation/releases/download/sc-4.10-r4/StarCitizen_Traduzione_Italiana_4.10_R4.exe"
      },
-     "downloads": 5
+     "downloads": 6
     },
     {
      "tag": "sc-4.10-r3",
